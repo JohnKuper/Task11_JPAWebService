@@ -1,0 +1,70 @@
+2014-10-07 15:11:55,303 DEBUG [main] JohnKuper [JPAWebServiceServer.java:16] Starting Server
+2014-10-07 15:11:56,602 DEBUG [main] JohnKuper [JPAWebServiceServer.java:26] Server ready...
+2014-10-07 15:16:56,615 DEBUG [main] JohnKuper [JPAWebServiceServer.java:35] Server exiting
+2014-10-07 15:35:43,573 DEBUG [main] JohnKuper [JPAWebServiceServer.java:16] Starting Server
+2014-10-07 15:35:43,946 DEBUG [main] JohnKuper [JPAWebServiceServer.java:26] Server ready...
+2014-10-07 15:40:43,959 DEBUG [main] JohnKuper [JPAWebServiceServer.java:35] Server exiting
+2014-10-08 10:54:07,569 DEBUG [main] JohnKuper [JPAWebServiceServer.java:16] Starting Server
+2014-10-08 10:54:07,962 DEBUG [main] JohnKuper [JPAWebServiceServer.java:26] Server ready...
+2014-10-08 10:59:07,975 DEBUG [main] JohnKuper [JPAWebServiceServer.java:35] Server exiting
+2014-10-08 11:01:39,976 DEBUG [main] JohnKuper [JPAWebServiceServer.java:16] Starting Server
+2014-10-08 11:01:40,277 DEBUG [main] JohnKuper [JPAWebServiceServer.java:26] Server ready...
+2014-10-08 11:22:49,566 DEBUG [main] JohnKuper [JPAWebServiceServer.java:16] Starting Server
+2014-10-08 11:22:49,859 DEBUG [main] JohnKuper [JPAWebServiceServer.java:26] Server ready...
+2014-10-08 11:27:49,856 DEBUG [main] JohnKuper [JPAWebServiceServer.java:35] Server exiting
+2014-10-08 15:53:40,048 DEBUG [main] JohnKuper [JPAWebServiceServer.java:16] Starting Server
+2014-10-08 15:53:40,365 DEBUG [main] JohnKuper [JPAWebServiceServer.java:26] Server ready...
+2014-10-08 16:10:23,542 DEBUG [main] JohnKuper [JPAWebServiceServer.java:16] Starting Server
+2014-10-08 16:10:23,845 DEBUG [main] JohnKuper [JPAWebServiceServer.java:26] Server ready...
+2014-10-08 16:15:23,859 DEBUG [main] JohnKuper [JPAWebServiceServer.java:35] Server exiting
+2014-10-08 16:26:28,208 DEBUG [main] JohnKuper [JPAWebServiceServer.java:16] Starting Server
+2014-10-08 16:26:28,533 DEBUG [main] JohnKuper [JPAWebServiceServer.java:26] Server ready...
+2014-10-08 16:27:37,450 DEBUG [main] JohnKuper [JPAWebServiceServer.java:16] Starting Server
+2014-10-08 16:27:37,738 DEBUG [main] JohnKuper [JPAWebServiceServer.java:26] Server ready...
+2014-10-08 18:32:27,947 DEBUG [main] JohnKuper [JPAWebServiceServer.java:16] Starting Server
+2014-10-08 18:32:28,153 DEBUG [main] JohnKuper [DomainServiceFieldRegistator.java:26] --- Start fields registration Domain ->> Service ---
+2014-10-08 18:32:28,224 DEBUG [main] JohnKuper [DomainServiceFieldRegistator.java:55] --- Fields registration Domain ->> Service complete ---
+2014-10-08 18:34:59,090 DEBUG [main] JohnKuper [JPAWebServiceServer.java:16] Starting Server
+2014-10-08 18:34:59,215 DEBUG [main] JohnKuper [DomainServiceFieldRegistator.java:26] --- Start fields registration Domain ->> Service ---
+2014-10-08 18:34:59,295 DEBUG [main] JohnKuper [DomainServiceFieldRegistator.java:55] --- Fields registration Domain ->> Service complete ---
+2014-10-08 18:35:35,434 DEBUG [main] JohnKuper [JPAWebServiceServer.java:16] Starting Server
+2014-10-08 18:35:35,534 DEBUG [main] JohnKuper [DomainServiceFieldRegistator.java:26] --- Start fields registration Domain ->> Service ---
+2014-10-08 18:35:35,593 DEBUG [main] JohnKuper [DomainServiceFieldRegistator.java:55] --- Fields registration Domain ->> Service complete ---
+2014-10-08 18:35:37,956 DEBUG [main] JohnKuper [EntityDomainFieldRegistator.java:26] --- Start fields registration Entity ->> Domain ---
+2014-10-08 18:35:37,973 DEBUG [main] JohnKuper [EntityDomainFieldRegistator.java:52] --- Fields registration Entity ->> Domain complete ---
+2014-10-08 18:35:38,322 DEBUG [main] JohnKuper [JPAWebServiceServer.java:20] The web service is published at http://localhost:9000/JPAWebService
+2014-10-08 18:35:38,324 DEBUG [main] JohnKuper [JPAWebServiceServer.java:27] Server ready...
+2014-10-08 18:39:21,191 DEBUG [main] JohnKuper [JPAWebServiceServer.java:16] Starting Server
+2014-10-08 18:39:21,317 DEBUG [main] JohnKuper [DomainServiceFieldRegistator.java:26] --- Start fields registration Domain ->> Service ---
+2014-10-08 18:39:21,415 DEBUG [main] JohnKuper [DomainServiceFieldRegistator.java:55] --- Fields registration Domain ->> Service complete ---
+2014-10-08 18:39:22,998 DEBUG [main] JohnKuper [EntityDomainFieldRegistator.java:26] --- Start fields registration Entity ->> Domain ---
+2014-10-08 18:39:23,011 DEBUG [main] JohnKuper [EntityDomainFieldRegistator.java:52] --- Fields registration Entity ->> Domain complete ---
+2014-10-08 18:39:23,354 DEBUG [main] JohnKuper [JPAWebServiceServer.java:20] The web service is published at http://localhost:9000/JPAWebService
+2014-10-08 18:39:23,356 DEBUG [main] JohnKuper [JPAWebServiceServer.java:27] Server ready...
+2014-10-08 18:45:26,312 DEBUG [pool-1-thread-1] JohnKuper [JPAWebServiceImpl.java:38] Service method 'sayHi' was called
+2014-10-08 18:45:26,331 DEBUG [pool-1-thread-1] JohnKuper [JPAWebServiceImpl.java:48] Service method 'findCarByName' was called
+2014-10-08 18:45:26,331 DEBUG [pool-1-thread-1] JohnKuper [CarDAOImpl.java:23] --- Start 'findByName' method for Car entity --- 
+2014-10-08 18:45:26,652 DEBUG [pool-1-thread-1] JohnKuper [CarDAOImpl.java:33] Found car with name Lada:  Car: {id = 4; name = Lada; model = Granta; modification = 150hs; color = Синий} 
+2014-10-08 18:45:26,652 DEBUG [pool-1-thread-1] JohnKuper [CarDAOImpl.java:33] Found car with name Lada:  Car: {id = 3; name = Lada; model = Priora; modification = 90hs; color = Черный} 
+2014-10-08 18:46:18,170 DEBUG [pool-1-thread-1] JohnKuper [JPAWebServiceImpl.java:38] Service method 'sayHi' was called
+2014-10-08 18:46:18,183 DEBUG [pool-1-thread-1] JohnKuper [JPAWebServiceImpl.java:48] Service method 'findCarByName' was called
+2014-10-08 18:46:18,183 DEBUG [pool-1-thread-1] JohnKuper [CarDAOImpl.java:23] --- Start 'findByName' method for Car entity --- 
+2014-10-08 18:46:18,186 DEBUG [pool-1-thread-1] JohnKuper [CarDAOImpl.java:33] Found car with name Lada:  Car: {id = 4; name = Lada; model = Granta; modification = 150hs; color = Синий} 
+2014-10-08 18:46:18,186 DEBUG [pool-1-thread-1] JohnKuper [CarDAOImpl.java:33] Found car with name Lada:  Car: {id = 3; name = Lada; model = Priora; modification = 90hs; color = Черный} 
+2014-10-08 18:50:48,282 DEBUG [pool-1-thread-2] JohnKuper [JPAWebServiceImpl.java:38] Service method 'sayHi' was called
+2014-10-08 18:50:48,299 DEBUG [pool-1-thread-2] JohnKuper [JPAWebServiceImpl.java:48] Service method 'findCarByName' was called
+2014-10-08 18:50:48,299 DEBUG [pool-1-thread-2] JohnKuper [CarDAOImpl.java:23] --- Start 'findByName' method for Car entity --- 
+2014-10-08 18:50:48,301 DEBUG [pool-1-thread-2] JohnKuper [CarDAOImpl.java:33] Found car with name Lada:  Car: {id = 4; name = Lada; model = Granta; modification = 150hs; color = Синий} 
+2014-10-08 18:50:48,301 DEBUG [pool-1-thread-2] JohnKuper [CarDAOImpl.java:33] Found car with name Lada:  Car: {id = 3; name = Lada; model = Priora; modification = 90hs; color = Черный} 
+2014-10-08 18:53:01,750 DEBUG [main] JohnKuper [JPAWebServiceServer.java:16] Starting Server
+2014-10-08 18:53:01,846 DEBUG [main] JohnKuper [DomainServiceFieldRegistator.java:26] --- Start fields registration Domain ->> Service ---
+2014-10-08 18:53:01,896 DEBUG [main] JohnKuper [DomainServiceFieldRegistator.java:55] --- Fields registration Domain ->> Service complete ---
+2014-10-08 18:53:03,534 DEBUG [main] JohnKuper [EntityDomainFieldRegistator.java:26] --- Start fields registration Entity ->> Domain ---
+2014-10-08 18:53:03,547 DEBUG [main] JohnKuper [EntityDomainFieldRegistator.java:52] --- Fields registration Entity ->> Domain complete ---
+2014-10-08 18:53:03,889 DEBUG [main] JohnKuper [JPAWebServiceServer.java:20] The web service is published at http://localhost:9000/JPAWebService
+2014-10-08 18:53:03,890 DEBUG [main] JohnKuper [JPAWebServiceServer.java:27] Server is ready...
+2014-10-08 18:53:08,236 DEBUG [pool-1-thread-1] JohnKuper [JPAWebServiceImpl.java:38] Service method 'sayHi' was called
+2014-10-08 18:53:08,255 DEBUG [pool-1-thread-1] JohnKuper [JPAWebServiceImpl.java:48] Service method 'findCarByName' was called
+2014-10-08 18:53:08,255 DEBUG [pool-1-thread-1] JohnKuper [CarDAOImpl.java:23] --- Start 'findByName' method for Car entity --- 
+2014-10-08 18:53:08,454 DEBUG [pool-1-thread-1] JohnKuper [CarDAOImpl.java:33] Found car with name Lada:  Car: {id = 4; name = Lada; model = Granta; modification = 150hs; color = Синий} 
+2014-10-08 18:53:08,455 DEBUG [pool-1-thread-1] JohnKuper [CarDAOImpl.java:33] Found car with name Lada:  Car: {id = 3; name = Lada; model = Priora; modification = 90hs; color = Черный} 

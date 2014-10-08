@@ -1,0 +1,14 @@
+2014-10-08 16:30:46,056 DEBUG [main] JohnKuper [JPAWebServiceClient.java:55] String after service response : This is Kuper!!!
+2014-10-08 16:32:23,108 DEBUG [main] JohnKuper [JPAWebServiceClient.java:53] String after service response : Hello This is Kuper!!!
+2014-10-08 18:45:26,323 DEBUG [main] JohnKuper [JPAWebServiceClient.java:50] String after service response : Hello This is Kuper!!!
+2014-10-08 18:45:26,671 DEBUG [main] JohnKuper [JPAWebServiceClient.java:58] Found car: com.johnkuper.epam.client.CarWeb@3551a94
+2014-10-08 18:45:26,672 DEBUG [main] JohnKuper [JPAWebServiceClient.java:58] Found car: com.johnkuper.epam.client.CarWeb@531be3c5
+2014-10-08 18:46:18,175 DEBUG [main] JohnKuper [JPAWebServiceClient.java:50] String after service response : Hello This is Kuper!!!
+2014-10-08 18:46:18,190 DEBUG [main] JohnKuper [JPAWebServiceClient.java:58] Found car: com.johnkuper.epam.client.CarWeb@3551a94
+2014-10-08 18:46:18,191 DEBUG [main] JohnKuper [JPAWebServiceClient.java:58] Found car: com.johnkuper.epam.client.CarWeb@531be3c5
+2014-10-08 18:50:48,288 DEBUG [main] JohnKuper [JPAWebServiceClient.java:50] String after service response : Hello This is Kuper!!!
+2014-10-08 18:50:48,305 DEBUG [main] JohnKuper [JPAWebServiceClient.java:63] Found car: id = 4, car_mark = Lada, car_model = Granta, motorpower = 150hs, car_color = Синий
+2014-10-08 18:50:48,306 DEBUG [main] JohnKuper [JPAWebServiceClient.java:63] Found car: id = 3, car_mark = Lada, car_model = Priora, motorpower = 90hs, car_color = Черный
+2014-10-08 18:53:08,246 DEBUG [main] JohnKuper [JPAWebServiceClient.java:50] String after service response : Hello! This is Kuper!!!
+2014-10-08 18:53:08,465 DEBUG [main] JohnKuper [JPAWebServiceClient.java:63] Found car: id = 4, car_mark = Lada, car_model = Granta, motorpower = 150hs, car_color = Синий
+2014-10-08 18:53:08,466 DEBUG [main] JohnKuper [JPAWebServiceClient.java:63] Found car: id = 3, car_mark = Lada, car_model = Priora, motorpower = 90hs, car_color = Черный
