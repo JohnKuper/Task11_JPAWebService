@@ -11,6 +11,7 @@ import org.slf4j.LoggerFactory;
 import com.johnkuper.epam.daointerface.CarDAO;
 import com.johnkuper.epam.domain.CarDomain;
 import com.johnkuper.epam.entity.Car;
+import com.johnkuper.epam.entity.Store;
 
 public class CarDAOImpl extends GenericDAOImpl<Car, CarDomain, Integer>
 		implements CarDAO {
@@ -35,5 +36,11 @@ public class CarDAOImpl extends GenericDAOImpl<Car, CarDomain, Integer>
 		}
 		return carDomains;
 	}
+
+	TypedQuery<Store> query = entityManager
+			.createQuery(
+					"SELECT s FROM Store s WHERE s.price BETWEEN :minprice AND :maxprice",
+					Store.class);
+
 
 }

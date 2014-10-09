@@ -2,12 +2,13 @@ package com.johnkuper.epam.client;
 
 import java.net.MalformedURLException;
 import java.net.URL;
-import java.util.List;
 
 import javax.xml.namespace.QName;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+
+import com.johnkuper.epam.requests.CarRequests;
 
 public class JPAWebServiceClient {
 
@@ -18,13 +19,25 @@ public class JPAWebServiceClient {
 
 	static JPAWebServiceImpl jpaPort;
 
+	// wsimport -keep -p com.johnkuper.epam.client
+	// http://localhost:9000/JPAWebService?wsdl
+
 	public static void main(String[] args) {
 
 		URL url = getWSDLURL(SERVICE_URL);
 		portSetup(url);
 		sayHi("This is Kuper!!!");
-		findCarByName("Lada");
+		carRequests();
 
+	}
+
+	private static void carRequests() {
+
+		CarRequests requests = new CarRequests(jpaPort);
+
+		requests.findCarByName("Lada");
+		requests.createCar();
+		requests.findCarsByMotorPower();
 	}
 
 	private static void portSetup(URL url) {
@@ -49,23 +62,6 @@ public class JPAWebServiceClient {
 		clientStr = jpaPort.sayHi(clientStr);
 		logger.debug("String after service response : {}", clientStr);
 		return clientStr;
-	}
-
-	private static List<CarWeb> findCarByName(String name) {
-
-		List<CarWeb> cars = jpaPort.findCarByName(name);
-		for (CarWeb car : cars) {
-			int id = car.getId();
-			String car_mark = car.getCarMark();
-			String car_model = car.getCarModel();
-			String motorpower = car.getMotorpower();
-			String car_color = car.getCarColor();
-			logger.debug(
-					"Found car: id = {}, car_mark = {}, car_model = {}, motorpower = {}, car_color = {}",
-					id, car_mark, car_model, motorpower, car_color);
-		}
-
-		return cars;
 	}
 
 }

@@ -68,3 +68,182 @@
 2014-10-08 18:53:08,255 DEBUG [pool-1-thread-1] JohnKuper [CarDAOImpl.java:23] --- Start 'findByName' method for Car entity --- 
 2014-10-08 18:53:08,454 DEBUG [pool-1-thread-1] JohnKuper [CarDAOImpl.java:33] Found car with name Lada:  Car: {id = 4; name = Lada; model = Granta; modification = 150hs; color = Синий} 
 2014-10-08 18:53:08,455 DEBUG [pool-1-thread-1] JohnKuper [CarDAOImpl.java:33] Found car with name Lada:  Car: {id = 3; name = Lada; model = Priora; modification = 90hs; color = Черный} 
+2014-10-09 10:47:42,062 DEBUG [main] JohnKuper [JPAWebServiceServer.java:16] Starting Server
+2014-10-09 10:47:42,188 DEBUG [main] JohnKuper [DomainServiceFieldRegistator.java:26] --- Start fields registration Domain ->> Service ---
+2014-10-09 10:47:42,251 DEBUG [main] JohnKuper [DomainServiceFieldRegistator.java:55] --- Fields registration Domain ->> Service complete ---
+2014-10-09 10:47:43,870 DEBUG [main] JohnKuper [EntityDomainFieldRegistator.java:26] --- Start fields registration Entity ->> Domain ---
+2014-10-09 10:47:43,887 DEBUG [main] JohnKuper [EntityDomainFieldRegistator.java:52] --- Fields registration Entity ->> Domain complete ---
+2014-10-09 10:47:44,331 DEBUG [main] JohnKuper [JPAWebServiceServer.java:20] The web service is published at http://localhost:9000/JPAWebService
+2014-10-09 10:47:44,333 DEBUG [main] JohnKuper [JPAWebServiceServer.java:27] Server is ready...
+2014-10-09 11:11:28,213 DEBUG [pool-1-thread-2] JohnKuper [JPAWebServiceImpl.java:38] Service method 'sayHi' was called
+2014-10-09 11:11:28,248 DEBUG [pool-1-thread-2] JohnKuper [JPAWebServiceImpl.java:49] Service method 'findCarByName' was called
+2014-10-09 11:11:28,248 DEBUG [pool-1-thread-2] JohnKuper [CarDAOImpl.java:23] --- Start 'findByName' method for Car entity --- 
+2014-10-09 11:11:28,634 DEBUG [pool-1-thread-2] JohnKuper [CarDAOImpl.java:33] Found car with name Lada:  Car: {id = 4; name = Lada; model = Granta; modification = 150hs; color = Синий} 
+2014-10-09 11:11:28,635 DEBUG [pool-1-thread-2] JohnKuper [CarDAOImpl.java:33] Found car with name Lada:  Car: {id = 3; name = Lada; model = Priora; modification = 90hs; color = Черный} 
+2014-10-09 11:11:28,685 DEBUG [pool-1-thread-2] JohnKuper [JPAWebServiceImpl.java:64] Service method 'createCar' was called
+2014-10-09 11:11:28,689 DEBUG [pool-1-thread-2] JohnKuper [GenericDAOImpl.java:55] --- Start 'create' method for Car entity ---
+2014-10-09 11:11:28,689 DEBUG [pool-1-thread-2] JohnKuper [GenericDAOImpl.java:56] Domain for create: CarDomain: {id = 0; car_mark = Chevrolet; car_model = Corvette; motorpower = 560hs; car_color = Red}
+2014-10-09 11:11:28,859 DEBUG [pool-1-thread-2] JohnKuper [GenericDAOImpl.java:61] New entity:  Car: {id = 6; name = Chevrolet; model = Corvette; modification = 560hs; color = Red}  
+2014-10-09 12:27:19,439 DEBUG [main] JohnKuper [JPAWebServiceServer.java:16] Starting Server
+2014-10-09 12:27:19,556 DEBUG [main] JohnKuper [DomainServiceFieldRegistator.java:26] --- Start fields registration Domain ->> Service ---
+2014-10-09 12:27:19,611 DEBUG [main] JohnKuper [DomainServiceFieldRegistator.java:55] --- Fields registration Domain ->> Service complete ---
+2014-10-09 12:27:22,879 DEBUG [main] JohnKuper [EntityDomainFieldRegistator.java:26] --- Start fields registration Entity ->> Domain ---
+2014-10-09 12:27:22,898 DEBUG [main] JohnKuper [EntityDomainFieldRegistator.java:52] --- Fields registration Entity ->> Domain complete ---
+2014-10-09 12:27:23,979 DEBUG [main] JohnKuper [JPAWebServiceServer.java:20] The web service is published at http://localhost:9000/JPAWebService
+2014-10-09 12:27:23,981 DEBUG [main] JohnKuper [JPAWebServiceServer.java:27] Server is ready...
+2014-10-09 12:36:11,005 DEBUG [pool-1-thread-2] JohnKuper [JPAWebServiceImpl.java:38] Service method 'sayHi' was called
+2014-10-09 12:36:11,025 DEBUG [pool-1-thread-2] JohnKuper [JPAWebServiceImpl.java:49] Service method 'findCarByName' was called
+2014-10-09 12:36:11,025 DEBUG [pool-1-thread-2] JohnKuper [CarDAOImpl.java:24] --- Start 'findByName' method for Car entity --- 
+2014-10-09 12:36:11,136 DEBUG [pool-1-thread-2] JohnKuper [CarDAOImpl.java:34] Found car with name Lada:  Car: {id = 4; name = Lada; model = Granta; modification = 150; color = Синий} 
+2014-10-09 12:36:11,137 DEBUG [pool-1-thread-2] JohnKuper [CarDAOImpl.java:34] Found car with name Lada:  Car: {id = 3; name = Lada; model = Priora; modification = 90; color = Черный} 
+2014-10-09 12:36:11,179 DEBUG [pool-1-thread-2] JohnKuper [JPAWebServiceImpl.java:64] Service method 'createCar' was called
+2014-10-09 12:36:11,185 DEBUG [pool-1-thread-2] JohnKuper [GenericDAOImpl.java:55] --- Start 'create' method for Car entity ---
+2014-10-09 12:36:11,185 DEBUG [pool-1-thread-2] JohnKuper [GenericDAOImpl.java:56] Domain for create: CarDomain: {id = 0; car_mark = Chevrolet; car_model = Corvette; motorpower = 560hs; car_color = Red}
+2014-10-09 12:36:11,263 DEBUG [pool-1-thread-2] JohnKuper [GenericDAOImpl.java:61] New entity:  Car: {id = 6; name = Chevrolet; model = Corvette; modification = 560hs; color = Red}  
+2014-10-09 12:36:11,271 DEBUG [pool-1-thread-2] JohnKuper [JPAWebServiceImpl.java:72] Service method 'findCarsByMotorPower' was called
+2014-10-09 12:36:11,271 DEBUG [pool-1-thread-2] JohnKuper [CarDAOImpl.java:48] --- Start 'findByMotorPower' method for Car entity --- 
+2014-10-09 12:38:08,369 DEBUG [pool-1-thread-3] JohnKuper [JPAWebServiceImpl.java:38] Service method 'sayHi' was called
+2014-10-09 12:38:08,382 DEBUG [pool-1-thread-3] JohnKuper [JPAWebServiceImpl.java:49] Service method 'findCarByName' was called
+2014-10-09 12:38:08,383 DEBUG [pool-1-thread-3] JohnKuper [CarDAOImpl.java:24] --- Start 'findByName' method for Car entity --- 
+2014-10-09 12:38:08,385 DEBUG [pool-1-thread-3] JohnKuper [CarDAOImpl.java:34] Found car with name Lada:  Car: {id = 4; name = Lada; model = Granta; modification = 150; color = Синий} 
+2014-10-09 12:38:08,386 DEBUG [pool-1-thread-3] JohnKuper [CarDAOImpl.java:34] Found car with name Lada:  Car: {id = 3; name = Lada; model = Priora; modification = 90; color = Черный} 
+2014-10-09 12:38:08,392 DEBUG [pool-1-thread-3] JohnKuper [JPAWebServiceImpl.java:64] Service method 'createCar' was called
+2014-10-09 12:38:08,393 DEBUG [pool-1-thread-3] JohnKuper [GenericDAOImpl.java:55] --- Start 'create' method for Car entity ---
+2014-10-09 12:38:08,393 DEBUG [pool-1-thread-3] JohnKuper [GenericDAOImpl.java:56] Domain for create: CarDomain: {id = 0; car_mark = Chevrolet; car_model = Corvette; motorpower = 560hs; car_color = Red}
+2014-10-09 12:38:26,202 DEBUG [pool-1-thread-3] JohnKuper [JPAWebServiceImpl.java:38] Service method 'sayHi' was called
+2014-10-09 12:38:26,215 DEBUG [pool-1-thread-3] JohnKuper [JPAWebServiceImpl.java:49] Service method 'findCarByName' was called
+2014-10-09 12:38:26,216 DEBUG [pool-1-thread-3] JohnKuper [CarDAOImpl.java:24] --- Start 'findByName' method for Car entity --- 
+2014-10-09 12:38:50,241 DEBUG [pool-1-thread-3] JohnKuper [JPAWebServiceImpl.java:38] Service method 'sayHi' was called
+2014-10-09 12:38:50,259 DEBUG [pool-1-thread-3] JohnKuper [JPAWebServiceImpl.java:49] Service method 'findCarByName' was called
+2014-10-09 12:38:50,259 DEBUG [pool-1-thread-3] JohnKuper [CarDAOImpl.java:24] --- Start 'findByName' method for Car entity --- 
+2014-10-09 12:39:03,307 DEBUG [main] JohnKuper [JPAWebServiceServer.java:16] Starting Server
+2014-10-09 12:39:03,403 DEBUG [main] JohnKuper [DomainServiceFieldRegistator.java:26] --- Start fields registration Domain ->> Service ---
+2014-10-09 12:39:03,456 DEBUG [main] JohnKuper [DomainServiceFieldRegistator.java:55] --- Fields registration Domain ->> Service complete ---
+2014-10-09 12:39:05,045 DEBUG [main] JohnKuper [EntityDomainFieldRegistator.java:26] --- Start fields registration Entity ->> Domain ---
+2014-10-09 12:39:05,060 DEBUG [main] JohnKuper [EntityDomainFieldRegistator.java:52] --- Fields registration Entity ->> Domain complete ---
+2014-10-09 12:39:05,501 DEBUG [main] JohnKuper [JPAWebServiceServer.java:20] The web service is published at http://localhost:9000/JPAWebService
+2014-10-09 12:39:05,502 DEBUG [main] JohnKuper [JPAWebServiceServer.java:27] Server is ready...
+2014-10-09 12:39:09,657 DEBUG [pool-1-thread-1] JohnKuper [JPAWebServiceImpl.java:38] Service method 'sayHi' was called
+2014-10-09 12:39:09,674 DEBUG [pool-1-thread-1] JohnKuper [JPAWebServiceImpl.java:49] Service method 'findCarByName' was called
+2014-10-09 12:39:09,674 DEBUG [pool-1-thread-1] JohnKuper [CarDAOImpl.java:24] --- Start 'findByName' method for Car entity --- 
+2014-10-09 12:39:09,741 DEBUG [pool-1-thread-1] JohnKuper [CarDAOImpl.java:34] Found car with name Lada:  Car: {id = 4; name = Lada; model = Granta; modification = 150; color = Синий} 
+2014-10-09 12:39:09,742 DEBUG [pool-1-thread-1] JohnKuper [CarDAOImpl.java:34] Found car with name Lada:  Car: {id = 3; name = Lada; model = Priora; modification = 90; color = Черный} 
+2014-10-09 12:39:09,767 DEBUG [pool-1-thread-1] JohnKuper [JPAWebServiceImpl.java:64] Service method 'createCar' was called
+2014-10-09 12:39:09,772 DEBUG [pool-1-thread-1] JohnKuper [GenericDAOImpl.java:55] --- Start 'create' method for Car entity ---
+2014-10-09 12:39:09,773 DEBUG [pool-1-thread-1] JohnKuper [GenericDAOImpl.java:56] Domain for create: CarDomain: {id = 0; car_mark = Chevrolet; car_model = Corvette; motorpower = 560hs; car_color = Red}
+2014-10-09 12:39:09,807 DEBUG [pool-1-thread-1] JohnKuper [GenericDAOImpl.java:61] New entity:  Car: {id = 6; name = Chevrolet; model = Corvette; modification = 560hs; color = Red}  
+2014-10-09 12:39:09,811 DEBUG [pool-1-thread-1] JohnKuper [JPAWebServiceImpl.java:72] Service method 'findCarsByMotorPower' was called
+2014-10-09 12:39:09,812 DEBUG [pool-1-thread-1] JohnKuper [CarDAOImpl.java:48] --- Start 'findByMotorPower' method for Car entity --- 
+2014-10-09 12:46:53,641 DEBUG [main] JohnKuper [JPAWebServiceServer.java:16] Starting Server
+2014-10-09 12:46:53,737 DEBUG [main] JohnKuper [DomainServiceFieldRegistator.java:26] --- Start fields registration Domain ->> Service ---
+2014-10-09 12:46:53,787 DEBUG [main] JohnKuper [DomainServiceFieldRegistator.java:55] --- Fields registration Domain ->> Service complete ---
+2014-10-09 12:46:55,411 DEBUG [main] JohnKuper [EntityDomainFieldRegistator.java:26] --- Start fields registration Entity ->> Domain ---
+2014-10-09 12:46:55,435 DEBUG [main] JohnKuper [EntityDomainFieldRegistator.java:52] --- Fields registration Entity ->> Domain complete ---
+2014-10-09 12:46:55,901 DEBUG [main] JohnKuper [JPAWebServiceServer.java:20] The web service is published at http://localhost:9000/JPAWebService
+2014-10-09 12:46:55,902 DEBUG [main] JohnKuper [JPAWebServiceServer.java:27] Server is ready...
+2014-10-09 12:47:26,087 DEBUG [pool-1-thread-1] JohnKuper [JPAWebServiceImpl.java:38] Service method 'sayHi' was called
+2014-10-09 12:47:26,122 DEBUG [pool-1-thread-1] JohnKuper [JPAWebServiceImpl.java:49] Service method 'findCarByName' was called
+2014-10-09 12:47:26,122 DEBUG [pool-1-thread-1] JohnKuper [CarDAOImpl.java:24] --- Start 'findByName' method for Car entity --- 
+2014-10-09 12:47:26,188 DEBUG [pool-1-thread-1] JohnKuper [CarDAOImpl.java:34] Found car with name Lada:  Car: {id = 4; name = Lada; model = Granta; modification = 150; color = Синий} 
+2014-10-09 12:47:26,189 DEBUG [pool-1-thread-1] JohnKuper [CarDAOImpl.java:34] Found car with name Lada:  Car: {id = 3; name = Lada; model = Priora; modification = 90; color = Черный} 
+2014-10-09 12:47:26,221 DEBUG [pool-1-thread-1] JohnKuper [JPAWebServiceImpl.java:65] Service method 'createCar' was called
+2014-10-09 12:47:26,226 DEBUG [pool-1-thread-1] JohnKuper [GenericDAOImpl.java:55] --- Start 'create' method for Car entity ---
+2014-10-09 12:47:26,227 DEBUG [pool-1-thread-1] JohnKuper [GenericDAOImpl.java:56] Domain for create: CarDomain: {id = 0; car_mark = Chevrolet; car_model = Corvette; motorpower = 560hs; car_color = Red}
+2014-10-09 12:48:08,469 DEBUG [main] JohnKuper [JPAWebServiceServer.java:16] Starting Server
+2014-10-09 12:48:08,567 DEBUG [main] JohnKuper [DomainServiceFieldRegistator.java:26] --- Start fields registration Domain ->> Service ---
+2014-10-09 12:48:08,623 DEBUG [main] JohnKuper [DomainServiceFieldRegistator.java:55] --- Fields registration Domain ->> Service complete ---
+2014-10-09 12:48:10,115 DEBUG [main] JohnKuper [EntityDomainFieldRegistator.java:26] --- Start fields registration Entity ->> Domain ---
+2014-10-09 12:48:10,133 DEBUG [main] JohnKuper [EntityDomainFieldRegistator.java:52] --- Fields registration Entity ->> Domain complete ---
+2014-10-09 12:48:10,594 DEBUG [main] JohnKuper [JPAWebServiceServer.java:20] The web service is published at http://localhost:9000/JPAWebService
+2014-10-09 12:48:10,595 DEBUG [main] JohnKuper [JPAWebServiceServer.java:27] Server is ready...
+2014-10-09 12:48:19,162 DEBUG [pool-1-thread-1] JohnKuper [JPAWebServiceImpl.java:38] Service method 'sayHi' was called
+2014-10-09 12:48:19,180 DEBUG [pool-1-thread-1] JohnKuper [JPAWebServiceImpl.java:49] Service method 'findCarByName' was called
+2014-10-09 12:48:19,180 DEBUG [pool-1-thread-1] JohnKuper [CarDAOImpl.java:24] --- Start 'findByName' method for Car entity --- 
+2014-10-09 12:48:19,245 DEBUG [pool-1-thread-1] JohnKuper [CarDAOImpl.java:34] Found car with name Lada:  Car: {id = 4; name = Lada; model = Granta; modification = 150; color = Синий} 
+2014-10-09 12:48:19,245 DEBUG [pool-1-thread-1] JohnKuper [CarDAOImpl.java:34] Found car with name Lada:  Car: {id = 3; name = Lada; model = Priora; modification = 90; color = Черный} 
+2014-10-09 12:48:19,263 DEBUG [pool-1-thread-1] JohnKuper [JPAWebServiceImpl.java:65] Service method 'createCar' was called
+2014-10-09 12:48:19,271 DEBUG [pool-1-thread-1] JohnKuper [GenericDAOImpl.java:55] --- Start 'create' method for Car entity ---
+2014-10-09 12:48:19,272 DEBUG [pool-1-thread-1] JohnKuper [GenericDAOImpl.java:56] Domain for create: CarDomain: {id = 0; car_mark = Chevrolet; car_model = Corvette; motorpower = 560hs; car_color = Red}
+2014-10-09 12:48:19,316 DEBUG [pool-1-thread-1] JohnKuper [GenericDAOImpl.java:61] New entity:  Car: {id = 6; name = Chevrolet; model = Corvette; modification = 560hs; color = Red}  
+2014-10-09 12:59:56,582 DEBUG [main] JohnKuper [JPAWebServiceServer.java:16] Starting Server
+2014-10-09 12:59:56,678 DEBUG [main] JohnKuper [DomainServiceFieldRegistator.java:26] --- Start fields registration Domain ->> Service ---
+2014-10-09 12:59:56,730 DEBUG [main] JohnKuper [DomainServiceFieldRegistator.java:55] --- Fields registration Domain ->> Service complete ---
+2014-10-09 12:59:58,285 DEBUG [main] JohnKuper [EntityDomainFieldRegistator.java:26] --- Start fields registration Entity ->> Domain ---
+2014-10-09 12:59:58,302 DEBUG [main] JohnKuper [EntityDomainFieldRegistator.java:52] --- Fields registration Entity ->> Domain complete ---
+2014-10-09 12:59:58,790 DEBUG [main] JohnKuper [JPAWebServiceServer.java:20] The web service is published at http://localhost:9000/JPAWebService
+2014-10-09 12:59:58,791 DEBUG [main] JohnKuper [JPAWebServiceServer.java:27] Server is ready...
+2014-10-09 13:00:48,405 DEBUG [pool-1-thread-1] JohnKuper [JPAWebServiceImpl.java:38] Service method 'sayHi' was called
+2014-10-09 13:00:48,437 DEBUG [pool-1-thread-1] JohnKuper [JPAWebServiceImpl.java:49] Service method 'findCarByName' was called
+2014-10-09 13:00:48,437 DEBUG [pool-1-thread-1] JohnKuper [CarDAOImpl.java:24] --- Start 'findByName' method for Car entity --- 
+2014-10-09 13:00:48,508 DEBUG [pool-1-thread-1] JohnKuper [CarDAOImpl.java:34] Found car with name Lada:  Car: {id = 4; name = Lada; model = Granta; modification = 150; color = Синий} 
+2014-10-09 13:00:48,509 DEBUG [pool-1-thread-1] JohnKuper [CarDAOImpl.java:34] Found car with name Lada:  Car: {id = 3; name = Lada; model = Priora; modification = 90; color = Черный} 
+2014-10-09 13:00:48,549 DEBUG [pool-1-thread-1] JohnKuper [JPAWebServiceImpl.java:64] Service method 'createCar' was called
+2014-10-09 13:00:48,554 DEBUG [pool-1-thread-1] JohnKuper [GenericDAOImpl.java:55] --- Start 'create' method for Car entity ---
+2014-10-09 13:00:48,555 DEBUG [pool-1-thread-1] JohnKuper [GenericDAOImpl.java:56] Domain for create: CarDomain: {id = 0; car_mark = Chevrolet; car_model = Corvette; motorpower = 560hs; car_color = Red}
+2014-10-09 13:00:48,597 DEBUG [pool-1-thread-1] JohnKuper [GenericDAOImpl.java:61] New entity:  Car: {id = 6; name = Chevrolet; model = Corvette; modification = 560hs; color = Red}  
+2014-10-09 13:00:48,629 DEBUG [pool-1-thread-1] JohnKuper [JPAWebServiceImpl.java:72] Service method 'findCarsByMotorPower' was called
+2014-10-09 13:00:48,629 DEBUG [pool-1-thread-1] JohnKuper [GenericDAOImpl.java:79] --- Start 'findAll' method for Car entity ---
+2014-10-09 13:00:48,636 DEBUG [pool-1-thread-1] JohnKuper [GenericDAOImpl.java:88] Found:  Car: {id = 1; name = Audi; model = R5; modification = 400; color = Красный} 
+2014-10-09 13:00:48,637 DEBUG [pool-1-thread-1] JohnKuper [GenericDAOImpl.java:88] Found:  Car: {id = 2; name = BMW; model = X3; modification = 250; color = Белый} 
+2014-10-09 13:00:48,638 DEBUG [pool-1-thread-1] JohnKuper [GenericDAOImpl.java:88] Found:  Car: {id = 3; name = Lada; model = Priora; modification = 90; color = Черный} 
+2014-10-09 13:00:48,638 DEBUG [pool-1-thread-1] JohnKuper [GenericDAOImpl.java:88] Found:  Car: {id = 4; name = Lada; model = Granta; modification = 150; color = Синий} 
+2014-10-09 13:00:48,639 DEBUG [pool-1-thread-1] JohnKuper [GenericDAOImpl.java:88] Found:  Car: {id = 5; name = Lamborghini; model = Diablo SV; modification = 900; color = Металлик} 
+2014-10-09 13:00:48,639 DEBUG [pool-1-thread-1] JohnKuper [GenericDAOImpl.java:88] Found:  Car: {id = 6; name = Chevrolet; model = Corvette; modification = 560hs; color = Red} 
+2014-10-09 13:01:33,094 DEBUG [pool-1-thread-1] JohnKuper [JPAWebServiceImpl.java:38] Service method 'sayHi' was called
+2014-10-09 13:01:33,111 DEBUG [pool-1-thread-1] JohnKuper [JPAWebServiceImpl.java:49] Service method 'findCarByName' was called
+2014-10-09 13:01:33,112 DEBUG [pool-1-thread-1] JohnKuper [CarDAOImpl.java:24] --- Start 'findByName' method for Car entity --- 
+2014-10-09 13:01:33,114 DEBUG [pool-1-thread-1] JohnKuper [CarDAOImpl.java:34] Found car with name Lada:  Car: {id = 4; name = Lada; model = Granta; modification = 150; color = Синий} 
+2014-10-09 13:01:33,115 DEBUG [pool-1-thread-1] JohnKuper [CarDAOImpl.java:34] Found car with name Lada:  Car: {id = 3; name = Lada; model = Priora; modification = 90; color = Черный} 
+2014-10-09 13:01:33,121 DEBUG [pool-1-thread-1] JohnKuper [JPAWebServiceImpl.java:64] Service method 'createCar' was called
+2014-10-09 13:01:33,122 DEBUG [pool-1-thread-1] JohnKuper [GenericDAOImpl.java:55] --- Start 'create' method for Car entity ---
+2014-10-09 13:01:33,122 DEBUG [pool-1-thread-1] JohnKuper [GenericDAOImpl.java:56] Domain for create: CarDomain: {id = 0; car_mark = Chevrolet; car_model = Corvette; motorpower = 560; car_color = Red}
+2014-10-09 13:01:56,801 DEBUG [main] JohnKuper [JPAWebServiceServer.java:16] Starting Server
+2014-10-09 13:01:56,890 DEBUG [main] JohnKuper [DomainServiceFieldRegistator.java:26] --- Start fields registration Domain ->> Service ---
+2014-10-09 13:01:56,952 DEBUG [main] JohnKuper [DomainServiceFieldRegistator.java:55] --- Fields registration Domain ->> Service complete ---
+2014-10-09 13:01:58,444 DEBUG [main] JohnKuper [EntityDomainFieldRegistator.java:26] --- Start fields registration Entity ->> Domain ---
+2014-10-09 13:01:58,461 DEBUG [main] JohnKuper [EntityDomainFieldRegistator.java:52] --- Fields registration Entity ->> Domain complete ---
+2014-10-09 13:01:59,053 DEBUG [main] JohnKuper [JPAWebServiceServer.java:20] The web service is published at http://localhost:9000/JPAWebService
+2014-10-09 13:01:59,055 DEBUG [main] JohnKuper [JPAWebServiceServer.java:27] Server is ready...
+2014-10-09 13:02:06,874 DEBUG [pool-1-thread-1] JohnKuper [JPAWebServiceImpl.java:38] Service method 'sayHi' was called
+2014-10-09 13:02:06,896 DEBUG [pool-1-thread-1] JohnKuper [JPAWebServiceImpl.java:49] Service method 'findCarByName' was called
+2014-10-09 13:02:06,896 DEBUG [pool-1-thread-1] JohnKuper [CarDAOImpl.java:24] --- Start 'findByName' method for Car entity --- 
+2014-10-09 13:02:06,967 DEBUG [pool-1-thread-1] JohnKuper [CarDAOImpl.java:34] Found car with name Lada:  Car: {id = 4; name = Lada; model = Granta; modification = 150; color = Синий} 
+2014-10-09 13:02:06,967 DEBUG [pool-1-thread-1] JohnKuper [CarDAOImpl.java:34] Found car with name Lada:  Car: {id = 3; name = Lada; model = Priora; modification = 90; color = Черный} 
+2014-10-09 13:02:07,003 DEBUG [pool-1-thread-1] JohnKuper [JPAWebServiceImpl.java:64] Service method 'createCar' was called
+2014-10-09 13:02:07,008 DEBUG [pool-1-thread-1] JohnKuper [GenericDAOImpl.java:55] --- Start 'create' method for Car entity ---
+2014-10-09 13:02:07,009 DEBUG [pool-1-thread-1] JohnKuper [GenericDAOImpl.java:56] Domain for create: CarDomain: {id = 0; car_mark = Chevrolet; car_model = Corvette; motorpower = 560; car_color = Red}
+2014-10-09 13:02:07,050 DEBUG [pool-1-thread-1] JohnKuper [GenericDAOImpl.java:61] New entity:  Car: {id = 6; name = Chevrolet; model = Corvette; modification = 560; color = Red}  
+2014-10-09 13:02:07,056 DEBUG [pool-1-thread-1] JohnKuper [JPAWebServiceImpl.java:72] Service method 'findCarsByMotorPower' was called
+2014-10-09 13:02:07,056 DEBUG [pool-1-thread-1] JohnKuper [GenericDAOImpl.java:79] --- Start 'findAll' method for Car entity ---
+2014-10-09 13:02:07,063 DEBUG [pool-1-thread-1] JohnKuper [GenericDAOImpl.java:88] Found:  Car: {id = 1; name = Audi; model = R5; modification = 400; color = Красный} 
+2014-10-09 13:02:07,064 DEBUG [pool-1-thread-1] JohnKuper [GenericDAOImpl.java:88] Found:  Car: {id = 2; name = BMW; model = X3; modification = 250; color = Белый} 
+2014-10-09 13:02:07,064 DEBUG [pool-1-thread-1] JohnKuper [GenericDAOImpl.java:88] Found:  Car: {id = 3; name = Lada; model = Priora; modification = 90; color = Черный} 
+2014-10-09 13:02:07,065 DEBUG [pool-1-thread-1] JohnKuper [GenericDAOImpl.java:88] Found:  Car: {id = 4; name = Lada; model = Granta; modification = 150; color = Синий} 
+2014-10-09 13:02:07,065 DEBUG [pool-1-thread-1] JohnKuper [GenericDAOImpl.java:88] Found:  Car: {id = 5; name = Lamborghini; model = Diablo SV; modification = 900; color = Металлик} 
+2014-10-09 13:02:07,065 DEBUG [pool-1-thread-1] JohnKuper [GenericDAOImpl.java:88] Found:  Car: {id = 6; name = Chevrolet; model = Corvette; modification = 560; color = Red} 
+2014-10-09 13:16:42,331 DEBUG [main] JohnKuper [JPAWebServiceServer.java:16] Starting Server
+2014-10-09 13:16:42,430 DEBUG [main] JohnKuper [DomainServiceFieldRegistator.java:26] --- Start fields registration Domain ->> Service ---
+2014-10-09 13:16:42,479 DEBUG [main] JohnKuper [DomainServiceFieldRegistator.java:55] --- Fields registration Domain ->> Service complete ---
+2014-10-09 13:16:44,040 DEBUG [main] JohnKuper [EntityDomainFieldRegistator.java:26] --- Start fields registration Entity ->> Domain ---
+2014-10-09 13:16:44,057 DEBUG [main] JohnKuper [EntityDomainFieldRegistator.java:52] --- Fields registration Entity ->> Domain complete ---
+2014-10-09 14:26:34,553 DEBUG [main] JohnKuper [JPAWebServiceServer.java:16] Starting Server
+2014-10-09 14:26:34,754 DEBUG [main] JohnKuper [DomainServiceFieldRegistator.java:26] --- Start fields registration Domain ->> Service ---
+2014-10-09 14:26:34,844 DEBUG [main] JohnKuper [DomainServiceFieldRegistator.java:55] --- Fields registration Domain ->> Service complete ---
+2014-10-09 14:26:36,822 DEBUG [main] JohnKuper [EntityDomainFieldRegistator.java:26] --- Start fields registration Entity ->> Domain ---
+2014-10-09 14:26:36,840 DEBUG [main] JohnKuper [EntityDomainFieldRegistator.java:52] --- Fields registration Entity ->> Domain complete ---
+2014-10-09 14:26:38,355 DEBUG [main] JohnKuper [JPAWebServiceServer.java:20] The web service is published at http://localhost:9000/JPAWebService
+2014-10-09 14:26:38,358 DEBUG [main] JohnKuper [JPAWebServiceServer.java:27] Server is ready...
+2014-10-09 14:34:25,846 DEBUG [main] JohnKuper [JPAWebServiceServer.java:16] Starting Server
+2014-10-09 14:34:25,953 DEBUG [main] JohnKuper [DomainServiceFieldRegistator.java:26] --- Start fields registration Domain ->> Service ---
+2014-10-09 14:34:26,008 DEBUG [main] JohnKuper [DomainServiceFieldRegistator.java:55] --- Fields registration Domain ->> Service complete ---
+2014-10-09 14:34:27,734 DEBUG [main] JohnKuper [EntityDomainFieldRegistator.java:26] --- Start fields registration Entity ->> Domain ---
+2014-10-09 14:34:27,750 DEBUG [main] JohnKuper [EntityDomainFieldRegistator.java:52] --- Fields registration Entity ->> Domain complete ---
+2014-10-09 14:34:28,780 DEBUG [main] JohnKuper [JPAWebServiceServer.java:20] The web service is published at http://localhost:9000/JPAWebService
+2014-10-09 14:34:28,782 DEBUG [main] JohnKuper [JPAWebServiceServer.java:27] Server is ready...
+2014-10-09 14:45:35,748 DEBUG [main] JohnKuper [JPAWebServiceServer.java:16] Starting Server
+2014-10-09 14:45:35,846 DEBUG [main] JohnKuper [DomainServiceFieldRegistator.java:26] --- Start fields registration Domain ->> Service ---
+2014-10-09 14:45:35,902 DEBUG [main] JohnKuper [DomainServiceFieldRegistator.java:55] --- Fields registration Domain ->> Service complete ---
+2014-10-09 14:45:37,464 DEBUG [main] JohnKuper [EntityDomainFieldRegistator.java:26] --- Start fields registration Entity ->> Domain ---
+2014-10-09 14:45:37,479 DEBUG [main] JohnKuper [EntityDomainFieldRegistator.java:52] --- Fields registration Entity ->> Domain complete ---
+2014-10-09 14:45:38,444 DEBUG [main] JohnKuper [JPAWebServiceServer.java:20] The web service is published at http://localhost:9000/JPAWebService
+2014-10-09 14:45:38,446 DEBUG [main] JohnKuper [JPAWebServiceServer.java:27] Server is ready...

@@ -64,11 +64,11 @@ create table if not exists store(
 GRANT ALL PRIVILEGES ON *.* TO 'root'@'localhost' IDENTIFIED BY 'root' WITH GRANT OPTION;
 
 insert into cars(name,model,modification,color)
-values('Audi','R5','400hs','Красный'),
-	  ('BMW','X3','250hs','Белый'),
-	  ('Lada','Priora','90hs','Черный'),
-	  ('Lada','Granta','150hs','Синий'),
-      ('Lamborghini','Diablo SV','900hs','Металлик');
+values('Audi','R5','400','Красный'),
+	  ('BMW','X3','250','Белый'),
+	  ('Toyota','Corolla','300','Черный'),
+	  ('Lada','Granta','150','Синий'),
+      ('Lamborghini','Diablo SV','900','Металлик');
 
 insert into customers(name,surname,patronymic,passport_series,passport_number,birthdate)
 values('Игорь','Ежов','Владимирович','5705','032667', cast('1970-04-16' as datetime)),
@@ -94,9 +94,9 @@ DELIMITER $$
 
 		set step = 1;
 
-		WHILE step  <= 50 DO
+		WHILE step  <= 5 DO
 
-			set carRnd = ROUND(RAND()*4)+1;
+			set carRnd = step;
 			set customerRnd = ROUND(RAND()*4)+1 ;
 			set merchantRnd = ROUND(RAND()*2)+1;
 			set priceRnd = ROUND(RAND()*1000000.50);
@@ -124,9 +124,9 @@ DELIMITER $$
 
 		set step = 1;
 
-		WHILE step  <= 50 DO
+		WHILE step  <= 5 DO
 
-			set carRnd = ROUND(RAND()*4)+1;
+			set carRnd = step;
 			set countRnd = ROUND(RAND()*9)+1 ;
 			set priceRnd = ROUND(RAND()*1000000.50);
 			set testDriveRnd = ROUND(RAND()*1);

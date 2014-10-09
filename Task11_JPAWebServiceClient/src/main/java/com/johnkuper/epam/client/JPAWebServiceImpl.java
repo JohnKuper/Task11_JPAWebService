@@ -1,6 +1,7 @@
 
 package com.johnkuper.epam.client;
 
+import java.math.BigDecimal;
 import java.util.List;
 import javax.jws.WebMethod;
 import javax.jws.WebParam;
@@ -29,6 +30,21 @@ public interface JPAWebServiceImpl {
      * 
      * @param arg0
      * @return
+     *     returns java.lang.String
+     */
+    @WebMethod
+    @WebResult(targetNamespace = "")
+    @RequestWrapper(localName = "sayHi", targetNamespace = "http://jpa.johnkuper/jpawebservice", className = "com.johnkuper.epam.client.SayHi")
+    @ResponseWrapper(localName = "sayHiResponse", targetNamespace = "http://jpa.johnkuper/jpawebservice", className = "com.johnkuper.epam.client.SayHiResponse")
+    @Action(input = "http://jpa.johnkuper/jpawebservice/JPAWebServiceImpl/sayHiRequest", output = "http://jpa.johnkuper/jpawebservice/JPAWebServiceImpl/sayHiResponse")
+    public String sayHi(
+        @WebParam(name = "arg0", targetNamespace = "")
+        String arg0);
+
+    /**
+     * 
+     * @param arg0
+     * @return
      *     returns java.util.List<com.johnkuper.epam.client.CarWeb>
      */
     @WebMethod
@@ -43,16 +59,97 @@ public interface JPAWebServiceImpl {
     /**
      * 
      * @param arg0
+     */
+    @WebMethod
+    @RequestWrapper(localName = "createCar", targetNamespace = "http://jpa.johnkuper/jpawebservice", className = "com.johnkuper.epam.client.CreateCar")
+    @ResponseWrapper(localName = "createCarResponse", targetNamespace = "http://jpa.johnkuper/jpawebservice", className = "com.johnkuper.epam.client.CreateCarResponse")
+    @Action(input = "http://jpa.johnkuper/jpawebservice/JPAWebServiceImpl/createCarRequest", output = "http://jpa.johnkuper/jpawebservice/JPAWebServiceImpl/createCarResponse")
+    public void createCar(
+        @WebParam(name = "arg0", targetNamespace = "")
+        CarWeb arg0);
+
+    /**
+     * 
+     * @param arg0
+     */
+    @WebMethod
+    @RequestWrapper(localName = "createCustomer", targetNamespace = "http://jpa.johnkuper/jpawebservice", className = "com.johnkuper.epam.client.CreateCustomer")
+    @ResponseWrapper(localName = "createCustomerResponse", targetNamespace = "http://jpa.johnkuper/jpawebservice", className = "com.johnkuper.epam.client.CreateCustomerResponse")
+    @Action(input = "http://jpa.johnkuper/jpawebservice/JPAWebServiceImpl/createCustomerRequest", output = "http://jpa.johnkuper/jpawebservice/JPAWebServiceImpl/createCustomerResponse")
+    public void createCustomer(
+        @WebParam(name = "arg0", targetNamespace = "")
+        CustomerWeb arg0);
+
+    /**
+     * 
+     * @param arg0
      * @return
-     *     returns java.lang.String
+     *     returns com.johnkuper.epam.client.CustomerWeb
      */
     @WebMethod
     @WebResult(targetNamespace = "")
-    @RequestWrapper(localName = "sayHi", targetNamespace = "http://jpa.johnkuper/jpawebservice", className = "com.johnkuper.epam.client.SayHi")
-    @ResponseWrapper(localName = "sayHiResponse", targetNamespace = "http://jpa.johnkuper/jpawebservice", className = "com.johnkuper.epam.client.SayHiResponse")
-    @Action(input = "http://jpa.johnkuper/jpawebservice/JPAWebServiceImpl/sayHiRequest", output = "http://jpa.johnkuper/jpawebservice/JPAWebServiceImpl/sayHiResponse")
-    public String sayHi(
+    @RequestWrapper(localName = "findCustomer", targetNamespace = "http://jpa.johnkuper/jpawebservice", className = "com.johnkuper.epam.client.FindCustomer")
+    @ResponseWrapper(localName = "findCustomerResponse", targetNamespace = "http://jpa.johnkuper/jpawebservice", className = "com.johnkuper.epam.client.FindCustomerResponse")
+    @Action(input = "http://jpa.johnkuper/jpawebservice/JPAWebServiceImpl/findCustomerRequest", output = "http://jpa.johnkuper/jpawebservice/JPAWebServiceImpl/findCustomerResponse")
+    public CustomerWeb findCustomer(
         @WebParam(name = "arg0", targetNamespace = "")
-        String arg0);
+        int arg0);
+
+    /**
+     * 
+     * @param arg0
+     * @return
+     *     returns com.johnkuper.epam.client.MerchantWeb
+     */
+    @WebMethod
+    @WebResult(targetNamespace = "")
+    @RequestWrapper(localName = "findMerchant", targetNamespace = "http://jpa.johnkuper/jpawebservice", className = "com.johnkuper.epam.client.FindMerchant")
+    @ResponseWrapper(localName = "findMerchantResponse", targetNamespace = "http://jpa.johnkuper/jpawebservice", className = "com.johnkuper.epam.client.FindMerchantResponse")
+    @Action(input = "http://jpa.johnkuper/jpawebservice/JPAWebServiceImpl/findMerchantRequest", output = "http://jpa.johnkuper/jpawebservice/JPAWebServiceImpl/findMerchantResponse")
+    public MerchantWeb findMerchant(
+        @WebParam(name = "arg0", targetNamespace = "")
+        int arg0);
+
+    /**
+     * 
+     * @param arg3
+     * @param arg2
+     * @param arg1
+     * @param arg0
+     * @return
+     *     returns com.johnkuper.epam.client.SaleWeb
+     */
+    @WebMethod
+    @WebResult(targetNamespace = "")
+    @RequestWrapper(localName = "buyCar", targetNamespace = "http://jpa.johnkuper/jpawebservice", className = "com.johnkuper.epam.client.BuyCar")
+    @ResponseWrapper(localName = "buyCarResponse", targetNamespace = "http://jpa.johnkuper/jpawebservice", className = "com.johnkuper.epam.client.BuyCarResponse")
+    @Action(input = "http://jpa.johnkuper/jpawebservice/JPAWebServiceImpl/buyCarRequest", output = "http://jpa.johnkuper/jpawebservice/JPAWebServiceImpl/buyCarResponse")
+    public SaleWeb buyCar(
+        @WebParam(name = "arg0", targetNamespace = "")
+        CarWeb arg0,
+        @WebParam(name = "arg1", targetNamespace = "")
+        CustomerWeb arg1,
+        @WebParam(name = "arg2", targetNamespace = "")
+        MerchantWeb arg2,
+        @WebParam(name = "arg3", targetNamespace = "")
+        BigDecimal arg3);
+
+    /**
+     * 
+     * @param arg1
+     * @param arg0
+     * @return
+     *     returns java.util.List<com.johnkuper.epam.client.CarWeb>
+     */
+    @WebMethod
+    @WebResult(targetNamespace = "")
+    @RequestWrapper(localName = "findCarsByMotorPower", targetNamespace = "http://jpa.johnkuper/jpawebservice", className = "com.johnkuper.epam.client.FindCarsByMotorPower")
+    @ResponseWrapper(localName = "findCarsByMotorPowerResponse", targetNamespace = "http://jpa.johnkuper/jpawebservice", className = "com.johnkuper.epam.client.FindCarsByMotorPowerResponse")
+    @Action(input = "http://jpa.johnkuper/jpawebservice/JPAWebServiceImpl/findCarsByMotorPowerRequest", output = "http://jpa.johnkuper/jpawebservice/JPAWebServiceImpl/findCarsByMotorPowerResponse")
+    public List<CarWeb> findCarsByMotorPower(
+        @WebParam(name = "arg0", targetNamespace = "")
+        int arg0,
+        @WebParam(name = "arg1", targetNamespace = "")
+        int arg1);
 
 }

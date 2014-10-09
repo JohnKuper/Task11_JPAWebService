@@ -12,3 +12,45 @@
 2014-10-08 18:53:08,246 DEBUG [main] JohnKuper [JPAWebServiceClient.java:50] String after service response : Hello! This is Kuper!!!
 2014-10-08 18:53:08,465 DEBUG [main] JohnKuper [JPAWebServiceClient.java:63] Found car: id = 4, car_mark = Lada, car_model = Granta, motorpower = 150hs, car_color = Синий
 2014-10-08 18:53:08,466 DEBUG [main] JohnKuper [JPAWebServiceClient.java:63] Found car: id = 3, car_mark = Lada, car_model = Priora, motorpower = 90hs, car_color = Черный
+2014-10-09 11:11:28,233 DEBUG [main] JohnKuper [JPAWebServiceClient.java:61] String after service response : Hello! This is Kuper!!!
+2014-10-09 11:11:28,681 DEBUG [main] JohnKuper [CarRequests.java:29] Found car: id = 4, car_mark = Lada, car_model = Granta, motorpower = 150hs, car_color = Синий
+2014-10-09 11:11:28,681 DEBUG [main] JohnKuper [CarRequests.java:29] Found car: id = 3, car_mark = Lada, car_model = Priora, motorpower = 90hs, car_color = Черный
+2014-10-09 12:36:11,016 DEBUG [main] JohnKuper [JPAWebServiceClient.java:63] String after service response : Hello! This is Kuper!!!
+2014-10-09 12:36:11,172 DEBUG [main] JohnKuper [CarRequests.java:28] id = 4, car_mark = Lada, car_model = Granta, motorpower = 150, car_color = Синий
+2014-10-09 12:36:11,172 DEBUG [main] JohnKuper [CarRequests.java:28] id = 3, car_mark = Lada, car_model = Priora, motorpower = 90, car_color = Черный
+2014-10-09 12:36:11,172 DEBUG [main] JohnKuper [CarRequests.java:39] Found car by name: null
+2014-10-09 12:38:08,375 DEBUG [main] JohnKuper [JPAWebServiceClient.java:63] String after service response : Hello! This is Kuper!!!
+2014-10-09 12:38:08,389 DEBUG [main] JohnKuper [CarRequests.java:38] Found car by name: 
+
+2014-10-09 12:38:08,390 DEBUG [main] JohnKuper [CarRequests.java:28] id = 4, car_mark = Lada, car_model = Granta, motorpower = 150, car_color = Синий
+2014-10-09 12:38:08,390 DEBUG [main] JohnKuper [CarRequests.java:28] id = 3, car_mark = Lada, car_model = Priora, motorpower = 90, car_color = Черный
+2014-10-09 12:38:26,208 DEBUG [main] JohnKuper [JPAWebServiceClient.java:63] String after service response : Hello! This is Kuper!!!
+2014-10-09 12:38:50,247 DEBUG [main] JohnKuper [JPAWebServiceClient.java:63] String after service response : Hello! This is Kuper!!!
+2014-10-09 12:39:09,666 DEBUG [main] JohnKuper [JPAWebServiceClient.java:63] String after service response : Hello! This is Kuper!!!
+2014-10-09 12:39:09,756 DEBUG [main] JohnKuper [CarRequests.java:38] Found car by name:
+2014-10-09 12:39:09,756 DEBUG [main] JohnKuper [CarRequests.java:28] id = 4, car_mark = Lada, car_model = Granta, motorpower = 150, car_color = Синий
+2014-10-09 12:39:09,757 DEBUG [main] JohnKuper [CarRequests.java:28] id = 3, car_mark = Lada, car_model = Priora, motorpower = 90, car_color = Черный
+2014-10-09 12:47:26,099 DEBUG [main] JohnKuper [JPAWebServiceClient.java:62] String after service response : Hello! This is Kuper!!!
+2014-10-09 12:47:26,216 DEBUG [main] JohnKuper [CarRequests.java:38] Found car by name:
+2014-10-09 12:47:26,217 DEBUG [main] JohnKuper [CarRequests.java:28] id = 4, car_mark = Lada, car_model = Granta, motorpower = 150, car_color = Синий
+2014-10-09 12:47:26,217 DEBUG [main] JohnKuper [CarRequests.java:28] id = 3, car_mark = Lada, car_model = Priora, motorpower = 90, car_color = Черный
+2014-10-09 12:48:19,172 DEBUG [main] JohnKuper [JPAWebServiceClient.java:62] String after service response : Hello! This is Kuper!!!
+2014-10-09 12:48:19,259 DEBUG [main] JohnKuper [CarRequests.java:38] Found car by name:
+2014-10-09 12:48:19,259 DEBUG [main] JohnKuper [CarRequests.java:28] id = 4, car_mark = Lada, car_model = Granta, motorpower = 150, car_color = Синий
+2014-10-09 12:48:19,259 DEBUG [main] JohnKuper [CarRequests.java:28] id = 3, car_mark = Lada, car_model = Priora, motorpower = 90, car_color = Черный
+2014-10-09 13:00:48,415 DEBUG [main] JohnKuper [JPAWebServiceClient.java:63] String after service response : Hello! This is Kuper!!!
+2014-10-09 13:00:48,524 DEBUG [main] JohnKuper [CarRequests.java:38] Found car by name:
+2014-10-09 13:00:48,524 DEBUG [main] JohnKuper [CarRequests.java:28] id = 4, car_mark = Lada, car_model = Granta, motorpower = 150, car_color = Синий
+2014-10-09 13:00:48,545 DEBUG [main] JohnKuper [CarRequests.java:28] id = 3, car_mark = Lada, car_model = Priora, motorpower = 90, car_color = Черный
+2014-10-09 13:01:33,102 DEBUG [main] JohnKuper [JPAWebServiceClient.java:63] String after service response : Hello! This is Kuper!!!
+2014-10-09 13:01:33,118 DEBUG [main] JohnKuper [CarRequests.java:38] Found car by name:
+2014-10-09 13:01:33,119 DEBUG [main] JohnKuper [CarRequests.java:28] id = 4, car_mark = Lada, car_model = Granta, motorpower = 150, car_color = Синий
+2014-10-09 13:01:33,119 DEBUG [main] JohnKuper [CarRequests.java:28] id = 3, car_mark = Lada, car_model = Priora, motorpower = 90, car_color = Черный
+2014-10-09 13:02:06,887 DEBUG [main] JohnKuper [JPAWebServiceClient.java:63] String after service response : Hello! This is Kuper!!!
+2014-10-09 13:02:06,989 DEBUG [main] JohnKuper [CarRequests.java:38] Found car by name:
+2014-10-09 13:02:06,989 DEBUG [main] JohnKuper [CarRequests.java:28] id = 4, car_mark = Lada, car_model = Granta, motorpower = 150, car_color = Синий
+2014-10-09 13:02:06,989 DEBUG [main] JohnKuper [CarRequests.java:28] id = 3, car_mark = Lada, car_model = Priora, motorpower = 90, car_color = Черный
+2014-10-09 13:02:07,070 DEBUG [main] JohnKuper [CarRequests.java:56] Found car by motor power: 
+2014-10-09 13:02:07,070 DEBUG [main] JohnKuper [CarRequests.java:28] id = 2, car_mark = BMW, car_model = X3, motorpower = 250, car_color = Белый
+2014-10-09 13:02:07,070 DEBUG [main] JohnKuper [CarRequests.java:28] id = 3, car_mark = Lada, car_model = Priora, motorpower = 90, car_color = Черный
+2014-10-09 13:02:07,070 DEBUG [main] JohnKuper [CarRequests.java:28] id = 4, car_mark = Lada, car_model = Granta, motorpower = 150, car_color = Синий

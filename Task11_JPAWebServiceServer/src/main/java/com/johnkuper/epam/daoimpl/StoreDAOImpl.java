@@ -26,16 +26,16 @@ public class StoreDAOImpl extends GenericDAOImpl<Store, StoreDomain, Integer>
 		query.setParameter("minprice", minprice);
 		query.setParameter("maxprice", maxprice);
 		List<Store> items = query.getResultList();
-		List<StoreDomain> domainitems = new ArrayList<StoreDomain>();
+		List<StoreDomain> domainItems = new ArrayList<StoreDomain>();
 		logger.debug("--- {} Items between {} and {} prices was found ---",
 				items.size(), minprice, maxprice);
 		if (items.size() > 0) {
 			for (Store item : items) {
-				domainitems.add(mapper.map(item, StoreDomain.class));
+				domainItems.add(mapper.map(item, StoreDomain.class));
 				logger.debug("{}", item);
 			}
 		}
-		return domainitems;
+		return domainItems;
 	}
 	
 

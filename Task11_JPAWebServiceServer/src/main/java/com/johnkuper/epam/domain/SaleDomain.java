@@ -17,15 +17,15 @@ public class SaleDomain {
 	private Date dateOfSale; // saleDate
 
 	public SaleDomain() {
+		
 	}
 
 	public SaleDomain(Car car, Customer customer, Merchant merchant,
-			BigDecimal salePrice, Date dateOfSale) {
+			BigDecimal salePrice) {
 		this.car = car;
 		this.customer = customer;
 		this.merchant = merchant;
 		this.salePrice = salePrice;
-		this.dateOfSale = dateOfSale;
 	}
 
 	@Override
