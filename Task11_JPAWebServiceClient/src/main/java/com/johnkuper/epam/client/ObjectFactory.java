@@ -35,8 +35,10 @@ public class ObjectFactory {
     private final static QName _FindMerchantResponse_QNAME = new QName("http://jpa.johnkuper/jpawebservice", "findMerchantResponse");
     private final static QName _FindCustomerResponse_QNAME = new QName("http://jpa.johnkuper/jpawebservice", "findCustomerResponse");
     private final static QName _FindMerchant_QNAME = new QName("http://jpa.johnkuper/jpawebservice", "findMerchant");
+    private final static QName _CreateMerchant_QNAME = new QName("http://jpa.johnkuper/jpawebservice", "createMerchant");
     private final static QName _BuyCarResponse_QNAME = new QName("http://jpa.johnkuper/jpawebservice", "buyCarResponse");
     private final static QName _CreateCarResponse_QNAME = new QName("http://jpa.johnkuper/jpawebservice", "createCarResponse");
+    private final static QName _CreateMerchantResponse_QNAME = new QName("http://jpa.johnkuper/jpawebservice", "createMerchantResponse");
     private final static QName _FindCarsByMotorPowerResponse_QNAME = new QName("http://jpa.johnkuper/jpawebservice", "findCarsByMotorPowerResponse");
     private final static QName _CreateCar_QNAME = new QName("http://jpa.johnkuper/jpawebservice", "createCar");
     private final static QName _FindCarByNameResponse_QNAME = new QName("http://jpa.johnkuper/jpawebservice", "findCarByNameResponse");
@@ -129,6 +131,14 @@ public class ObjectFactory {
     }
 
     /**
+     * Create an instance of {@link CreateMerchantResponse }
+     * 
+     */
+    public CreateMerchantResponse createCreateMerchantResponse() {
+        return new CreateMerchantResponse();
+    }
+
+    /**
      * Create an instance of {@link FindCarsByMotorPowerResponse }
      * 
      */
@@ -161,6 +171,14 @@ public class ObjectFactory {
     }
 
     /**
+     * Create an instance of {@link CreateMerchant }
+     * 
+     */
+    public CreateMerchant createCreateMerchant() {
+        return new CreateMerchant();
+    }
+
+    /**
      * Create an instance of {@link FindMerchantResponse }
      * 
      */
@@ -177,27 +195,11 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link Merchant }
-     * 
-     */
-    public Merchant createMerchant() {
-        return new Merchant();
-    }
-
-    /**
      * Create an instance of {@link MerchantWeb }
      * 
      */
     public MerchantWeb createMerchantWeb() {
         return new MerchantWeb();
-    }
-
-    /**
-     * Create an instance of {@link Car }
-     * 
-     */
-    public Car createCar() {
-        return new Car();
     }
 
     /**
@@ -214,22 +216,6 @@ public class ObjectFactory {
      */
     public CarWeb createCarWeb() {
         return new CarWeb();
-    }
-
-    /**
-     * Create an instance of {@link SaleWeb }
-     * 
-     */
-    public SaleWeb createSaleWeb() {
-        return new SaleWeb();
-    }
-
-    /**
-     * Create an instance of {@link Customer }
-     * 
-     */
-    public Customer createCustomer() {
-        return new Customer();
     }
 
     /**
@@ -332,6 +318,15 @@ public class ObjectFactory {
     }
 
     /**
+     * Create an instance of {@link JAXBElement }{@code <}{@link CreateMerchant }{@code >}}
+     * 
+     */
+    @XmlElementDecl(namespace = "http://jpa.johnkuper/jpawebservice", name = "createMerchant")
+    public JAXBElement<CreateMerchant> createCreateMerchant(CreateMerchant value) {
+        return new JAXBElement<CreateMerchant>(_CreateMerchant_QNAME, CreateMerchant.class, null, value);
+    }
+
+    /**
      * Create an instance of {@link JAXBElement }{@code <}{@link BuyCarResponse }{@code >}}
      * 
      */
@@ -347,6 +342,15 @@ public class ObjectFactory {
     @XmlElementDecl(namespace = "http://jpa.johnkuper/jpawebservice", name = "createCarResponse")
     public JAXBElement<CreateCarResponse> createCreateCarResponse(CreateCarResponse value) {
         return new JAXBElement<CreateCarResponse>(_CreateCarResponse_QNAME, CreateCarResponse.class, null, value);
+    }
+
+    /**
+     * Create an instance of {@link JAXBElement }{@code <}{@link CreateMerchantResponse }{@code >}}
+     * 
+     */
+    @XmlElementDecl(namespace = "http://jpa.johnkuper/jpawebservice", name = "createMerchantResponse")
+    public JAXBElement<CreateMerchantResponse> createCreateMerchantResponse(CreateMerchantResponse value) {
+        return new JAXBElement<CreateMerchantResponse>(_CreateMerchantResponse_QNAME, CreateMerchantResponse.class, null, value);
     }
 
     /**

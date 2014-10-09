@@ -2,12 +2,10 @@ package com.johnkuper.epam.domain;
 
 import java.math.BigDecimal;
 
-import com.johnkuper.epam.entity.Car;
-
 public class StoreDomain {
 
 	private int id;
-	private Car car;
+	private CarDomain car;
 	private int amount; // count
 	private BigDecimal carPrice; // price
 	private boolean testDrive; // testdrive_avaible
@@ -15,7 +13,7 @@ public class StoreDomain {
 	public StoreDomain() {
 	}
 
-	public StoreDomain(Car car, int amount, BigDecimal carPrice,
+	public StoreDomain(CarDomain car, int amount, BigDecimal carPrice,
 			boolean testDrive) {
 		this.car = car;
 		this.amount = amount;
@@ -38,11 +36,11 @@ public class StoreDomain {
 		this.id = id;
 	}
 
-	public Car getCar() {
+	public CarDomain getCar() {
 		return car;
 	}
 
-	public void setCar(Car car) {
+	public void setCar(CarDomain car) {
 		this.car = car;
 	}
 

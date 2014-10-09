@@ -10,7 +10,6 @@ import com.johnkuper.epam.client.CarWeb;
 import com.johnkuper.epam.client.CustomerWeb;
 import com.johnkuper.epam.client.JPAWebServiceImpl;
 import com.johnkuper.epam.client.MerchantWeb;
-import com.johnkuper.epam.client.SaleWeb;
 
 public class CarRequests {
 
@@ -19,6 +18,10 @@ public class CarRequests {
 
 	public CarRequests(JPAWebServiceImpl serviceImpl) {
 		this.jpaPort = serviceImpl;
+	}
+
+	private String calledMethod(String methodName) {
+		return String.format("--- Client method '%s' was called", methodName);
 	}
 
 	private void getCarInfo(List<CarWeb> cars) {
@@ -38,24 +41,28 @@ public class CarRequests {
 
 	public void findCarByName(String name) {
 
+		logger.debug(calledMethod("findCarByName"));
 		List<CarWeb> cars = jpaPort.findCarByName(name);
-		logger.debug("Found car by name:");
+		logger.debug("Found car by name {}:", name);
 		getCarInfo(cars);
 
 	}
 
 	public void createCar() {
 
+		logger.debug(calledMethod("createCar"));
 		CarWeb carWeb = new CarWeb();
 		carWeb.setCarMark("Chevrolet");
 		carWeb.setCarModel("Corvette");
 		carWeb.setMotorpower("560");
 		carWeb.setCarColor("Red");
-		jpaPort.createCar(carWeb);
+		String status = jpaPort.createCar(carWeb);
+		logger.debug(status);
 	}
 
 	public void findCarsByMotorPower() {
 
+		logger.debug(calledMethod("findCarsByMotorPower"));
 		int minPower = 50;
 		int maxPower = 300;
 		List<CarWeb> cars = jpaPort.findCarsByMotorPower(minPower, maxPower);
@@ -67,18 +74,24 @@ public class CarRequests {
 
 	public void buyCar() {
 
+		logger.debug(calledMethod("buyCar"));
+
 		// Assume that the customer want to buy this car
-		List<CarWeb> car = jpaPort.findCarByName("Toytota");
+		List<CarWeb> car = jpaPort.findCarByName("Toyota");
 		CarWeb oneCar = null;
-		if(car.size() == 1 ) {
+		if (car.size() == 1) {
 			oneCar = car.get(0);
 		}
 		// Assume that the current user wants to buy a car
 		CustomerWeb customer = jpaPort.findCustomer(1);
-		// Assume that the customer likes this merchant and want to cooperate with him
+		// Assume that the customer likes this merchant and want to cooperate
+		// with him
 		MerchantWeb merchant = jpaPort.findMerchant(1);
 		BigDecimal price = new BigDecimal(1050000.90);
-		SaleWeb sale = new SaleWeb();
+
+		String status = jpaPort.buyCar(oneCar, customer, merchant, price);
+
+		logger.debug(status);
 
 	}
 }

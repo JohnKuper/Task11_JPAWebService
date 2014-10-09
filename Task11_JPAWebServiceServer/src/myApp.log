@@ -247,3 +247,957 @@
 2014-10-09 14:45:37,479 DEBUG [main] JohnKuper [EntityDomainFieldRegistator.java:52] --- Fields registration Entity ->> Domain complete ---
 2014-10-09 14:45:38,444 DEBUG [main] JohnKuper [JPAWebServiceServer.java:20] The web service is published at http://localhost:9000/JPAWebService
 2014-10-09 14:45:38,446 DEBUG [main] JohnKuper [JPAWebServiceServer.java:27] Server is ready...
+2014-10-09 15:03:48,140 DEBUG [main] JohnKuper [JPAWebServiceServer.java:16] Starting Server
+2014-10-09 15:03:48,249 DEBUG [main] JohnKuper [DomainServiceFieldRegistator.java:26] --- Start fields registration Domain ->> Service ---
+2014-10-09 15:03:48,307 DEBUG [main] JohnKuper [DomainServiceFieldRegistator.java:55] --- Fields registration Domain ->> Service complete ---
+2014-10-09 15:03:49,780 DEBUG [main] JohnKuper [EntityDomainFieldRegistator.java:26] --- Start fields registration Entity ->> Domain ---
+2014-10-09 15:03:49,798 DEBUG [main] JohnKuper [EntityDomainFieldRegistator.java:52] --- Fields registration Entity ->> Domain complete ---
+2014-10-09 15:03:50,780 DEBUG [main] JohnKuper [JPAWebServiceServer.java:20] The web service is published at http://localhost:9000/JPAWebService
+2014-10-09 15:03:50,782 DEBUG [main] JohnKuper [JPAWebServiceServer.java:27] Server is ready...
+2014-10-09 15:18:55,295 DEBUG [main] JohnKuper [JPAWebServiceServer.java:16] Starting Server
+2014-10-09 15:18:55,393 DEBUG [main] JohnKuper [DomainServiceFieldRegistator.java:26] --- Start fields registration Domain ->> Service ---
+2014-10-09 15:18:55,446 DEBUG [main] JohnKuper [DomainServiceFieldRegistator.java:55] --- Fields registration Domain ->> Service complete ---
+2014-10-09 15:18:56,993 DEBUG [main] JohnKuper [EntityDomainFieldRegistator.java:26] --- Start fields registration Entity ->> Domain ---
+2014-10-09 15:18:57,007 DEBUG [main] JohnKuper [EntityDomainFieldRegistator.java:52] --- Fields registration Entity ->> Domain complete ---
+2014-10-09 15:18:58,122 DEBUG [main] JohnKuper [JPAWebServiceServer.java:20] The web service is published at http://localhost:9000/JPAWebService
+2014-10-09 15:18:58,123 DEBUG [main] JohnKuper [JPAWebServiceServer.java:27] Server is ready...
+2014-10-09 15:19:23,283 DEBUG [pool-1-thread-1] JohnKuper [JPAWebServiceImpl.java:54] Service method 'sayHi' was called
+2014-10-09 15:19:23,318 DEBUG [pool-1-thread-1] JohnKuper [JPAWebServiceImpl.java:65] Service method 'findCarByName' was called
+2014-10-09 15:19:23,318 DEBUG [pool-1-thread-1] JohnKuper [CarDAOImpl.java:24] --- Start 'findByName' method for Car entity --- 
+2014-10-09 15:19:23,476 DEBUG [pool-1-thread-1] JohnKuper [CarDAOImpl.java:34] Found car with name Lada:  Car: {id = 4; name = Lada; model = Granta; modification = 150; color = Синий} 
+2014-10-09 15:19:23,512 DEBUG [pool-1-thread-1] JohnKuper [JPAWebServiceImpl.java:88] Service method 'findCarsByMotorPower' was called
+2014-10-09 15:19:23,513 DEBUG [pool-1-thread-1] JohnKuper [GenericDAOImpl.java:79] --- Start 'findAll' method for Car entity ---
+2014-10-09 15:19:23,520 DEBUG [pool-1-thread-1] JohnKuper [GenericDAOImpl.java:88] Found:  Car: {id = 1; name = Audi; model = R5; modification = 400; color = Красный} 
+2014-10-09 15:19:23,521 DEBUG [pool-1-thread-1] JohnKuper [GenericDAOImpl.java:88] Found:  Car: {id = 2; name = BMW; model = X3; modification = 250; color = Белый} 
+2014-10-09 15:19:23,521 DEBUG [pool-1-thread-1] JohnKuper [GenericDAOImpl.java:88] Found:  Car: {id = 3; name = Toyota; model = Corolla; modification = 300; color = Черный} 
+2014-10-09 15:19:23,521 DEBUG [pool-1-thread-1] JohnKuper [GenericDAOImpl.java:88] Found:  Car: {id = 4; name = Lada; model = Granta; modification = 150; color = Синий} 
+2014-10-09 15:19:23,522 DEBUG [pool-1-thread-1] JohnKuper [GenericDAOImpl.java:88] Found:  Car: {id = 5; name = Lamborghini; model = Diablo SV; modification = 900; color = Металлик} 
+2014-10-09 15:19:23,553 DEBUG [pool-1-thread-1] JohnKuper [JPAWebServiceImpl.java:65] Service method 'findCarByName' was called
+2014-10-09 15:19:23,554 DEBUG [pool-1-thread-1] JohnKuper [CarDAOImpl.java:24] --- Start 'findByName' method for Car entity --- 
+2014-10-09 15:19:23,560 DEBUG [pool-1-thread-1] JohnKuper [JPAWebServiceImpl.java:116] Service method 'findCustomer' was called
+2014-10-09 15:19:23,560 DEBUG [pool-1-thread-1] JohnKuper [GenericDAOImpl.java:96] --- Start 'findOne' method for Customer entity with ID = 1 ---
+2014-10-09 15:19:23,581 DEBUG [pool-1-thread-1] JohnKuper [GenericDAOImpl.java:101] Found entity:  Customer: {id = 1; name = Игорь; surname = Ежов; patronymic = Владимирович; passport_series = 5705; passport_number = 032667; birthdate = 1970-04-16} 
+2014-10-09 15:19:23,607 DEBUG [pool-1-thread-1] JohnKuper [JPAWebServiceImpl.java:127] Service method 'findMerchant' was called
+2014-10-09 15:19:23,607 DEBUG [pool-1-thread-1] JohnKuper [GenericDAOImpl.java:96] --- Start 'findOne' method for Merchant entity with ID = 1 ---
+2014-10-09 15:19:23,613 DEBUG [pool-1-thread-1] JohnKuper [GenericDAOImpl.java:101] Found entity:  Merchant: {id = 1; name = Михаил; surname = Захаров; patronymic = Олегович} 
+2014-10-09 15:19:23,669 DEBUG [pool-1-thread-1] JohnKuper [GenericDAOImpl.java:55] --- Start 'create' method for Sale entity ---
+2014-10-09 15:19:23,670 DEBUG [pool-1-thread-1] JohnKuper [GenericDAOImpl.java:56] Domain for create: SaleDomain: {id = 0; salePrice = 1050000.8999999999068677425384521484375; dateOfSale = null
+null
+CustomerDomain: {id = 1; custName = Игорь; custSurname = Ежов; custPatronymic = Владимирович; passportSeries = 5705; passportNumber = 032667; dateOfBirth = Thu Apr 16 00:00:00 MSK 1970}
+MerchantDomain: {id = 1; merchName = Михаил; merchSurname = Захаров; merchPatronymic = Олегович}
+
+2014-10-09 15:21:03,399 DEBUG [pool-1-thread-2] JohnKuper [JPAWebServiceImpl.java:54] Service method 'sayHi' was called
+2014-10-09 15:21:03,414 DEBUG [pool-1-thread-2] JohnKuper [JPAWebServiceImpl.java:65] Service method 'findCarByName' was called
+2014-10-09 15:21:03,415 DEBUG [pool-1-thread-2] JohnKuper [CarDAOImpl.java:24] --- Start 'findByName' method for Car entity --- 
+2014-10-09 15:21:03,418 DEBUG [pool-1-thread-2] JohnKuper [CarDAOImpl.java:34] Found car with name Lada:  Car: {id = 4; name = Lada; model = Granta; modification = 150; color = Синий} 
+2014-10-09 15:21:03,425 DEBUG [pool-1-thread-2] JohnKuper [JPAWebServiceImpl.java:88] Service method 'findCarsByMotorPower' was called
+2014-10-09 15:21:03,425 DEBUG [pool-1-thread-2] JohnKuper [GenericDAOImpl.java:79] --- Start 'findAll' method for Car entity ---
+2014-10-09 15:21:03,427 DEBUG [pool-1-thread-2] JohnKuper [GenericDAOImpl.java:88] Found:  Car: {id = 1; name = Audi; model = R5; modification = 400; color = Красный} 
+2014-10-09 15:21:03,428 DEBUG [pool-1-thread-2] JohnKuper [GenericDAOImpl.java:88] Found:  Car: {id = 2; name = BMW; model = X3; modification = 250; color = Белый} 
+2014-10-09 15:21:03,428 DEBUG [pool-1-thread-2] JohnKuper [GenericDAOImpl.java:88] Found:  Car: {id = 3; name = Toyota; model = Corolla; modification = 300; color = Черный} 
+2014-10-09 15:21:03,428 DEBUG [pool-1-thread-2] JohnKuper [GenericDAOImpl.java:88] Found:  Car: {id = 4; name = Lada; model = Granta; modification = 150; color = Синий} 
+2014-10-09 15:21:03,429 DEBUG [pool-1-thread-2] JohnKuper [GenericDAOImpl.java:88] Found:  Car: {id = 5; name = Lamborghini; model = Diablo SV; modification = 900; color = Металлик} 
+2014-10-09 15:21:03,440 DEBUG [pool-1-thread-2] JohnKuper [JPAWebServiceImpl.java:65] Service method 'findCarByName' was called
+2014-10-09 15:21:03,441 DEBUG [pool-1-thread-2] JohnKuper [CarDAOImpl.java:24] --- Start 'findByName' method for Car entity --- 
+2014-10-09 15:21:03,444 DEBUG [pool-1-thread-2] JohnKuper [JPAWebServiceImpl.java:116] Service method 'findCustomer' was called
+2014-10-09 15:21:03,445 DEBUG [pool-1-thread-2] JohnKuper [GenericDAOImpl.java:96] --- Start 'findOne' method for Customer entity with ID = 1 ---
+2014-10-09 15:21:03,445 DEBUG [pool-1-thread-2] JohnKuper [GenericDAOImpl.java:101] Found entity:  Customer: {id = 1; name = Игорь; surname = Ежов; patronymic = Владимирович; passport_series = 5705; passport_number = 032667; birthdate = 1970-04-16} 
+2014-10-09 15:21:03,451 DEBUG [pool-1-thread-2] JohnKuper [JPAWebServiceImpl.java:127] Service method 'findMerchant' was called
+2014-10-09 15:21:03,452 DEBUG [pool-1-thread-2] JohnKuper [GenericDAOImpl.java:96] --- Start 'findOne' method for Merchant entity with ID = 1 ---
+2014-10-09 15:21:03,452 DEBUG [pool-1-thread-2] JohnKuper [GenericDAOImpl.java:101] Found entity:  Merchant: {id = 1; name = Михаил; surname = Захаров; patronymic = Олегович} 
+2014-10-09 15:21:03,457 DEBUG [pool-1-thread-2] JohnKuper [GenericDAOImpl.java:55] --- Start 'create' method for Sale entity ---
+2014-10-09 15:21:03,457 DEBUG [pool-1-thread-2] JohnKuper [GenericDAOImpl.java:56] Domain for create: SaleDomain: {id = 0; salePrice = 1050000.8999999999068677425384521484375; dateOfSale = null
+null
+CustomerDomain: {id = 1; custName = Игорь; custSurname = Ежов; custPatronymic = Владимирович; passportSeries = 5705; passportNumber = 032667; dateOfBirth = Thu Apr 16 00:00:00 MSK 1970}
+MerchantDomain: {id = 1; merchName = Михаил; merchSurname = Захаров; merchPatronymic = Олегович}
+
+2014-10-09 15:22:15,626 DEBUG [main] JohnKuper [JPAWebServiceServer.java:16] Starting Server
+2014-10-09 15:22:15,729 DEBUG [main] JohnKuper [DomainServiceFieldRegistator.java:26] --- Start fields registration Domain ->> Service ---
+2014-10-09 15:22:15,777 DEBUG [main] JohnKuper [DomainServiceFieldRegistator.java:55] --- Fields registration Domain ->> Service complete ---
+2014-10-09 15:22:17,437 DEBUG [main] JohnKuper [EntityDomainFieldRegistator.java:26] --- Start fields registration Entity ->> Domain ---
+2014-10-09 15:22:17,461 DEBUG [main] JohnKuper [EntityDomainFieldRegistator.java:52] --- Fields registration Entity ->> Domain complete ---
+2014-10-09 15:22:18,565 DEBUG [main] JohnKuper [JPAWebServiceServer.java:20] The web service is published at http://localhost:9000/JPAWebService
+2014-10-09 15:22:18,567 DEBUG [main] JohnKuper [JPAWebServiceServer.java:27] Server is ready...
+2014-10-09 15:22:20,291 DEBUG [pool-1-thread-1] JohnKuper [JPAWebServiceImpl.java:54] Service method 'sayHi' was called
+2014-10-09 15:22:20,311 DEBUG [pool-1-thread-1] JohnKuper [JPAWebServiceImpl.java:65] Service method 'findCarByName' was called
+2014-10-09 15:22:20,312 DEBUG [pool-1-thread-1] JohnKuper [CarDAOImpl.java:24] --- Start 'findByName' method for Car entity --- 
+2014-10-09 15:22:20,494 DEBUG [pool-1-thread-1] JohnKuper [CarDAOImpl.java:34] Found car with name Lada:  Car: {id = 4; name = Lada; model = Granta; modification = 150; color = Синий} 
+2014-10-09 15:22:20,516 DEBUG [pool-1-thread-1] JohnKuper [JPAWebServiceImpl.java:88] Service method 'findCarsByMotorPower' was called
+2014-10-09 15:22:20,517 DEBUG [pool-1-thread-1] JohnKuper [GenericDAOImpl.java:79] --- Start 'findAll' method for Car entity ---
+2014-10-09 15:22:20,524 DEBUG [pool-1-thread-1] JohnKuper [GenericDAOImpl.java:88] Found:  Car: {id = 1; name = Audi; model = R5; modification = 400; color = Красный} 
+2014-10-09 15:22:20,524 DEBUG [pool-1-thread-1] JohnKuper [GenericDAOImpl.java:88] Found:  Car: {id = 2; name = BMW; model = X3; modification = 250; color = Белый} 
+2014-10-09 15:22:20,525 DEBUG [pool-1-thread-1] JohnKuper [GenericDAOImpl.java:88] Found:  Car: {id = 3; name = Toyota; model = Corolla; modification = 300; color = Черный} 
+2014-10-09 15:22:20,525 DEBUG [pool-1-thread-1] JohnKuper [GenericDAOImpl.java:88] Found:  Car: {id = 4; name = Lada; model = Granta; modification = 150; color = Синий} 
+2014-10-09 15:22:20,526 DEBUG [pool-1-thread-1] JohnKuper [GenericDAOImpl.java:88] Found:  Car: {id = 5; name = Lamborghini; model = Diablo SV; modification = 900; color = Металлик} 
+2014-10-09 15:22:20,552 DEBUG [pool-1-thread-1] JohnKuper [JPAWebServiceImpl.java:65] Service method 'findCarByName' was called
+2014-10-09 15:22:20,553 DEBUG [pool-1-thread-1] JohnKuper [CarDAOImpl.java:24] --- Start 'findByName' method for Car entity --- 
+2014-10-09 15:22:20,559 DEBUG [pool-1-thread-1] JohnKuper [JPAWebServiceImpl.java:116] Service method 'findCustomer' was called
+2014-10-09 15:22:20,559 DEBUG [pool-1-thread-1] JohnKuper [GenericDAOImpl.java:96] --- Start 'findOne' method for Customer entity with ID = 1 ---
+2014-10-09 15:22:20,579 DEBUG [pool-1-thread-1] JohnKuper [GenericDAOImpl.java:101] Found entity:  Customer: {id = 1; name = Игорь; surname = Ежов; patronymic = Владимирович; passport_series = 5705; passport_number = 032667; birthdate = 1970-04-16} 
+2014-10-09 15:22:20,596 DEBUG [pool-1-thread-1] JohnKuper [JPAWebServiceImpl.java:127] Service method 'findMerchant' was called
+2014-10-09 15:22:20,596 DEBUG [pool-1-thread-1] JohnKuper [GenericDAOImpl.java:96] --- Start 'findOne' method for Merchant entity with ID = 1 ---
+2014-10-09 15:22:20,608 DEBUG [pool-1-thread-1] JohnKuper [GenericDAOImpl.java:101] Found entity:  Merchant: {id = 1; name = Михаил; surname = Захаров; patronymic = Олегович} 
+2014-10-09 15:22:20,640 DEBUG [pool-1-thread-1] JohnKuper [GenericDAOImpl.java:55] --- Start 'create' method for Sale entity ---
+2014-10-09 15:22:20,641 DEBUG [pool-1-thread-1] JohnKuper [GenericDAOImpl.java:56] Domain for create: SaleDomain: {id = 0; salePrice = 1050000.8999999999068677425384521484375; dateOfSale = null
+null
+CustomerDomain: {id = 1; custName = Игорь; custSurname = Ежов; custPatronymic = Владимирович; passportSeries = 5705; passportNumber = 032667; dateOfBirth = Thu Apr 16 00:00:00 MSK 1970}
+MerchantDomain: {id = 1; merchName = Михаил; merchSurname = Захаров; merchPatronymic = Олегович}
+
+2014-10-09 15:22:39,170 DEBUG [main] JohnKuper [JPAWebServiceServer.java:16] Starting Server
+2014-10-09 15:22:39,265 DEBUG [main] JohnKuper [DomainServiceFieldRegistator.java:26] --- Start fields registration Domain ->> Service ---
+2014-10-09 15:22:39,320 DEBUG [main] JohnKuper [DomainServiceFieldRegistator.java:55] --- Fields registration Domain ->> Service complete ---
+2014-10-09 15:22:40,836 DEBUG [main] JohnKuper [EntityDomainFieldRegistator.java:26] --- Start fields registration Entity ->> Domain ---
+2014-10-09 15:22:40,852 DEBUG [main] JohnKuper [EntityDomainFieldRegistator.java:52] --- Fields registration Entity ->> Domain complete ---
+2014-10-09 15:22:41,934 DEBUG [main] JohnKuper [JPAWebServiceServer.java:20] The web service is published at http://localhost:9000/JPAWebService
+2014-10-09 15:22:41,936 DEBUG [main] JohnKuper [JPAWebServiceServer.java:27] Server is ready...
+2014-10-09 15:22:51,369 DEBUG [pool-1-thread-1] JohnKuper [JPAWebServiceImpl.java:54] Service method 'sayHi' was called
+2014-10-09 15:22:51,397 DEBUG [pool-1-thread-1] JohnKuper [JPAWebServiceImpl.java:65] Service method 'findCarByName' was called
+2014-10-09 15:22:51,398 DEBUG [pool-1-thread-1] JohnKuper [CarDAOImpl.java:24] --- Start 'findByName' method for Car entity --- 
+2014-10-09 15:22:51,466 DEBUG [pool-1-thread-1] JohnKuper [CarDAOImpl.java:34] Found car with name Lada:  Car: {id = 4; name = Lada; model = Granta; modification = 150; color = Синий} 
+2014-10-09 15:22:51,491 DEBUG [pool-1-thread-1] JohnKuper [JPAWebServiceImpl.java:88] Service method 'findCarsByMotorPower' was called
+2014-10-09 15:22:51,492 DEBUG [pool-1-thread-1] JohnKuper [GenericDAOImpl.java:79] --- Start 'findAll' method for Car entity ---
+2014-10-09 15:22:51,500 DEBUG [pool-1-thread-1] JohnKuper [GenericDAOImpl.java:88] Found:  Car: {id = 1; name = Audi; model = R5; modification = 400; color = Красный} 
+2014-10-09 15:22:51,500 DEBUG [pool-1-thread-1] JohnKuper [GenericDAOImpl.java:88] Found:  Car: {id = 2; name = BMW; model = X3; modification = 250; color = Белый} 
+2014-10-09 15:22:51,501 DEBUG [pool-1-thread-1] JohnKuper [GenericDAOImpl.java:88] Found:  Car: {id = 3; name = Toyota; model = Corolla; modification = 300; color = Черный} 
+2014-10-09 15:22:51,501 DEBUG [pool-1-thread-1] JohnKuper [GenericDAOImpl.java:88] Found:  Car: {id = 4; name = Lada; model = Granta; modification = 150; color = Синий} 
+2014-10-09 15:22:51,502 DEBUG [pool-1-thread-1] JohnKuper [GenericDAOImpl.java:88] Found:  Car: {id = 5; name = Lamborghini; model = Diablo SV; modification = 900; color = Металлик} 
+2014-10-09 15:22:51,514 DEBUG [pool-1-thread-1] JohnKuper [JPAWebServiceImpl.java:65] Service method 'findCarByName' was called
+2014-10-09 15:22:51,515 DEBUG [pool-1-thread-1] JohnKuper [CarDAOImpl.java:24] --- Start 'findByName' method for Car entity --- 
+2014-10-09 15:22:51,523 DEBUG [pool-1-thread-1] JohnKuper [JPAWebServiceImpl.java:116] Service method 'findCustomer' was called
+2014-10-09 15:22:51,523 DEBUG [pool-1-thread-1] JohnKuper [GenericDAOImpl.java:96] --- Start 'findOne' method for Customer entity with ID = 1 ---
+2014-10-09 15:22:51,551 DEBUG [pool-1-thread-1] JohnKuper [GenericDAOImpl.java:101] Found entity:  Customer: {id = 1; name = Игорь; surname = Ежов; patronymic = Владимирович; passport_series = 5705; passport_number = 032667; birthdate = 1970-04-16} 
+2014-10-09 15:22:51,568 DEBUG [pool-1-thread-1] JohnKuper [JPAWebServiceImpl.java:127] Service method 'findMerchant' was called
+2014-10-09 15:22:51,568 DEBUG [pool-1-thread-1] JohnKuper [GenericDAOImpl.java:96] --- Start 'findOne' method for Merchant entity with ID = 1 ---
+2014-10-09 15:22:51,573 DEBUG [pool-1-thread-1] JohnKuper [GenericDAOImpl.java:101] Found entity:  Merchant: {id = 1; name = Михаил; surname = Захаров; patronymic = Олегович} 
+2014-10-09 15:22:51,626 DEBUG [pool-1-thread-1] JohnKuper [GenericDAOImpl.java:55] --- Start 'create' method for Sale entity ---
+2014-10-09 15:22:51,627 DEBUG [pool-1-thread-1] JohnKuper [GenericDAOImpl.java:56] Domain for create: SaleDomain: {id = 0; salePrice = 1050000.8999999999068677425384521484375; dateOfSale = null
+null
+CustomerDomain: {id = 1; custName = Игорь; custSurname = Ежов; custPatronymic = Владимирович; passportSeries = 5705; passportNumber = 032667; dateOfBirth = Thu Apr 16 00:00:00 MSK 1970}
+MerchantDomain: {id = 1; merchName = Михаил; merchSurname = Захаров; merchPatronymic = Олегович}
+
+2014-10-09 15:23:48,594 DEBUG [main] JohnKuper [JPAWebServiceServer.java:16] Starting Server
+2014-10-09 15:23:48,691 DEBUG [main] JohnKuper [DomainServiceFieldRegistator.java:26] --- Start fields registration Domain ->> Service ---
+2014-10-09 15:23:48,747 DEBUG [main] JohnKuper [DomainServiceFieldRegistator.java:55] --- Fields registration Domain ->> Service complete ---
+2014-10-09 15:23:50,254 DEBUG [main] JohnKuper [EntityDomainFieldRegistator.java:26] --- Start fields registration Entity ->> Domain ---
+2014-10-09 15:23:50,272 DEBUG [main] JohnKuper [EntityDomainFieldRegistator.java:52] --- Fields registration Entity ->> Domain complete ---
+2014-10-09 15:23:51,601 DEBUG [main] JohnKuper [JPAWebServiceServer.java:20] The web service is published at http://localhost:9000/JPAWebService
+2014-10-09 15:23:51,602 DEBUG [main] JohnKuper [JPAWebServiceServer.java:27] Server is ready...
+2014-10-09 15:24:02,006 DEBUG [pool-1-thread-1] JohnKuper [JPAWebServiceImpl.java:54] Service method 'sayHi' was called
+2014-10-09 15:24:02,047 DEBUG [pool-1-thread-1] JohnKuper [JPAWebServiceImpl.java:65] Service method 'findCarByName' was called
+2014-10-09 15:24:02,047 DEBUG [pool-1-thread-1] JohnKuper [CarDAOImpl.java:24] --- Start 'findByName' method for Car entity --- 
+2014-10-09 15:24:02,121 DEBUG [pool-1-thread-1] JohnKuper [CarDAOImpl.java:34] Found car with name Lada:  Car: {id = 4; name = Lada; model = Granta; modification = 150; color = Синий} 
+2014-10-09 15:24:02,157 DEBUG [pool-1-thread-1] JohnKuper [JPAWebServiceImpl.java:88] Service method 'findCarsByMotorPower' was called
+2014-10-09 15:24:02,158 DEBUG [pool-1-thread-1] JohnKuper [GenericDAOImpl.java:79] --- Start 'findAll' method for Car entity ---
+2014-10-09 15:24:02,176 DEBUG [pool-1-thread-1] JohnKuper [GenericDAOImpl.java:88] Found:  Car: {id = 1; name = Audi; model = R5; modification = 400; color = Красный} 
+2014-10-09 15:24:02,177 DEBUG [pool-1-thread-1] JohnKuper [GenericDAOImpl.java:88] Found:  Car: {id = 2; name = BMW; model = X3; modification = 250; color = Белый} 
+2014-10-09 15:24:02,177 DEBUG [pool-1-thread-1] JohnKuper [GenericDAOImpl.java:88] Found:  Car: {id = 3; name = Toyota; model = Corolla; modification = 300; color = Черный} 
+2014-10-09 15:24:02,178 DEBUG [pool-1-thread-1] JohnKuper [GenericDAOImpl.java:88] Found:  Car: {id = 4; name = Lada; model = Granta; modification = 150; color = Синий} 
+2014-10-09 15:24:02,178 DEBUG [pool-1-thread-1] JohnKuper [GenericDAOImpl.java:88] Found:  Car: {id = 5; name = Lamborghini; model = Diablo SV; modification = 900; color = Металлик} 
+2014-10-09 15:24:02,189 DEBUG [pool-1-thread-1] JohnKuper [JPAWebServiceImpl.java:65] Service method 'findCarByName' was called
+2014-10-09 15:24:02,190 DEBUG [pool-1-thread-1] JohnKuper [CarDAOImpl.java:24] --- Start 'findByName' method for Car entity --- 
+2014-10-09 15:24:02,198 DEBUG [pool-1-thread-1] JohnKuper [JPAWebServiceImpl.java:116] Service method 'findCustomer' was called
+2014-10-09 15:24:02,199 DEBUG [pool-1-thread-1] JohnKuper [GenericDAOImpl.java:96] --- Start 'findOne' method for Customer entity with ID = 1 ---
+2014-10-09 15:24:02,233 DEBUG [pool-1-thread-1] JohnKuper [GenericDAOImpl.java:101] Found entity:  Customer: {id = 1; name = Игорь; surname = Ежов; patronymic = Владимирович; passport_series = 5705; passport_number = 032667; birthdate = 1970-04-16} 
+2014-10-09 15:24:02,252 DEBUG [pool-1-thread-1] JohnKuper [JPAWebServiceImpl.java:127] Service method 'findMerchant' was called
+2014-10-09 15:24:02,252 DEBUG [pool-1-thread-1] JohnKuper [GenericDAOImpl.java:96] --- Start 'findOne' method for Merchant entity with ID = 1 ---
+2014-10-09 15:24:02,258 DEBUG [pool-1-thread-1] JohnKuper [GenericDAOImpl.java:101] Found entity:  Merchant: {id = 1; name = Михаил; surname = Захаров; patronymic = Олегович} 
+2014-10-09 15:24:02,311 DEBUG [pool-1-thread-1] JohnKuper [GenericDAOImpl.java:55] --- Start 'create' method for Sale entity ---
+2014-10-09 15:24:02,311 DEBUG [pool-1-thread-1] JohnKuper [GenericDAOImpl.java:56] Domain for create: SaleDomain: {id = 0; salePrice = 1050000.8999999999068677425384521484375; dateOfSale = null
+null
+CustomerDomain: {id = 1; custName = Игорь; custSurname = Ежов; custPatronymic = Владимирович; passportSeries = 5705; passportNumber = 032667; dateOfBirth = Thu Apr 16 00:00:00 MSK 1970}
+MerchantDomain: {id = 1; merchName = Михаил; merchSurname = Захаров; merchPatronymic = Олегович}
+
+2014-10-09 15:24:46,325 DEBUG [main] JohnKuper [JPAWebServiceServer.java:16] Starting Server
+2014-10-09 15:24:46,425 DEBUG [main] JohnKuper [DomainServiceFieldRegistator.java:26] --- Start fields registration Domain ->> Service ---
+2014-10-09 15:24:46,477 DEBUG [main] JohnKuper [DomainServiceFieldRegistator.java:55] --- Fields registration Domain ->> Service complete ---
+2014-10-09 15:24:48,060 DEBUG [main] JohnKuper [EntityDomainFieldRegistator.java:26] --- Start fields registration Entity ->> Domain ---
+2014-10-09 15:24:48,078 DEBUG [main] JohnKuper [EntityDomainFieldRegistator.java:52] --- Fields registration Entity ->> Domain complete ---
+2014-10-09 15:24:49,308 DEBUG [main] JohnKuper [JPAWebServiceServer.java:20] The web service is published at http://localhost:9000/JPAWebService
+2014-10-09 15:24:49,310 DEBUG [main] JohnKuper [JPAWebServiceServer.java:27] Server is ready...
+2014-10-09 15:24:50,790 DEBUG [pool-1-thread-1] JohnKuper [JPAWebServiceImpl.java:54] Service method 'sayHi' was called
+2014-10-09 15:24:50,816 DEBUG [pool-1-thread-1] JohnKuper [JPAWebServiceImpl.java:65] Service method 'findCarByName' was called
+2014-10-09 15:24:50,817 DEBUG [pool-1-thread-1] JohnKuper [CarDAOImpl.java:24] --- Start 'findByName' method for Car entity --- 
+2014-10-09 15:24:50,884 DEBUG [pool-1-thread-1] JohnKuper [CarDAOImpl.java:34] Found car with name Lada:  Car: {id = 4; name = Lada; model = Granta; modification = 150; color = Синий} 
+2014-10-09 15:24:50,918 DEBUG [pool-1-thread-1] JohnKuper [JPAWebServiceImpl.java:88] Service method 'findCarsByMotorPower' was called
+2014-10-09 15:24:50,918 DEBUG [pool-1-thread-1] JohnKuper [GenericDAOImpl.java:79] --- Start 'findAll' method for Car entity ---
+2014-10-09 15:24:50,926 DEBUG [pool-1-thread-1] JohnKuper [GenericDAOImpl.java:88] Found:  Car: {id = 1; name = Audi; model = R5; modification = 400; color = Красный} 
+2014-10-09 15:24:50,926 DEBUG [pool-1-thread-1] JohnKuper [GenericDAOImpl.java:88] Found:  Car: {id = 2; name = BMW; model = X3; modification = 250; color = Белый} 
+2014-10-09 15:24:50,927 DEBUG [pool-1-thread-1] JohnKuper [GenericDAOImpl.java:88] Found:  Car: {id = 3; name = Toyota; model = Corolla; modification = 300; color = Черный} 
+2014-10-09 15:24:50,927 DEBUG [pool-1-thread-1] JohnKuper [GenericDAOImpl.java:88] Found:  Car: {id = 4; name = Lada; model = Granta; modification = 150; color = Синий} 
+2014-10-09 15:24:50,928 DEBUG [pool-1-thread-1] JohnKuper [GenericDAOImpl.java:88] Found:  Car: {id = 5; name = Lamborghini; model = Diablo SV; modification = 900; color = Металлик} 
+2014-10-09 15:24:50,966 DEBUG [pool-1-thread-1] JohnKuper [JPAWebServiceImpl.java:65] Service method 'findCarByName' was called
+2014-10-09 15:24:50,966 DEBUG [pool-1-thread-1] JohnKuper [CarDAOImpl.java:24] --- Start 'findByName' method for Car entity --- 
+2014-10-09 15:24:50,984 DEBUG [pool-1-thread-1] JohnKuper [JPAWebServiceImpl.java:116] Service method 'findCustomer' was called
+2014-10-09 15:24:50,984 DEBUG [pool-1-thread-1] JohnKuper [GenericDAOImpl.java:96] --- Start 'findOne' method for Customer entity with ID = 1 ---
+2014-10-09 15:24:51,005 DEBUG [pool-1-thread-1] JohnKuper [GenericDAOImpl.java:101] Found entity:  Customer: {id = 1; name = Игорь; surname = Ежов; patronymic = Владимирович; passport_series = 5705; passport_number = 032667; birthdate = 1970-04-16} 
+2014-10-09 15:24:51,022 DEBUG [pool-1-thread-1] JohnKuper [JPAWebServiceImpl.java:127] Service method 'findMerchant' was called
+2014-10-09 15:24:51,022 DEBUG [pool-1-thread-1] JohnKuper [GenericDAOImpl.java:96] --- Start 'findOne' method for Merchant entity with ID = 1 ---
+2014-10-09 15:24:51,028 DEBUG [pool-1-thread-1] JohnKuper [GenericDAOImpl.java:101] Found entity:  Merchant: {id = 1; name = Михаил; surname = Захаров; patronymic = Олегович} 
+2014-10-09 15:24:51,077 DEBUG [pool-1-thread-1] JohnKuper [GenericDAOImpl.java:55] --- Start 'create' method for Sale entity ---
+2014-10-09 15:24:51,079 DEBUG [pool-1-thread-1] JohnKuper [GenericDAOImpl.java:56] Domain for create: SaleDomain: {id = 0; salePrice = 1050000.8999999999068677425384521484375; dateOfSale = null
+null
+CustomerDomain: {id = 1; custName = Игорь; custSurname = Ежов; custPatronymic = Владимирович; passportSeries = 5705; passportNumber = 032667; dateOfBirth = Thu Apr 16 00:00:00 MSK 1970}
+MerchantDomain: {id = 1; merchName = Михаил; merchSurname = Захаров; merchPatronymic = Олегович}
+
+2014-10-09 15:28:34,355 DEBUG [main] JohnKuper [JPAWebServiceServer.java:16] Starting Server
+2014-10-09 15:28:34,454 DEBUG [main] JohnKuper [DomainServiceFieldRegistator.java:26] --- Start fields registration Domain ->> Service ---
+2014-10-09 15:28:34,512 DEBUG [main] JohnKuper [DomainServiceFieldRegistator.java:55] --- Fields registration Domain ->> Service complete ---
+2014-10-09 15:28:36,098 DEBUG [main] JohnKuper [EntityDomainFieldRegistator.java:26] --- Start fields registration Entity ->> Domain ---
+2014-10-09 15:28:36,116 DEBUG [main] JohnKuper [EntityDomainFieldRegistator.java:52] --- Fields registration Entity ->> Domain complete ---
+2014-10-09 15:28:37,289 DEBUG [main] JohnKuper [JPAWebServiceServer.java:20] The web service is published at http://localhost:9000/JPAWebService
+2014-10-09 15:28:37,291 DEBUG [main] JohnKuper [JPAWebServiceServer.java:27] Server is ready...
+2014-10-09 15:28:44,418 DEBUG [pool-1-thread-1] JohnKuper [JPAWebServiceImpl.java:54] Service method 'sayHi' was called
+2014-10-09 15:28:44,438 DEBUG [pool-1-thread-1] JohnKuper [JPAWebServiceImpl.java:65] Service method 'findCarByName' was called
+2014-10-09 15:28:44,439 DEBUG [pool-1-thread-1] JohnKuper [CarDAOImpl.java:24] --- Start 'findByName' method for Car entity --- 
+2014-10-09 15:28:44,503 DEBUG [pool-1-thread-1] JohnKuper [CarDAOImpl.java:34] Found car with name Lada:  Car: {id = 4; name = Lada; model = Granta; modification = 150; color = Синий} 
+2014-10-09 15:28:44,522 DEBUG [pool-1-thread-1] JohnKuper [JPAWebServiceImpl.java:88] Service method 'findCarsByMotorPower' was called
+2014-10-09 15:28:44,523 DEBUG [pool-1-thread-1] JohnKuper [GenericDAOImpl.java:79] --- Start 'findAll' method for Car entity ---
+2014-10-09 15:28:44,537 DEBUG [pool-1-thread-1] JohnKuper [GenericDAOImpl.java:88] Found:  Car: {id = 1; name = Audi; model = R5; modification = 400; color = Красный} 
+2014-10-09 15:28:44,538 DEBUG [pool-1-thread-1] JohnKuper [GenericDAOImpl.java:88] Found:  Car: {id = 2; name = BMW; model = X3; modification = 250; color = Белый} 
+2014-10-09 15:28:44,538 DEBUG [pool-1-thread-1] JohnKuper [GenericDAOImpl.java:88] Found:  Car: {id = 3; name = Toyota; model = Corolla; modification = 300; color = Черный} 
+2014-10-09 15:28:44,539 DEBUG [pool-1-thread-1] JohnKuper [GenericDAOImpl.java:88] Found:  Car: {id = 4; name = Lada; model = Granta; modification = 150; color = Синий} 
+2014-10-09 15:28:44,539 DEBUG [pool-1-thread-1] JohnKuper [GenericDAOImpl.java:88] Found:  Car: {id = 5; name = Lamborghini; model = Diablo SV; modification = 900; color = Металлик} 
+2014-10-09 15:28:44,594 DEBUG [pool-1-thread-1] JohnKuper [JPAWebServiceImpl.java:65] Service method 'findCarByName' was called
+2014-10-09 15:28:44,594 DEBUG [pool-1-thread-1] JohnKuper [CarDAOImpl.java:24] --- Start 'findByName' method for Car entity --- 
+2014-10-09 15:28:44,601 DEBUG [pool-1-thread-1] JohnKuper [JPAWebServiceImpl.java:116] Service method 'findCustomer' was called
+2014-10-09 15:28:44,602 DEBUG [pool-1-thread-1] JohnKuper [GenericDAOImpl.java:96] --- Start 'findOne' method for Customer entity with ID = 1 ---
+2014-10-09 15:28:44,623 DEBUG [pool-1-thread-1] JohnKuper [GenericDAOImpl.java:101] Found entity:  Customer: {id = 1; name = Игорь; surname = Ежов; patronymic = Владимирович; passport_series = 5705; passport_number = 032667; birthdate = 1970-04-16} 
+2014-10-09 15:28:44,649 DEBUG [pool-1-thread-1] JohnKuper [JPAWebServiceImpl.java:127] Service method 'findMerchant' was called
+2014-10-09 15:28:44,650 DEBUG [pool-1-thread-1] JohnKuper [GenericDAOImpl.java:96] --- Start 'findOne' method for Merchant entity with ID = 1 ---
+2014-10-09 15:28:44,658 DEBUG [pool-1-thread-1] JohnKuper [GenericDAOImpl.java:101] Found entity:  Merchant: {id = 1; name = Михаил; surname = Захаров; patronymic = Олегович} 
+2014-10-09 15:28:44,691 DEBUG [pool-1-thread-1] JohnKuper [GenericDAOImpl.java:55] --- Start 'create' method for Sale entity ---
+2014-10-09 15:28:44,692 DEBUG [pool-1-thread-1] JohnKuper [GenericDAOImpl.java:56] Domain for create: SaleDomain: {id = 0; salePrice = 1050000.8999999999068677425384521484375; dateOfSale = null
+null
+CustomerDomain: {id = 1; custName = Игорь; custSurname = Ежов; custPatronymic = Владимирович; passportSeries = 5705; passportNumber = 032667; dateOfBirth = Thu Apr 16 00:00:00 MSK 1970}
+MerchantDomain: {id = 1; merchName = Михаил; merchSurname = Захаров; merchPatronymic = Олегович}
+
+2014-10-09 15:36:38,831 DEBUG [main] JohnKuper [JPAWebServiceServer.java:16] Starting Server
+2014-10-09 15:36:38,932 DEBUG [main] JohnKuper [DomainServiceFieldRegistator.java:26] --- Start fields registration Domain ->> Service ---
+2014-10-09 15:36:38,988 DEBUG [main] JohnKuper [DomainServiceFieldRegistator.java:55] --- Fields registration Domain ->> Service complete ---
+2014-10-09 15:36:40,652 DEBUG [main] JohnKuper [EntityDomainFieldRegistator.java:26] --- Start fields registration Entity ->> Domain ---
+2014-10-09 15:36:40,667 DEBUG [main] JohnKuper [EntityDomainFieldRegistator.java:52] --- Fields registration Entity ->> Domain complete ---
+2014-10-09 15:36:41,788 DEBUG [main] JohnKuper [JPAWebServiceServer.java:20] The web service is published at http://localhost:9000/JPAWebService
+2014-10-09 15:36:41,790 DEBUG [main] JohnKuper [JPAWebServiceServer.java:27] Server is ready...
+2014-10-09 15:36:46,431 DEBUG [pool-1-thread-1] JohnKuper [JPAWebServiceImpl.java:54] Service method 'sayHi' was called
+2014-10-09 15:36:46,450 DEBUG [pool-1-thread-1] JohnKuper [JPAWebServiceImpl.java:65] Service method 'findCarByName' was called
+2014-10-09 15:36:46,450 DEBUG [pool-1-thread-1] JohnKuper [CarDAOImpl.java:24] --- Start 'findByName' method for Car entity --- 
+2014-10-09 15:36:46,620 DEBUG [pool-1-thread-1] JohnKuper [CarDAOImpl.java:34] Found car with name Lada:  Car: {id = 4; name = Lada; model = Granta; modification = 150; color = Синий} 
+2014-10-09 15:36:46,636 DEBUG [pool-1-thread-1] JohnKuper [JPAWebServiceImpl.java:88] Service method 'findCarsByMotorPower' was called
+2014-10-09 15:36:46,637 DEBUG [pool-1-thread-1] JohnKuper [GenericDAOImpl.java:79] --- Start 'findAll' method for Car entity ---
+2014-10-09 15:36:46,645 DEBUG [pool-1-thread-1] JohnKuper [GenericDAOImpl.java:88] Found:  Car: {id = 1; name = Audi; model = R5; modification = 400; color = Красный} 
+2014-10-09 15:36:46,646 DEBUG [pool-1-thread-1] JohnKuper [GenericDAOImpl.java:88] Found:  Car: {id = 2; name = BMW; model = X3; modification = 250; color = Белый} 
+2014-10-09 15:36:46,646 DEBUG [pool-1-thread-1] JohnKuper [GenericDAOImpl.java:88] Found:  Car: {id = 3; name = Toyota; model = Corolla; modification = 300; color = Черный} 
+2014-10-09 15:36:46,646 DEBUG [pool-1-thread-1] JohnKuper [GenericDAOImpl.java:88] Found:  Car: {id = 4; name = Lada; model = Granta; modification = 150; color = Синий} 
+2014-10-09 15:36:46,647 DEBUG [pool-1-thread-1] JohnKuper [GenericDAOImpl.java:88] Found:  Car: {id = 5; name = Lamborghini; model = Diablo SV; modification = 900; color = Металлик} 
+2014-10-09 15:36:46,671 DEBUG [pool-1-thread-1] JohnKuper [JPAWebServiceImpl.java:65] Service method 'findCarByName' was called
+2014-10-09 15:36:46,671 DEBUG [pool-1-thread-1] JohnKuper [CarDAOImpl.java:24] --- Start 'findByName' method for Car entity --- 
+2014-10-09 15:36:46,677 DEBUG [pool-1-thread-1] JohnKuper [JPAWebServiceImpl.java:116] Service method 'findCustomer' was called
+2014-10-09 15:36:46,678 DEBUG [pool-1-thread-1] JohnKuper [GenericDAOImpl.java:96] --- Start 'findOne' method for Customer entity with ID = 1 ---
+2014-10-09 15:36:46,698 DEBUG [pool-1-thread-1] JohnKuper [GenericDAOImpl.java:101] Found entity:  Customer: {id = 1; name = Игорь; surname = Ежов; patronymic = Владимирович; passport_series = 5705; passport_number = 032667; birthdate = 1970-04-16} 
+2014-10-09 15:36:46,699 DEBUG [pool-1-thread-1] JohnKuper [GenericDAOImpl.java:102] CustomerDomainDomain after mapping
+2014-10-09 15:36:46,715 DEBUG [pool-1-thread-1] JohnKuper [JPAWebServiceImpl.java:127] Service method 'findMerchant' was called
+2014-10-09 15:36:46,715 DEBUG [pool-1-thread-1] JohnKuper [GenericDAOImpl.java:96] --- Start 'findOne' method for Merchant entity with ID = 1 ---
+2014-10-09 15:36:46,721 DEBUG [pool-1-thread-1] JohnKuper [GenericDAOImpl.java:101] Found entity:  Merchant: {id = 1; name = Михаил; surname = Захаров; patronymic = Олегович} 
+2014-10-09 15:36:46,722 DEBUG [pool-1-thread-1] JohnKuper [GenericDAOImpl.java:102] MerchantDomainDomain after mapping
+2014-10-09 15:36:46,741 DEBUG [pool-1-thread-1] JohnKuper [JPAWebServiceImpl.java:140] Service method 'buyCar' was called
+2014-10-09 15:36:46,760 DEBUG [pool-1-thread-1] JohnKuper [GenericDAOImpl.java:55] --- Start 'create' method for Sale entity ---
+2014-10-09 15:36:46,760 DEBUG [pool-1-thread-1] JohnKuper [GenericDAOImpl.java:56] Domain for create: SaleDomain: {id = 0; salePrice = 1050000.8999999999068677425384521484375; dateOfSale = null
+null
+CustomerDomain: {id = 1; custName = Игорь; custSurname = Ежов; custPatronymic = Владимирович; passportSeries = 5705; passportNumber = 032667; dateOfBirth = Thu Apr 16 00:00:00 MSK 1970}
+MerchantDomain: {id = 1; merchName = Михаил; merchSurname = Захаров; merchPatronymic = Олегович}
+
+2014-10-09 15:37:55,608 DEBUG [main] JohnKuper [JPAWebServiceServer.java:16] Starting Server
+2014-10-09 15:37:55,713 DEBUG [main] JohnKuper [DomainServiceFieldRegistator.java:26] --- Start fields registration Domain ->> Service ---
+2014-10-09 15:37:55,765 DEBUG [main] JohnKuper [DomainServiceFieldRegistator.java:55] --- Fields registration Domain ->> Service complete ---
+2014-10-09 15:37:57,296 DEBUG [main] JohnKuper [EntityDomainFieldRegistator.java:26] --- Start fields registration Entity ->> Domain ---
+2014-10-09 15:37:57,314 DEBUG [main] JohnKuper [EntityDomainFieldRegistator.java:52] --- Fields registration Entity ->> Domain complete ---
+2014-10-09 15:37:58,714 DEBUG [main] JohnKuper [JPAWebServiceServer.java:20] The web service is published at http://localhost:9000/JPAWebService
+2014-10-09 15:37:58,716 DEBUG [main] JohnKuper [JPAWebServiceServer.java:27] Server is ready...
+2014-10-09 15:38:01,000 DEBUG [pool-1-thread-1] JohnKuper [JPAWebServiceImpl.java:54] Service method 'sayHi' was called
+2014-10-09 15:38:01,020 DEBUG [pool-1-thread-1] JohnKuper [JPAWebServiceImpl.java:65] Service method 'findCarByName' was called
+2014-10-09 15:38:01,020 DEBUG [pool-1-thread-1] JohnKuper [CarDAOImpl.java:24] --- Start 'findByName' method for Car entity --- 
+2014-10-09 15:38:01,224 DEBUG [pool-1-thread-1] JohnKuper [CarDAOImpl.java:34] Found car with name Lada:  Car: {id = 4; name = Lada; model = Granta; modification = 150; color = Синий} 
+2014-10-09 15:38:01,253 DEBUG [pool-1-thread-1] JohnKuper [JPAWebServiceImpl.java:88] Service method 'findCarsByMotorPower' was called
+2014-10-09 15:38:01,254 DEBUG [pool-1-thread-1] JohnKuper [GenericDAOImpl.java:79] --- Start 'findAll' method for Car entity ---
+2014-10-09 15:38:01,263 DEBUG [pool-1-thread-1] JohnKuper [GenericDAOImpl.java:88] Found:  Car: {id = 1; name = Audi; model = R5; modification = 400; color = Красный} 
+2014-10-09 15:38:01,263 DEBUG [pool-1-thread-1] JohnKuper [GenericDAOImpl.java:88] Found:  Car: {id = 2; name = BMW; model = X3; modification = 250; color = Белый} 
+2014-10-09 15:38:01,264 DEBUG [pool-1-thread-1] JohnKuper [GenericDAOImpl.java:88] Found:  Car: {id = 3; name = Toyota; model = Corolla; modification = 300; color = Черный} 
+2014-10-09 15:38:01,264 DEBUG [pool-1-thread-1] JohnKuper [GenericDAOImpl.java:88] Found:  Car: {id = 4; name = Lada; model = Granta; modification = 150; color = Синий} 
+2014-10-09 15:38:01,265 DEBUG [pool-1-thread-1] JohnKuper [GenericDAOImpl.java:88] Found:  Car: {id = 5; name = Lamborghini; model = Diablo SV; modification = 900; color = Металлик} 
+2014-10-09 15:38:01,285 DEBUG [pool-1-thread-1] JohnKuper [JPAWebServiceImpl.java:65] Service method 'findCarByName' was called
+2014-10-09 15:38:01,285 DEBUG [pool-1-thread-1] JohnKuper [CarDAOImpl.java:24] --- Start 'findByName' method for Car entity --- 
+2014-10-09 15:38:01,292 DEBUG [pool-1-thread-1] JohnKuper [JPAWebServiceImpl.java:116] Service method 'findCustomer' was called
+2014-10-09 15:38:01,292 DEBUG [pool-1-thread-1] JohnKuper [GenericDAOImpl.java:96] --- Start 'findOne' method for Customer entity with ID = 1 ---
+2014-10-09 15:38:01,309 DEBUG [pool-1-thread-1] JohnKuper [GenericDAOImpl.java:101] Found entity:  Customer: {id = 1; name = Игорь; surname = Ежов; patronymic = Владимирович; passport_series = 5705; passport_number = 032667; birthdate = 1970-04-16} 
+2014-10-09 15:38:01,310 DEBUG [pool-1-thread-1] JohnKuper [GenericDAOImpl.java:102] CustomerDomain after mapping CustomerDomain: {id = 1; custName = Игорь; custSurname = Ежов; custPatronymic = Владимирович; passportSeries = 5705; passportNumber = 032667; dateOfBirth = 1970-04-16}
+2014-10-09 15:38:01,327 DEBUG [pool-1-thread-1] JohnKuper [JPAWebServiceImpl.java:127] Service method 'findMerchant' was called
+2014-10-09 15:38:01,328 DEBUG [pool-1-thread-1] JohnKuper [GenericDAOImpl.java:96] --- Start 'findOne' method for Merchant entity with ID = 1 ---
+2014-10-09 15:38:01,334 DEBUG [pool-1-thread-1] JohnKuper [GenericDAOImpl.java:101] Found entity:  Merchant: {id = 1; name = Михаил; surname = Захаров; patronymic = Олегович} 
+2014-10-09 15:38:01,334 DEBUG [pool-1-thread-1] JohnKuper [GenericDAOImpl.java:102] MerchantDomain after mapping MerchantDomain: {id = 1; merchName = Михаил; merchSurname = Захаров; merchPatronymic = Олегович}
+2014-10-09 15:38:01,353 DEBUG [pool-1-thread-1] JohnKuper [JPAWebServiceImpl.java:140] Service method 'buyCar' was called
+2014-10-09 15:38:01,368 DEBUG [pool-1-thread-1] JohnKuper [GenericDAOImpl.java:55] --- Start 'create' method for Sale entity ---
+2014-10-09 15:38:01,370 DEBUG [pool-1-thread-1] JohnKuper [GenericDAOImpl.java:56] Domain for create: SaleDomain: {id = 0; salePrice = 1050000.8999999999068677425384521484375; dateOfSale = null
+null
+CustomerDomain: {id = 1; custName = Игорь; custSurname = Ежов; custPatronymic = Владимирович; passportSeries = 5705; passportNumber = 032667; dateOfBirth = Thu Apr 16 00:00:00 MSK 1970}
+MerchantDomain: {id = 1; merchName = Михаил; merchSurname = Захаров; merchPatronymic = Олегович}
+
+2014-10-09 16:49:44,309 DEBUG [main] JohnKuper [JPAWebServiceServer.java:16] Starting Server
+2014-10-09 16:49:44,403 DEBUG [main] JohnKuper [DomainServiceFieldRegistator.java:26] --- Start fields registration Domain ->> Service ---
+2014-10-09 16:49:44,459 DEBUG [main] JohnKuper [DomainServiceFieldRegistator.java:55] --- Fields registration Domain ->> Service complete ---
+2014-10-09 16:49:46,051 DEBUG [main] JohnKuper [EntityDomainFieldRegistator.java:26] --- Start fields registration Entity ->> Domain ---
+2014-10-09 16:49:46,076 DEBUG [main] JohnKuper [EntityDomainFieldRegistator.java:52] --- Fields registration Entity ->> Domain complete ---
+2014-10-09 16:49:47,298 DEBUG [main] JohnKuper [JPAWebServiceServer.java:20] The web service is published at http://localhost:9000/JPAWebService
+2014-10-09 16:49:47,300 DEBUG [main] JohnKuper [JPAWebServiceServer.java:27] Server is ready...
+2014-10-09 16:53:29,402 DEBUG [main] JohnKuper [JPAWebServiceServer.java:16] Starting Server
+2014-10-09 16:53:29,500 DEBUG [main] JohnKuper [DomainServiceFieldRegistator.java:26] --- Start fields registration Domain ->> Service ---
+2014-10-09 16:53:29,564 DEBUG [main] JohnKuper [DomainServiceFieldRegistator.java:55] --- Fields registration Domain ->> Service complete ---
+2014-10-09 16:53:31,163 DEBUG [main] JohnKuper [EntityDomainFieldRegistator.java:26] --- Start fields registration Entity ->> Domain ---
+2014-10-09 16:53:31,181 DEBUG [main] JohnKuper [EntityDomainFieldRegistator.java:52] --- Fields registration Entity ->> Domain complete ---
+2014-10-09 16:53:32,215 DEBUG [main] JohnKuper [JPAWebServiceServer.java:20] The web service is published at http://localhost:9000/JPAWebService
+2014-10-09 16:53:32,217 DEBUG [main] JohnKuper [JPAWebServiceServer.java:27] Server is ready...
+2014-10-09 16:54:29,142 DEBUG [pool-1-thread-1] JohnKuper [JPAWebServiceImpl.java:55] Service method 'sayHi' was called
+2014-10-09 16:54:29,160 DEBUG [pool-1-thread-1] JohnKuper [JPAWebServiceImpl.java:66] Service method 'findCarByName' was called
+2014-10-09 16:54:29,161 DEBUG [pool-1-thread-1] JohnKuper [CarDAOImpl.java:24] --- Start 'findByName' method for Car entity --- 
+2014-10-09 16:54:29,240 DEBUG [pool-1-thread-1] JohnKuper [CarDAOImpl.java:34] Found car with name Lada:  Car: {id = 4; name = Lada; model = Granta; modification = 150; color = Синий} 
+2014-10-09 16:54:29,305 DEBUG [pool-1-thread-1] JohnKuper [JPAWebServiceImpl.java:89] Service method 'findCarsByMotorPower' was called
+2014-10-09 16:54:29,305 DEBUG [pool-1-thread-1] JohnKuper [GenericDAOImpl.java:79] --- Start 'findAll' method for Car entity ---
+2014-10-09 16:54:29,323 DEBUG [pool-1-thread-1] JohnKuper [GenericDAOImpl.java:88] Found:  Car: {id = 1; name = Audi; model = R5; modification = 400; color = Красный} 
+2014-10-09 16:54:29,324 DEBUG [pool-1-thread-1] JohnKuper [GenericDAOImpl.java:88] Found:  Car: {id = 2; name = BMW; model = X3; modification = 250; color = Белый} 
+2014-10-09 16:54:29,325 DEBUG [pool-1-thread-1] JohnKuper [GenericDAOImpl.java:88] Found:  Car: {id = 3; name = Toyota; model = Corolla; modification = 300; color = Черный} 
+2014-10-09 16:54:29,325 DEBUG [pool-1-thread-1] JohnKuper [GenericDAOImpl.java:88] Found:  Car: {id = 4; name = Lada; model = Granta; modification = 150; color = Синий} 
+2014-10-09 16:54:29,325 DEBUG [pool-1-thread-1] JohnKuper [GenericDAOImpl.java:88] Found:  Car: {id = 5; name = Lamborghini; model = Diablo SV; modification = 900; color = Металлик} 
+2014-10-09 16:54:29,612 DEBUG [pool-1-thread-1] JohnKuper [JPAWebServiceImpl.java:66] Service method 'findCarByName' was called
+2014-10-09 16:54:29,613 DEBUG [pool-1-thread-1] JohnKuper [CarDAOImpl.java:24] --- Start 'findByName' method for Car entity --- 
+2014-10-09 16:54:29,621 DEBUG [pool-1-thread-2] JohnKuper [JPAWebServiceImpl.java:117] Service method 'findCustomer' was called
+2014-10-09 16:54:29,621 DEBUG [pool-1-thread-2] JohnKuper [GenericDAOImpl.java:96] --- Start 'findOne' method for Customer entity with ID = 1 ---
+2014-10-09 16:54:29,643 DEBUG [pool-1-thread-2] JohnKuper [GenericDAOImpl.java:101] Found entity:  Customer: {id = 1; name = Игорь; surname = Ежов; patronymic = Владимирович; passport_series = 5705; passport_number = 032667; birthdate = 1970-04-16} 
+2014-10-09 16:54:29,643 DEBUG [pool-1-thread-2] JohnKuper [GenericDAOImpl.java:102] After mapping CustomerDomain
+2014-10-09 16:54:29,662 DEBUG [pool-1-thread-2] JohnKuper [JPAWebServiceImpl.java:128] Service method 'findMerchant' was called
+2014-10-09 16:54:29,663 DEBUG [pool-1-thread-2] JohnKuper [GenericDAOImpl.java:96] --- Start 'findOne' method for Merchant entity with ID = 1 ---
+2014-10-09 16:54:29,668 DEBUG [pool-1-thread-2] JohnKuper [GenericDAOImpl.java:101] Found entity:  Merchant: {id = 1; name = Михаил; surname = Захаров; patronymic = Олегович} 
+2014-10-09 16:54:29,669 DEBUG [pool-1-thread-2] JohnKuper [GenericDAOImpl.java:102] After mapping MerchantDomain
+2014-10-09 16:54:29,686 DEBUG [pool-1-thread-2] JohnKuper [JPAWebServiceImpl.java:141] Service method 'buyCar' was called
+2014-10-09 16:54:29,699 DEBUG [pool-1-thread-2] JohnKuper [GenericDAOImpl.java:55] --- Start 'create' method for Sale entity ---
+2014-10-09 16:54:29,699 DEBUG [pool-1-thread-2] JohnKuper [GenericDAOImpl.java:56] Domain for create: SaleDomain: {id = 0; salePrice = 1050000.8999999999068677425384521484375; dateOfSale = 2014-10-09
+null
+CustomerDomain: {id = 1; custName = Игорь; custSurname = Ежов; custPatronymic = Владимирович; passportSeries = 5705; passportNumber = 032667; dateOfBirth = Thu Apr 16 00:00:00 MSK 1970}
+MerchantDomain: {id = 1; merchName = Михаил; merchSurname = Захаров; merchPatronymic = Олегович}
+
+2014-10-09 16:54:29,788 DEBUG [pool-1-thread-2] JohnKuper [GenericDAOImpl.java:61] New entity: 
+ Sale: id = 6; price = 1050000.8999999999068677425384521484375; sale_date = Thu Oct 09 16:54:29 MSK 2014
+null
+ Customer: {id = 1; name = Игорь; surname = Ежов; patronymic = Владимирович; passport_series = 5705; passport_number = 032667; birthdate = Thu Apr 16 00:00:00 MSK 1970} 
+ Merchant: {id = 1; name = Михаил; surname = Захаров; patronymic = Олегович} 
+ 
+2014-10-09 16:56:32,478 DEBUG [main] JohnKuper [JPAWebServiceServer.java:16] Starting Server
+2014-10-09 16:56:32,595 DEBUG [main] JohnKuper [DomainServiceFieldRegistator.java:26] --- Start fields registration Domain ->> Service ---
+2014-10-09 16:56:32,664 DEBUG [main] JohnKuper [DomainServiceFieldRegistator.java:55] --- Fields registration Domain ->> Service complete ---
+2014-10-09 16:56:34,257 DEBUG [main] JohnKuper [EntityDomainFieldRegistator.java:26] --- Start fields registration Entity ->> Domain ---
+2014-10-09 16:56:34,272 DEBUG [main] JohnKuper [EntityDomainFieldRegistator.java:52] --- Fields registration Entity ->> Domain complete ---
+2014-10-09 16:56:35,360 DEBUG [main] JohnKuper [JPAWebServiceServer.java:20] The web service is published at http://localhost:9000/JPAWebService
+2014-10-09 16:56:35,361 DEBUG [main] JohnKuper [JPAWebServiceServer.java:27] Server is ready...
+2014-10-09 16:56:40,008 DEBUG [pool-1-thread-1] JohnKuper [JPAWebServiceImpl.java:55] Service method 'sayHi' was called
+2014-10-09 16:56:40,028 DEBUG [pool-1-thread-1] JohnKuper [JPAWebServiceImpl.java:66] Service method 'findCarByName' was called
+2014-10-09 16:56:40,029 DEBUG [pool-1-thread-1] JohnKuper [CarDAOImpl.java:24] --- Start 'findByName' method for Car entity --- 
+2014-10-09 16:56:40,227 DEBUG [pool-1-thread-1] JohnKuper [CarDAOImpl.java:34] Found car with name Lada:  Car: {id = 4; name = Lada; model = Granta; modification = 150; color = Синий} 
+2014-10-09 16:56:40,245 DEBUG [pool-1-thread-1] JohnKuper [JPAWebServiceImpl.java:89] Service method 'findCarsByMotorPower' was called
+2014-10-09 16:56:40,245 DEBUG [pool-1-thread-1] JohnKuper [GenericDAOImpl.java:79] --- Start 'findAll' method for Car entity ---
+2014-10-09 16:56:40,256 DEBUG [pool-1-thread-1] JohnKuper [GenericDAOImpl.java:88] Found:  Car: {id = 1; name = Audi; model = R5; modification = 400; color = Красный} 
+2014-10-09 16:56:40,257 DEBUG [pool-1-thread-1] JohnKuper [GenericDAOImpl.java:88] Found:  Car: {id = 2; name = BMW; model = X3; modification = 250; color = Белый} 
+2014-10-09 16:56:40,257 DEBUG [pool-1-thread-1] JohnKuper [GenericDAOImpl.java:88] Found:  Car: {id = 3; name = Toyota; model = Corolla; modification = 300; color = Черный} 
+2014-10-09 16:56:40,258 DEBUG [pool-1-thread-1] JohnKuper [GenericDAOImpl.java:88] Found:  Car: {id = 4; name = Lada; model = Granta; modification = 150; color = Синий} 
+2014-10-09 16:56:40,258 DEBUG [pool-1-thread-1] JohnKuper [GenericDAOImpl.java:88] Found:  Car: {id = 5; name = Lamborghini; model = Diablo SV; modification = 900; color = Металлик} 
+2014-10-09 16:56:40,298 DEBUG [pool-1-thread-1] JohnKuper [JPAWebServiceImpl.java:66] Service method 'findCarByName' was called
+2014-10-09 16:56:40,300 DEBUG [pool-1-thread-1] JohnKuper [CarDAOImpl.java:24] --- Start 'findByName' method for Car entity --- 
+2014-10-09 16:56:40,302 DEBUG [pool-1-thread-1] JohnKuper [CarDAOImpl.java:34] Found car with name Toyota:  Car: {id = 3; name = Toyota; model = Corolla; modification = 300; color = Черный} 
+2014-10-09 16:56:40,308 DEBUG [pool-1-thread-1] JohnKuper [JPAWebServiceImpl.java:117] Service method 'findCustomer' was called
+2014-10-09 16:56:40,308 DEBUG [pool-1-thread-1] JohnKuper [GenericDAOImpl.java:96] --- Start 'findOne' method for Customer entity with ID = 1 ---
+2014-10-09 16:56:40,325 DEBUG [pool-1-thread-1] JohnKuper [GenericDAOImpl.java:101] Found entity:  Customer: {id = 1; name = Игорь; surname = Ежов; patronymic = Владимирович; passport_series = 5705; passport_number = 032667; birthdate = 1970-04-16} 
+2014-10-09 16:56:40,326 DEBUG [pool-1-thread-1] JohnKuper [GenericDAOImpl.java:102] After mapping CustomerDomain
+2014-10-09 16:56:40,345 DEBUG [pool-1-thread-1] JohnKuper [JPAWebServiceImpl.java:128] Service method 'findMerchant' was called
+2014-10-09 16:56:40,345 DEBUG [pool-1-thread-1] JohnKuper [GenericDAOImpl.java:96] --- Start 'findOne' method for Merchant entity with ID = 1 ---
+2014-10-09 16:56:40,351 DEBUG [pool-1-thread-1] JohnKuper [GenericDAOImpl.java:101] Found entity:  Merchant: {id = 1; name = Михаил; surname = Захаров; patronymic = Олегович} 
+2014-10-09 16:56:40,352 DEBUG [pool-1-thread-1] JohnKuper [GenericDAOImpl.java:102] After mapping MerchantDomain
+2014-10-09 16:56:40,371 DEBUG [pool-1-thread-1] JohnKuper [JPAWebServiceImpl.java:141] Service method 'buyCar' was called
+2014-10-09 16:56:40,397 DEBUG [pool-1-thread-1] JohnKuper [GenericDAOImpl.java:55] --- Start 'create' method for Sale entity ---
+2014-10-09 16:56:40,397 DEBUG [pool-1-thread-1] JohnKuper [GenericDAOImpl.java:56] Domain for create: SaleDomain: {id = 0; salePrice = 1050000.8999999999068677425384521484375; dateOfSale = 2014-10-09
+CarDomain: {id = 3; car_mark = Toyota; car_model = Corolla; motorpower = 300; car_color = Черный}
+CustomerDomain: {id = 1; custName = Игорь; custSurname = Ежов; custPatronymic = Владимирович; passportSeries = 5705; passportNumber = 032667; dateOfBirth = Thu Apr 16 00:00:00 MSK 1970}
+MerchantDomain: {id = 1; merchName = Михаил; merchSurname = Захаров; merchPatronymic = Олегович}
+
+2014-10-09 16:56:40,468 DEBUG [pool-1-thread-1] JohnKuper [GenericDAOImpl.java:61] New entity: 
+ Sale: id = 7; price = 1050000.8999999999068677425384521484375; sale_date = Thu Oct 09 16:56:40 MSK 2014
+ Car: {id = 3; name = Toyota; model = Corolla; modification = 300; color = Черный} 
+ Customer: {id = 1; name = Игорь; surname = Ежов; patronymic = Владимирович; passport_series = 5705; passport_number = 032667; birthdate = Thu Apr 16 00:00:00 MSK 1970} 
+ Merchant: {id = 1; name = Михаил; surname = Захаров; patronymic = Олегович} 
+ 
+2014-10-09 16:58:54,325 DEBUG [main] JohnKuper [JPAWebServiceServer.java:16] Starting Server
+2014-10-09 16:58:54,429 DEBUG [main] JohnKuper [DomainServiceFieldRegistator.java:26] --- Start fields registration Domain ->> Service ---
+2014-10-09 16:58:54,489 DEBUG [main] JohnKuper [DomainServiceFieldRegistator.java:55] --- Fields registration Domain ->> Service complete ---
+2014-10-09 16:58:55,993 DEBUG [main] JohnKuper [EntityDomainFieldRegistator.java:26] --- Start fields registration Entity ->> Domain ---
+2014-10-09 16:58:56,008 DEBUG [main] JohnKuper [EntityDomainFieldRegistator.java:52] --- Fields registration Entity ->> Domain complete ---
+2014-10-09 16:58:57,335 DEBUG [main] JohnKuper [JPAWebServiceServer.java:20] The web service is published at http://localhost:9000/JPAWebService
+2014-10-09 16:58:57,337 DEBUG [main] JohnKuper [JPAWebServiceServer.java:27] Server is ready...
+2014-10-09 16:58:59,658 DEBUG [pool-1-thread-1] JohnKuper [JPAWebServiceImpl.java:55] Service method 'sayHi' was called
+2014-10-09 16:58:59,690 DEBUG [pool-1-thread-1] JohnKuper [JPAWebServiceImpl.java:66] Service method 'findCarByName' was called
+2014-10-09 16:58:59,691 DEBUG [pool-1-thread-1] JohnKuper [CarDAOImpl.java:24] --- Start 'findByName' method for Car entity --- 
+2014-10-09 16:58:59,886 DEBUG [pool-1-thread-1] JohnKuper [CarDAOImpl.java:34] Found car with name Lada:  Car: {id = 4; name = Lada; model = Granta; modification = 150; color = Синий} 
+2014-10-09 16:58:59,902 DEBUG [pool-1-thread-1] JohnKuper [JPAWebServiceImpl.java:89] Service method 'findCarsByMotorPower' was called
+2014-10-09 16:58:59,902 DEBUG [pool-1-thread-1] JohnKuper [GenericDAOImpl.java:79] --- Start 'findAll' method for Car entity ---
+2014-10-09 16:58:59,909 DEBUG [pool-1-thread-1] JohnKuper [GenericDAOImpl.java:88] Found:  Car: {id = 1; name = Audi; model = R5; modification = 400; color = Красный} 
+2014-10-09 16:58:59,911 DEBUG [pool-1-thread-1] JohnKuper [GenericDAOImpl.java:88] Found:  Car: {id = 2; name = BMW; model = X3; modification = 250; color = Белый} 
+2014-10-09 16:58:59,911 DEBUG [pool-1-thread-1] JohnKuper [GenericDAOImpl.java:88] Found:  Car: {id = 3; name = Toyota; model = Corolla; modification = 300; color = Черный} 
+2014-10-09 16:58:59,913 DEBUG [pool-1-thread-1] JohnKuper [GenericDAOImpl.java:88] Found:  Car: {id = 4; name = Lada; model = Granta; modification = 150; color = Синий} 
+2014-10-09 16:58:59,914 DEBUG [pool-1-thread-1] JohnKuper [GenericDAOImpl.java:88] Found:  Car: {id = 5; name = Lamborghini; model = Diablo SV; modification = 900; color = Металлик} 
+2014-10-09 16:58:59,934 DEBUG [pool-1-thread-1] JohnKuper [JPAWebServiceImpl.java:66] Service method 'findCarByName' was called
+2014-10-09 16:58:59,934 DEBUG [pool-1-thread-1] JohnKuper [CarDAOImpl.java:24] --- Start 'findByName' method for Car entity --- 
+2014-10-09 16:58:59,936 DEBUG [pool-1-thread-1] JohnKuper [CarDAOImpl.java:34] Found car with name Toyota:  Car: {id = 3; name = Toyota; model = Corolla; modification = 300; color = Черный} 
+2014-10-09 16:58:59,942 DEBUG [pool-1-thread-1] JohnKuper [JPAWebServiceImpl.java:117] Service method 'findCustomer' was called
+2014-10-09 16:58:59,942 DEBUG [pool-1-thread-1] JohnKuper [GenericDAOImpl.java:96] --- Start 'findOne' method for Customer entity with ID = 1 ---
+2014-10-09 16:58:59,961 DEBUG [pool-1-thread-1] JohnKuper [GenericDAOImpl.java:101] Found entity:  Customer: {id = 1; name = Игорь; surname = Ежов; patronymic = Владимирович; passport_series = 5705; passport_number = 032667; birthdate = 1970-04-16} 
+2014-10-09 16:58:59,962 DEBUG [pool-1-thread-1] JohnKuper [GenericDAOImpl.java:102] After mapping CustomerDomain: {id = 1; custName = Игорь; custSurname = Ежов; custPatronymic = Владимирович; passportSeries = 5705; passportNumber = 032667; dateOfBirth = 1970-04-16}
+2014-10-09 16:58:59,978 DEBUG [pool-1-thread-1] JohnKuper [JPAWebServiceImpl.java:128] Service method 'findMerchant' was called
+2014-10-09 16:58:59,979 DEBUG [pool-1-thread-1] JohnKuper [GenericDAOImpl.java:96] --- Start 'findOne' method for Merchant entity with ID = 1 ---
+2014-10-09 16:58:59,988 DEBUG [pool-1-thread-1] JohnKuper [GenericDAOImpl.java:101] Found entity:  Merchant: {id = 1; name = Михаил; surname = Захаров; patronymic = Олегович} 
+2014-10-09 16:58:59,988 DEBUG [pool-1-thread-1] JohnKuper [GenericDAOImpl.java:102] After mapping MerchantDomain: {id = 1; merchName = Михаил; merchSurname = Захаров; merchPatronymic = Олегович}
+2014-10-09 16:59:00,006 DEBUG [pool-1-thread-1] JohnKuper [JPAWebServiceImpl.java:141] Service method 'buyCar' was called
+2014-10-09 16:59:00,034 DEBUG [pool-1-thread-1] JohnKuper [GenericDAOImpl.java:55] --- Start 'create' method for Sale entity ---
+2014-10-09 16:59:00,034 DEBUG [pool-1-thread-1] JohnKuper [GenericDAOImpl.java:56] Domain for create: SaleDomain: {id = 0; salePrice = 1050000.8999999999068677425384521484375; dateOfSale = 2014-10-09
+CarDomain: {id = 3; car_mark = Toyota; car_model = Corolla; motorpower = 300; car_color = Черный}
+CustomerDomain: {id = 1; custName = Игорь; custSurname = Ежов; custPatronymic = Владимирович; passportSeries = 5705; passportNumber = 032667; dateOfBirth = Thu Apr 16 00:00:00 MSK 1970}
+MerchantDomain: {id = 1; merchName = Михаил; merchSurname = Захаров; merchPatronymic = Олегович}
+
+2014-10-09 16:59:00,092 DEBUG [pool-1-thread-1] JohnKuper [GenericDAOImpl.java:61] New entity: 
+ Sale: id = 6; price = 1050000.8999999999068677425384521484375; sale_date = Thu Oct 09 16:59:00 MSK 2014
+ Car: {id = 3; name = Toyota; model = Corolla; modification = 300; color = Черный} 
+ Customer: {id = 1; name = Игорь; surname = Ежов; patronymic = Владимирович; passport_series = 5705; passport_number = 032667; birthdate = Thu Apr 16 00:00:00 MSK 1970} 
+ Merchant: {id = 1; name = Михаил; surname = Захаров; patronymic = Олегович} 
+ 
+2014-10-09 17:04:03,610 DEBUG [main] JohnKuper [JPAWebServiceServer.java:16] Starting Server
+2014-10-09 17:04:03,711 DEBUG [main] JohnKuper [DomainServiceFieldRegistator.java:26] --- Start fields registration Domain ->> Service ---
+2014-10-09 17:04:03,763 DEBUG [main] JohnKuper [DomainServiceFieldRegistator.java:55] --- Fields registration Domain ->> Service complete ---
+2014-10-09 17:04:05,322 DEBUG [main] JohnKuper [EntityDomainFieldRegistator.java:26] --- Start fields registration Entity ->> Domain ---
+2014-10-09 17:04:05,337 DEBUG [main] JohnKuper [EntityDomainFieldRegistator.java:52] --- Fields registration Entity ->> Domain complete ---
+2014-10-09 17:04:06,463 DEBUG [main] JohnKuper [JPAWebServiceServer.java:20] The web service is published at http://localhost:9000/JPAWebService
+2014-10-09 17:04:06,466 DEBUG [main] JohnKuper [JPAWebServiceServer.java:27] Server is ready...
+2014-10-09 17:04:09,374 DEBUG [pool-1-thread-1] JohnKuper [JPAWebServiceImpl.java:55] Service method 'sayHi' was called
+2014-10-09 17:04:09,393 DEBUG [pool-1-thread-1] JohnKuper [JPAWebServiceImpl.java:66] Service method 'findCarByName' was called
+2014-10-09 17:04:09,394 DEBUG [pool-1-thread-1] JohnKuper [CarDAOImpl.java:24] --- Start 'findByName' method for Car entity --- 
+2014-10-09 17:04:09,585 DEBUG [pool-1-thread-1] JohnKuper [CarDAOImpl.java:34] Found car with name Lada:  Car: {id = 4; name = Lada; model = Granta; modification = 150; color = Синий} 
+2014-10-09 17:04:09,606 DEBUG [pool-1-thread-1] JohnKuper [JPAWebServiceImpl.java:89] Service method 'findCarsByMotorPower' was called
+2014-10-09 17:04:09,607 DEBUG [pool-1-thread-1] JohnKuper [GenericDAOImpl.java:79] --- Start 'findAll' method for Car entity ---
+2014-10-09 17:04:09,614 DEBUG [pool-1-thread-1] JohnKuper [GenericDAOImpl.java:88] Found:  Car: {id = 1; name = Audi; model = R5; modification = 400; color = Красный} 
+2014-10-09 17:04:09,615 DEBUG [pool-1-thread-1] JohnKuper [GenericDAOImpl.java:88] Found:  Car: {id = 2; name = BMW; model = X3; modification = 250; color = Белый} 
+2014-10-09 17:04:09,615 DEBUG [pool-1-thread-1] JohnKuper [GenericDAOImpl.java:88] Found:  Car: {id = 3; name = Toyota; model = Corolla; modification = 300; color = Черный} 
+2014-10-09 17:04:09,615 DEBUG [pool-1-thread-1] JohnKuper [GenericDAOImpl.java:88] Found:  Car: {id = 4; name = Lada; model = Granta; modification = 150; color = Синий} 
+2014-10-09 17:04:09,616 DEBUG [pool-1-thread-1] JohnKuper [GenericDAOImpl.java:88] Found:  Car: {id = 5; name = Lamborghini; model = Diablo SV; modification = 900; color = Металлик} 
+2014-10-09 17:04:09,640 DEBUG [pool-1-thread-1] JohnKuper [JPAWebServiceImpl.java:66] Service method 'findCarByName' was called
+2014-10-09 17:04:09,640 DEBUG [pool-1-thread-1] JohnKuper [CarDAOImpl.java:24] --- Start 'findByName' method for Car entity --- 
+2014-10-09 17:04:09,642 DEBUG [pool-1-thread-1] JohnKuper [CarDAOImpl.java:34] Found car with name Toyota:  Car: {id = 3; name = Toyota; model = Corolla; modification = 300; color = Черный} 
+2014-10-09 17:04:09,647 DEBUG [pool-1-thread-1] JohnKuper [JPAWebServiceImpl.java:117] Service method 'findCustomer' was called
+2014-10-09 17:04:09,648 DEBUG [pool-1-thread-1] JohnKuper [GenericDAOImpl.java:96] --- Start 'findOne' method for Customer entity with ID = 1 ---
+2014-10-09 17:04:09,666 DEBUG [pool-1-thread-1] JohnKuper [GenericDAOImpl.java:101] Found entity:  Customer: {id = 1; name = Игорь; surname = Ежов; patronymic = Владимирович; passport_series = 5705; passport_number = 032667; birthdate = 1970-04-16} 
+2014-10-09 17:04:09,666 DEBUG [pool-1-thread-1] JohnKuper [GenericDAOImpl.java:102] After mapping: CustomerDomain: {id = 1; custName = Игорь; custSurname = Ежов; custPatronymic = Владимирович; passportSeries = 5705; passportNumber = 032667; dateOfBirth = 1970-04-16}
+2014-10-09 17:04:09,679 DEBUG [pool-1-thread-1] JohnKuper [JPAWebServiceImpl.java:120] CustomerWeb: CustomerWeb: {id = 1; custName = Игорь; custSurname = Ежов; custPatronymic = Владимирович; passportSeries = 5705; passportNumber = 032667; dateOfBirth = 1970-04-16}
+2014-10-09 17:04:09,694 DEBUG [pool-1-thread-1] JohnKuper [JPAWebServiceImpl.java:129] Service method 'findMerchant' was called
+2014-10-09 17:04:09,694 DEBUG [pool-1-thread-1] JohnKuper [GenericDAOImpl.java:96] --- Start 'findOne' method for Merchant entity with ID = 1 ---
+2014-10-09 17:04:09,701 DEBUG [pool-1-thread-1] JohnKuper [GenericDAOImpl.java:101] Found entity:  Merchant: {id = 1; name = Михаил; surname = Захаров; patronymic = Олегович} 
+2014-10-09 17:04:09,702 DEBUG [pool-1-thread-1] JohnKuper [GenericDAOImpl.java:102] After mapping: MerchantDomain: {id = 1; merchName = Михаил; merchSurname = Захаров; merchPatronymic = Олегович}
+2014-10-09 17:04:09,706 DEBUG [pool-1-thread-1] JohnKuper [JPAWebServiceImpl.java:132] MerchantWeb: MerchantWeb: {id = 1; merchName = Михаил; merchSurname = Захаров; merchPatronymic = Олегович}
+2014-10-09 17:04:09,720 DEBUG [pool-1-thread-1] JohnKuper [JPAWebServiceImpl.java:143] Service method 'buyCar' was called
+2014-10-09 17:04:09,738 DEBUG [pool-1-thread-1] JohnKuper [GenericDAOImpl.java:55] --- Start 'create' method for Sale entity ---
+2014-10-09 17:04:09,739 DEBUG [pool-1-thread-1] JohnKuper [GenericDAOImpl.java:56] Domain for create: SaleDomain: {id = 0; salePrice = 1050000.8999999999068677425384521484375; dateOfSale = 2014-10-09
+CarDomain: {id = 3; car_mark = Toyota; car_model = Corolla; motorpower = 300; car_color = Черный}
+CustomerDomain: {id = 1; custName = Игорь; custSurname = Ежов; custPatronymic = Владимирович; passportSeries = 5705; passportNumber = 032667; dateOfBirth = Thu Apr 16 00:00:00 MSK 1970}
+MerchantDomain: {id = 1; merchName = Михаил; merchSurname = Захаров; merchPatronymic = Олегович}
+
+2014-10-09 17:04:09,824 DEBUG [pool-1-thread-1] JohnKuper [GenericDAOImpl.java:61] New entity: 
+ Sale: id = 7; price = 1050000.8999999999068677425384521484375; sale_date = Thu Oct 09 17:04:09 MSK 2014
+ Car: {id = 3; name = Toyota; model = Corolla; modification = 300; color = Черный} 
+ Customer: {id = 1; name = Игорь; surname = Ежов; patronymic = Владимирович; passport_series = 5705; passport_number = 032667; birthdate = Thu Apr 16 00:00:00 MSK 1970} 
+ Merchant: {id = 1; name = Михаил; surname = Захаров; patronymic = Олегович} 
+ 
+2014-10-09 17:12:51,220 DEBUG [main] JohnKuper [JPAWebServiceServer.java:16] Starting Server
+2014-10-09 17:12:51,328 DEBUG [main] JohnKuper [DomainServiceFieldRegistator.java:26] --- Start fields registration Domain ->> Service ---
+2014-10-09 17:12:51,378 DEBUG [main] JohnKuper [DomainServiceFieldRegistator.java:55] --- Fields registration Domain ->> Service complete ---
+2014-10-09 17:12:52,888 DEBUG [main] JohnKuper [EntityDomainFieldRegistator.java:26] --- Start fields registration Entity ->> Domain ---
+2014-10-09 17:12:52,904 DEBUG [main] JohnKuper [EntityDomainFieldRegistator.java:52] --- Fields registration Entity ->> Domain complete ---
+2014-10-09 17:12:54,196 DEBUG [main] JohnKuper [JPAWebServiceServer.java:20] The web service is published at http://localhost:9000/JPAWebService
+2014-10-09 17:12:54,197 DEBUG [main] JohnKuper [JPAWebServiceServer.java:27] Server is ready...
+2014-10-09 17:12:57,625 DEBUG [pool-1-thread-1] JohnKuper [JPAWebServiceImpl.java:55] Service method 'sayHi' was called
+2014-10-09 17:12:57,646 DEBUG [pool-1-thread-1] JohnKuper [JPAWebServiceImpl.java:66] Service method 'findCarByName' was called
+2014-10-09 17:12:57,647 DEBUG [pool-1-thread-1] JohnKuper [CarDAOImpl.java:24] --- Start 'findByName' method for Car entity --- 
+2014-10-09 17:12:57,709 DEBUG [pool-1-thread-1] JohnKuper [CarDAOImpl.java:34] Found car with name Lada:  Car: {id = 4; name = Lada; model = Granta; modification = 150; color = Синий} 
+2014-10-09 17:12:57,728 DEBUG [pool-1-thread-1] JohnKuper [JPAWebServiceImpl.java:89] Service method 'findCarsByMotorPower' was called
+2014-10-09 17:12:57,728 DEBUG [pool-1-thread-1] JohnKuper [GenericDAOImpl.java:79] --- Start 'findAll' method for Car entity ---
+2014-10-09 17:12:57,737 DEBUG [pool-1-thread-1] JohnKuper [GenericDAOImpl.java:88] Found:  Car: {id = 1; name = Audi; model = R5; modification = 400; color = Красный} 
+2014-10-09 17:12:57,738 DEBUG [pool-1-thread-1] JohnKuper [GenericDAOImpl.java:88] Found:  Car: {id = 2; name = BMW; model = X3; modification = 250; color = Белый} 
+2014-10-09 17:12:57,738 DEBUG [pool-1-thread-1] JohnKuper [GenericDAOImpl.java:88] Found:  Car: {id = 3; name = Toyota; model = Corolla; modification = 300; color = Черный} 
+2014-10-09 17:12:57,740 DEBUG [pool-1-thread-1] JohnKuper [GenericDAOImpl.java:88] Found:  Car: {id = 4; name = Lada; model = Granta; modification = 150; color = Синий} 
+2014-10-09 17:12:57,741 DEBUG [pool-1-thread-1] JohnKuper [GenericDAOImpl.java:88] Found:  Car: {id = 5; name = Lamborghini; model = Diablo SV; modification = 900; color = Металлик} 
+2014-10-09 17:12:57,792 DEBUG [pool-1-thread-1] JohnKuper [JPAWebServiceImpl.java:66] Service method 'findCarByName' was called
+2014-10-09 17:12:57,792 DEBUG [pool-1-thread-1] JohnKuper [CarDAOImpl.java:24] --- Start 'findByName' method for Car entity --- 
+2014-10-09 17:12:57,795 DEBUG [pool-1-thread-1] JohnKuper [CarDAOImpl.java:34] Found car with name Toyota:  Car: {id = 3; name = Toyota; model = Corolla; modification = 300; color = Черный} 
+2014-10-09 17:12:57,803 DEBUG [pool-1-thread-1] JohnKuper [JPAWebServiceImpl.java:117] Service method 'findCustomer' was called
+2014-10-09 17:12:57,803 DEBUG [pool-1-thread-1] JohnKuper [GenericDAOImpl.java:96] --- Start 'findOne' method for Customer entity with ID = 1 ---
+2014-10-09 17:12:57,828 DEBUG [pool-1-thread-1] JohnKuper [GenericDAOImpl.java:101] Found entity:  Customer: {id = 1; name = Игорь; surname = Ежов; patronymic = Владимирович; passport_series = 5705; passport_number = 032667; birthdate = 1970-04-16} 
+2014-10-09 17:12:57,829 DEBUG [pool-1-thread-1] JohnKuper [GenericDAOImpl.java:102] After mapping: CustomerDomain: {id = 1; custName = Игорь; custSurname = Ежов; custPatronymic = Владимирович; passportSeries = 5705; passportNumber = 032667; dateOfBirth = 1970-04-16}
+2014-10-09 17:12:57,836 DEBUG [pool-1-thread-1] JohnKuper [JPAWebServiceImpl.java:120] CustomerWeb: CustomerWeb: {id = 1; custName = Игорь; custSurname = Ежов; custPatronymic = Владимирович; passportSeries = 5705; passportNumber = 032667; dateOfBirth = 1970-04-16}
+2014-10-09 17:12:57,852 DEBUG [pool-1-thread-1] JohnKuper [JPAWebServiceImpl.java:129] Service method 'findMerchant' was called
+2014-10-09 17:12:57,853 DEBUG [pool-1-thread-1] JohnKuper [GenericDAOImpl.java:96] --- Start 'findOne' method for Merchant entity with ID = 1 ---
+2014-10-09 17:12:57,861 DEBUG [pool-1-thread-1] JohnKuper [GenericDAOImpl.java:101] Found entity:  Merchant: {id = 1; name = Михаил; surname = Захаров; patronymic = Олегович} 
+2014-10-09 17:12:57,861 DEBUG [pool-1-thread-1] JohnKuper [GenericDAOImpl.java:102] After mapping: MerchantDomain: {id = 1; merchName = Михаил; merchSurname = Захаров; merchPatronymic = Олегович}
+2014-10-09 17:12:57,865 DEBUG [pool-1-thread-1] JohnKuper [JPAWebServiceImpl.java:132] MerchantWeb: MerchantWeb: {id = 1; merchName = Михаил; merchSurname = Захаров; merchPatronymic = Олегович}
+2014-10-09 17:12:57,880 DEBUG [pool-1-thread-1] JohnKuper [JPAWebServiceImpl.java:143] Service method 'buyCar' was called
+2014-10-09 17:12:57,880 DEBUG [pool-1-thread-1] JohnKuper [JPAWebServiceImpl.java:151] TEST SaleWeb: {id = 0; salePrice = 1050000.8999999999068677425384521484375; dateOfSale = 2014-10-09
+CarWeb: {id = 3; car_mark = Toyota; car_model = Corolla; motorpower = 300; car_color = Черный}
+CustomerWeb: {id = 1; custName = Игорь; custSurname = Ежов; custPatronymic = Владимирович; passportSeries = 5705; passportNumber = 032667; dateOfBirth = Thu Apr 16 00:00:00 MSK 1970}
+MerchantWeb: {id = 1; merchName = Михаил; merchSurname = Захаров; merchPatronymic = Олегович}
+
+2014-10-09 17:12:57,898 DEBUG [pool-1-thread-1] JohnKuper [GenericDAOImpl.java:55] --- Start 'create' method for Sale entity ---
+2014-10-09 17:12:57,898 DEBUG [pool-1-thread-1] JohnKuper [GenericDAOImpl.java:56] Domain for create: SaleDomain: {id = 0; salePrice = 1050000.8999999999068677425384521484375; dateOfSale = 2014-10-09
+CarDomain: {id = 3; car_mark = Toyota; car_model = Corolla; motorpower = 300; car_color = Черный}
+CustomerDomain: {id = 1; custName = Игорь; custSurname = Ежов; custPatronymic = Владимирович; passportSeries = 5705; passportNumber = 032667; dateOfBirth = Thu Apr 16 00:00:00 MSK 1970}
+MerchantDomain: {id = 1; merchName = Михаил; merchSurname = Захаров; merchPatronymic = Олегович}
+
+2014-10-09 17:12:58,114 DEBUG [pool-1-thread-1] JohnKuper [GenericDAOImpl.java:61] New entity: 
+ Sale: id = 8; price = 1050000.8999999999068677425384521484375; sale_date = Thu Oct 09 17:12:57 MSK 2014
+ Car: {id = 3; name = Toyota; model = Corolla; modification = 300; color = Черный} 
+ Customer: {id = 1; name = Игорь; surname = Ежов; patronymic = Владимирович; passport_series = 5705; passport_number = 032667; birthdate = Thu Apr 16 00:00:00 MSK 1970} 
+ Merchant: {id = 1; name = Михаил; surname = Захаров; patronymic = Олегович} 
+ 
+2014-10-09 17:41:12,345 DEBUG [main] JohnKuper [JPAWebServiceServer.java:16] Starting Server
+2014-10-09 17:41:12,447 DEBUG [main] JohnKuper [DomainServiceFieldRegistator.java:26] --- Start fields registration Domain ->> Service ---
+2014-10-09 17:41:12,498 DEBUG [main] JohnKuper [DomainServiceFieldRegistator.java:55] --- Fields registration Domain ->> Service complete ---
+2014-10-09 17:41:14,043 DEBUG [main] JohnKuper [EntityDomainFieldRegistator.java:26] --- Start fields registration Entity ->> Domain ---
+2014-10-09 17:41:14,061 DEBUG [main] JohnKuper [EntityDomainFieldRegistator.java:52] --- Fields registration Entity ->> Domain complete ---
+2014-10-09 17:41:15,177 DEBUG [main] JohnKuper [JPAWebServiceServer.java:20] The web service is published at http://localhost:9000/JPAWebService
+2014-10-09 17:41:15,179 DEBUG [main] JohnKuper [JPAWebServiceServer.java:27] Server is ready...
+2014-10-09 17:41:30,829 DEBUG [pool-1-thread-1] JohnKuper [JPAWebServiceImpl.java:55] Service method 'sayHi' was called
+2014-10-09 17:41:30,907 DEBUG [pool-1-thread-1] JohnKuper [JPAWebServiceImpl.java:108] Service method 'createCustomer' was called
+2014-10-09 17:41:31,046 DEBUG [pool-1-thread-1] JohnKuper [GenericDAOImpl.java:55] --- Start 'create' method for Customer entity ---
+2014-10-09 17:41:31,047 DEBUG [pool-1-thread-1] JohnKuper [GenericDAOImpl.java:56] Domain for create: CustomerDomain: {id = 0; custName = Алексей; custSurname = Петров; custPatronymic = Васильевич; passportSeries = 4466; passportNumber = 569090; dateOfBirth = null}
+2014-10-09 17:41:31,155 DEBUG [pool-1-thread-1] JohnKuper [GenericDAOImpl.java:61] New entity:  Customer: {id = 6; name = Алексей; surname = Петров; patronymic = Васильевич; passport_series = 4466; passport_number = 569090; birthdate = null}  
+2014-10-09 17:53:04,867 DEBUG [main] JohnKuper [JPAWebServiceServer.java:16] Starting Server
+2014-10-09 17:53:04,977 DEBUG [main] JohnKuper [DomainServiceFieldRegistator.java:26] --- Start fields registration Domain ->> Service ---
+2014-10-09 17:53:05,030 DEBUG [main] JohnKuper [DomainServiceFieldRegistator.java:55] --- Fields registration Domain ->> Service complete ---
+2014-10-09 17:53:06,581 DEBUG [main] JohnKuper [EntityDomainFieldRegistator.java:26] --- Start fields registration Entity ->> Domain ---
+2014-10-09 17:53:06,600 DEBUG [main] JohnKuper [EntityDomainFieldRegistator.java:52] --- Fields registration Entity ->> Domain complete ---
+2014-10-09 17:53:07,651 DEBUG [main] JohnKuper [JPAWebServiceServer.java:20] The web service is published at http://localhost:9000/JPAWebService
+2014-10-09 17:53:07,652 DEBUG [main] JohnKuper [JPAWebServiceServer.java:27] Server is ready...
+2014-10-09 17:53:14,403 DEBUG [pool-1-thread-1] JohnKuper [JPAWebServiceImpl.java:55] Service method 'sayHi' was called
+2014-10-09 17:53:14,436 DEBUG [pool-1-thread-1] JohnKuper [JPAWebServiceImpl.java:108] Service method 'createCustomer' was called
+2014-10-09 17:53:14,457 DEBUG [pool-1-thread-1] JohnKuper [GenericDAOImpl.java:55] --- Start 'create' method for Customer entity ---
+2014-10-09 17:53:14,457 DEBUG [pool-1-thread-1] JohnKuper [GenericDAOImpl.java:56] Domain for create: CustomerDomain: {id = 0; custName = Алексей; custSurname = Петров; custPatronymic = Васильевич; passportSeries = 4466; passportNumber = 569090; dateOfBirth = Tue Jun 22 17:53:14 MSD 1982}
+2014-10-09 17:53:14,656 DEBUG [pool-1-thread-1] JohnKuper [GenericDAOImpl.java:61] New entity:  Customer: {id = 6; name = Алексей; surname = Петров; patronymic = Васильевич; passport_series = 4466; passport_number = 569090; birthdate = Tue Jun 22 17:53:14 MSD 1982}  
+2014-10-09 17:54:32,878 DEBUG [pool-1-thread-2] JohnKuper [JPAWebServiceImpl.java:55] Service method 'sayHi' was called
+2014-10-09 17:54:32,897 DEBUG [pool-1-thread-2] JohnKuper [JPAWebServiceImpl.java:108] Service method 'createCustomer' was called
+2014-10-09 17:54:32,898 DEBUG [pool-1-thread-2] JohnKuper [GenericDAOImpl.java:55] --- Start 'create' method for Customer entity ---
+2014-10-09 17:54:32,898 DEBUG [pool-1-thread-2] JohnKuper [GenericDAOImpl.java:56] Domain for create: CustomerDomain: {id = 0; custName = Алексей; custSurname = Петров; custPatronymic = Васильевич; passportSeries = 4466; passportNumber = 569090; dateOfBirth = Tue Jun 22 17:54:32 MSD 1982}
+2014-10-09 18:03:48,211 DEBUG [main] JohnKuper [JPAWebServiceServer.java:16] Starting Server
+2014-10-09 18:03:48,313 DEBUG [main] JohnKuper [DomainServiceFieldRegistator.java:26] --- Start fields registration Domain ->> Service ---
+2014-10-09 18:03:48,372 DEBUG [main] JohnKuper [DomainServiceFieldRegistator.java:55] --- Fields registration Domain ->> Service complete ---
+2014-10-09 18:03:49,896 DEBUG [main] JohnKuper [EntityDomainFieldRegistator.java:26] --- Start fields registration Entity ->> Domain ---
+2014-10-09 18:03:49,912 DEBUG [main] JohnKuper [EntityDomainFieldRegistator.java:52] --- Fields registration Entity ->> Domain complete ---
+2014-10-09 18:03:51,071 DEBUG [main] JohnKuper [JPAWebServiceServer.java:20] The web service is published at http://localhost:9000/JPAWebService
+2014-10-09 18:03:51,073 DEBUG [main] JohnKuper [JPAWebServiceServer.java:27] Server is ready...
+2014-10-09 18:03:55,792 DEBUG [pool-1-thread-1] JohnKuper [JPAWebServiceImpl.java:55] Service method 'sayHi' was called
+2014-10-09 18:03:55,823 DEBUG [pool-1-thread-1] JohnKuper [JPAWebServiceImpl.java:108] Service method 'createCustomer' was called
+2014-10-09 18:03:55,845 DEBUG [pool-1-thread-1] JohnKuper [GenericDAOImpl.java:55] --- Start 'create' method for Customer entity ---
+2014-10-09 18:03:55,845 DEBUG [pool-1-thread-1] JohnKuper [GenericDAOImpl.java:56] Domain for create: CustomerDomain: {id = 0; custName = Алексей; custSurname = Петров; custPatronymic = Васильевич; passportSeries = 4466; passportNumber = 569090; dateOfBirth = Tue Jun 22 18:03:55 MSD 1982}
+2014-10-09 18:03:55,953 DEBUG [pool-1-thread-1] JohnKuper [GenericDAOImpl.java:61] New entity:  Customer: {id = 6; name = Алексей; surname = Петров; patronymic = Васильевич; passport_series = 4466; passport_number = 569090; birthdate = Tue Jun 22 18:03:55 MSD 1982}  
+2014-10-09 18:04:29,074 DEBUG [main] JohnKuper [JPAWebServiceServer.java:16] Starting Server
+2014-10-09 18:04:29,173 DEBUG [main] JohnKuper [DomainServiceFieldRegistator.java:26] --- Start fields registration Domain ->> Service ---
+2014-10-09 18:04:29,220 DEBUG [main] JohnKuper [DomainServiceFieldRegistator.java:55] --- Fields registration Domain ->> Service complete ---
+2014-10-09 18:04:30,722 DEBUG [main] JohnKuper [EntityDomainFieldRegistator.java:26] --- Start fields registration Entity ->> Domain ---
+2014-10-09 18:04:30,739 DEBUG [main] JohnKuper [EntityDomainFieldRegistator.java:52] --- Fields registration Entity ->> Domain complete ---
+2014-10-09 18:04:32,035 DEBUG [main] JohnKuper [JPAWebServiceServer.java:20] The web service is published at http://localhost:9000/JPAWebService
+2014-10-09 18:04:32,039 DEBUG [main] JohnKuper [JPAWebServiceServer.java:27] Server is ready...
+2014-10-09 18:04:37,319 DEBUG [pool-1-thread-1] JohnKuper [JPAWebServiceImpl.java:55] Service method 'sayHi' was called
+2014-10-09 18:04:37,338 DEBUG [pool-1-thread-1] JohnKuper [JPAWebServiceImpl.java:66] Service method 'findCarByName' was called
+2014-10-09 18:04:37,338 DEBUG [pool-1-thread-1] JohnKuper [CarDAOImpl.java:24] --- Start 'findByName' method for Car entity --- 
+2014-10-09 18:04:37,409 DEBUG [pool-1-thread-1] JohnKuper [CarDAOImpl.java:34] Found car with name Lada:  Car: {id = 4; name = Lada; model = Granta; modification = 150; color = Синий} 
+2014-10-09 18:04:37,432 DEBUG [pool-1-thread-1] JohnKuper [JPAWebServiceImpl.java:81] Service method 'createCar' was called
+2014-10-09 18:04:37,438 DEBUG [pool-1-thread-1] JohnKuper [GenericDAOImpl.java:55] --- Start 'create' method for Car entity ---
+2014-10-09 18:04:37,439 DEBUG [pool-1-thread-1] JohnKuper [GenericDAOImpl.java:56] Domain for create: CarDomain: {id = 0; car_mark = Chevrolet; car_model = Corvette; motorpower = 560; car_color = Red}
+2014-10-09 18:04:37,498 DEBUG [pool-1-thread-1] JohnKuper [GenericDAOImpl.java:61] New entity:  Car: {id = 6; name = Chevrolet; model = Corvette; modification = 560; color = Red}  
+2014-10-09 18:04:37,502 DEBUG [pool-1-thread-1] JohnKuper [JPAWebServiceImpl.java:89] Service method 'findCarsByMotorPower' was called
+2014-10-09 18:04:37,503 DEBUG [pool-1-thread-1] JohnKuper [GenericDAOImpl.java:79] --- Start 'findAll' method for Car entity ---
+2014-10-09 18:04:37,511 DEBUG [pool-1-thread-1] JohnKuper [GenericDAOImpl.java:88] Found:  Car: {id = 1; name = Audi; model = R5; modification = 400; color = Красный} 
+2014-10-09 18:04:37,512 DEBUG [pool-1-thread-1] JohnKuper [GenericDAOImpl.java:88] Found:  Car: {id = 2; name = BMW; model = X3; modification = 250; color = Белый} 
+2014-10-09 18:04:37,512 DEBUG [pool-1-thread-1] JohnKuper [GenericDAOImpl.java:88] Found:  Car: {id = 3; name = Toyota; model = Corolla; modification = 300; color = Черный} 
+2014-10-09 18:04:37,513 DEBUG [pool-1-thread-1] JohnKuper [GenericDAOImpl.java:88] Found:  Car: {id = 4; name = Lada; model = Granta; modification = 150; color = Синий} 
+2014-10-09 18:04:37,513 DEBUG [pool-1-thread-1] JohnKuper [GenericDAOImpl.java:88] Found:  Car: {id = 5; name = Lamborghini; model = Diablo SV; modification = 900; color = Металлик} 
+2014-10-09 18:04:37,513 DEBUG [pool-1-thread-1] JohnKuper [GenericDAOImpl.java:88] Found:  Car: {id = 6; name = Chevrolet; model = Corvette; modification = 560; color = Red} 
+2014-10-09 18:04:37,523 DEBUG [pool-1-thread-1] JohnKuper [JPAWebServiceImpl.java:66] Service method 'findCarByName' was called
+2014-10-09 18:04:37,524 DEBUG [pool-1-thread-1] JohnKuper [CarDAOImpl.java:24] --- Start 'findByName' method for Car entity --- 
+2014-10-09 18:04:37,526 DEBUG [pool-1-thread-1] JohnKuper [CarDAOImpl.java:34] Found car with name Toyota:  Car: {id = 3; name = Toyota; model = Corolla; modification = 300; color = Черный} 
+2014-10-09 18:04:37,552 DEBUG [pool-1-thread-1] JohnKuper [JPAWebServiceImpl.java:117] Service method 'findCustomer' was called
+2014-10-09 18:04:37,553 DEBUG [pool-1-thread-1] JohnKuper [GenericDAOImpl.java:96] --- Start 'findOne' method for Customer entity with ID = 1 ---
+2014-10-09 18:04:37,580 DEBUG [pool-1-thread-1] JohnKuper [GenericDAOImpl.java:101] Found entity:  Customer: {id = 1; name = Игорь; surname = Ежов; patronymic = Владимирович; passport_series = 5705; passport_number = 032667; birthdate = 1970-04-16} 
+2014-10-09 18:04:37,581 DEBUG [pool-1-thread-1] JohnKuper [GenericDAOImpl.java:102] After mapping: CustomerDomain: {id = 1; custName = Игорь; custSurname = Ежов; custPatronymic = Владимирович; passportSeries = 5705; passportNumber = 032667; dateOfBirth = 1970-04-16}
+2014-10-09 18:04:37,587 DEBUG [pool-1-thread-1] JohnKuper [JPAWebServiceImpl.java:120] CustomerWeb: CustomerWeb: {id = 1; custName = Игорь; custSurname = Ежов; custPatronymic = Владимирович; passportSeries = 5705; passportNumber = 032667; dateOfBirth = 1970-04-16}
+2014-10-09 18:04:37,600 DEBUG [pool-1-thread-1] JohnKuper [JPAWebServiceImpl.java:129] Service method 'findMerchant' was called
+2014-10-09 18:04:37,600 DEBUG [pool-1-thread-1] JohnKuper [GenericDAOImpl.java:96] --- Start 'findOne' method for Merchant entity with ID = 1 ---
+2014-10-09 18:04:37,606 DEBUG [pool-1-thread-1] JohnKuper [GenericDAOImpl.java:101] Found entity:  Merchant: {id = 1; name = Михаил; surname = Захаров; patronymic = Олегович} 
+2014-10-09 18:04:37,607 DEBUG [pool-1-thread-1] JohnKuper [GenericDAOImpl.java:102] After mapping: MerchantDomain: {id = 1; merchName = Михаил; merchSurname = Захаров; merchPatronymic = Олегович}
+2014-10-09 18:04:37,615 DEBUG [pool-1-thread-1] JohnKuper [JPAWebServiceImpl.java:132] MerchantWeb: MerchantWeb: {id = 1; merchName = Михаил; merchSurname = Захаров; merchPatronymic = Олегович}
+2014-10-09 18:04:37,634 DEBUG [pool-1-thread-1] JohnKuper [JPAWebServiceImpl.java:143] Service method 'buyCar' was called
+2014-10-09 18:04:37,646 DEBUG [pool-1-thread-1] JohnKuper [GenericDAOImpl.java:55] --- Start 'create' method for Sale entity ---
+2014-10-09 18:04:37,647 DEBUG [pool-1-thread-1] JohnKuper [GenericDAOImpl.java:56] Domain for create: SaleDomain: {id = 0; salePrice = 1050000.8999999999068677425384521484375; dateOfSale = 2014-10-09
+CarDomain: {id = 3; car_mark = Toyota; car_model = Corolla; motorpower = 300; car_color = Черный}
+CustomerDomain: {id = 1; custName = Игорь; custSurname = Ежов; custPatronymic = Владимирович; passportSeries = 5705; passportNumber = 032667; dateOfBirth = Thu Apr 16 00:00:00 MSK 1970}
+MerchantDomain: {id = 1; merchName = Михаил; merchSurname = Захаров; merchPatronymic = Олегович}
+
+2014-10-09 18:04:37,672 DEBUG [pool-1-thread-1] JohnKuper [GenericDAOImpl.java:61] New entity: 
+ Sale: id = 6; price = 1050000.8999999999068677425384521484375; sale_date = Thu Oct 09 18:04:37 MSK 2014
+ Car: {id = 3; name = Toyota; model = Corolla; modification = 300; color = Черный} 
+ Customer: {id = 1; name = Игорь; surname = Ежов; patronymic = Владимирович; passport_series = 5705; passport_number = 032667; birthdate = Thu Apr 16 00:00:00 MSK 1970} 
+ Merchant: {id = 1; name = Михаил; surname = Захаров; patronymic = Олегович} 
+ 
+2014-10-09 18:04:37,673 DEBUG [pool-1-thread-1] JohnKuper [JPAWebServiceImpl.java:155] --- New sale was created: SaleWeb: {id = 0; salePrice = 1050000.8999999999068677425384521484375; dateOfSale = 2014-10-09
+CarWeb: {id = 3; car_mark = Toyota; car_model = Corolla; motorpower = 300; car_color = Черный}
+CustomerWeb: {id = 1; custName = Игорь; custSurname = Ежов; custPatronymic = Владимирович; passportSeries = 5705; passportNumber = 032667; dateOfBirth = Thu Apr 16 00:00:00 MSK 1970}
+MerchantWeb: {id = 1; merchName = Михаил; merchSurname = Захаров; merchPatronymic = Олегович}
+
+2014-10-09 18:04:37,683 DEBUG [pool-1-thread-1] JohnKuper [JPAWebServiceImpl.java:108] Service method 'createCustomer' was called
+2014-10-09 18:04:37,684 DEBUG [pool-1-thread-1] JohnKuper [GenericDAOImpl.java:55] --- Start 'create' method for Customer entity ---
+2014-10-09 18:04:37,684 DEBUG [pool-1-thread-1] JohnKuper [GenericDAOImpl.java:56] Domain for create: CustomerDomain: {id = 0; custName = Алексей; custSurname = Петров; custPatronymic = Васильевич; passportSeries = 4466; passportNumber = 569090; dateOfBirth = Tue Jun 22 18:04:37 MSD 1982}
+2014-10-09 18:04:37,693 DEBUG [pool-1-thread-1] JohnKuper [GenericDAOImpl.java:61] New entity:  Customer: {id = 6; name = Алексей; surname = Петров; patronymic = Васильевич; passport_series = 4466; passport_number = 569090; birthdate = Tue Jun 22 18:04:37 MSD 1982}  
+2014-10-09 18:15:35,727 DEBUG [main] JohnKuper [JPAWebServiceServer.java:16] Starting Server
+2014-10-09 18:15:35,829 DEBUG [main] JohnKuper [DomainServiceFieldRegistator.java:26] --- Start fields registration Domain ->> Service ---
+2014-10-09 18:15:35,885 DEBUG [main] JohnKuper [DomainServiceFieldRegistator.java:55] --- Fields registration Domain ->> Service complete ---
+2014-10-09 18:15:37,406 DEBUG [main] JohnKuper [EntityDomainFieldRegistator.java:26] --- Start fields registration Entity ->> Domain ---
+2014-10-09 18:15:37,424 DEBUG [main] JohnKuper [EntityDomainFieldRegistator.java:52] --- Fields registration Entity ->> Domain complete ---
+2014-10-09 18:15:38,623 DEBUG [main] JohnKuper [JPAWebServiceServer.java:20] The web service is published at http://localhost:9000/JPAWebService
+2014-10-09 18:15:38,625 DEBUG [main] JohnKuper [JPAWebServiceServer.java:27] Server is ready...
+2014-10-09 18:21:26,350 DEBUG [pool-1-thread-2] JohnKuper [JPAWebServiceImpl.java:66] Service method 'findCarByName' was called
+2014-10-09 18:21:26,351 DEBUG [pool-1-thread-2] JohnKuper [CarDAOImpl.java:24] --- Start 'findByName' method for Car entity --- 
+2014-10-09 18:21:26,441 DEBUG [pool-1-thread-2] JohnKuper [CarDAOImpl.java:34] Found car with name Lada:  Car: {id = 4; name = Lada; model = Granta; modification = 150; color = Синий} 
+2014-10-09 18:21:26,482 DEBUG [pool-1-thread-2] JohnKuper [JPAWebServiceImpl.java:81] Service method 'createCar' was called
+2014-10-09 18:21:26,487 DEBUG [pool-1-thread-2] JohnKuper [GenericDAOImpl.java:55] --- Start 'create' method for Car entity ---
+2014-10-09 18:21:26,488 DEBUG [pool-1-thread-2] JohnKuper [GenericDAOImpl.java:56] Domain for create: CarDomain: {id = 0; car_mark = Chevrolet; car_model = Corvette; motorpower = 560; car_color = Red}
+2014-10-09 18:21:26,557 DEBUG [pool-1-thread-2] JohnKuper [GenericDAOImpl.java:61] New entity:  Car: {id = 6; name = Chevrolet; model = Corvette; modification = 560; color = Red}  
+2014-10-09 18:21:26,592 DEBUG [pool-1-thread-2] JohnKuper [JPAWebServiceImpl.java:91] Service method 'findCarsByMotorPower' was called
+2014-10-09 18:21:26,592 DEBUG [pool-1-thread-2] JohnKuper [GenericDAOImpl.java:79] --- Start 'findAll' method for Car entity ---
+2014-10-09 18:21:26,599 DEBUG [pool-1-thread-2] JohnKuper [GenericDAOImpl.java:88] Found:  Car: {id = 1; name = Audi; model = R5; modification = 400; color = Красный} 
+2014-10-09 18:21:26,600 DEBUG [pool-1-thread-2] JohnKuper [GenericDAOImpl.java:88] Found:  Car: {id = 2; name = BMW; model = X3; modification = 250; color = Белый} 
+2014-10-09 18:21:26,600 DEBUG [pool-1-thread-2] JohnKuper [GenericDAOImpl.java:88] Found:  Car: {id = 3; name = Toyota; model = Corolla; modification = 300; color = Черный} 
+2014-10-09 18:21:26,600 DEBUG [pool-1-thread-2] JohnKuper [GenericDAOImpl.java:88] Found:  Car: {id = 4; name = Lada; model = Granta; modification = 150; color = Синий} 
+2014-10-09 18:21:26,601 DEBUG [pool-1-thread-2] JohnKuper [GenericDAOImpl.java:88] Found:  Car: {id = 5; name = Lamborghini; model = Diablo SV; modification = 900; color = Металлик} 
+2014-10-09 18:21:26,601 DEBUG [pool-1-thread-2] JohnKuper [GenericDAOImpl.java:88] Found:  Car: {id = 6; name = Chevrolet; model = Corvette; modification = 560; color = Red} 
+2014-10-09 18:21:26,611 DEBUG [pool-1-thread-2] JohnKuper [JPAWebServiceImpl.java:66] Service method 'findCarByName' was called
+2014-10-09 18:21:26,612 DEBUG [pool-1-thread-2] JohnKuper [CarDAOImpl.java:24] --- Start 'findByName' method for Car entity --- 
+2014-10-09 18:21:26,615 DEBUG [pool-1-thread-2] JohnKuper [CarDAOImpl.java:34] Found car with name Toyota:  Car: {id = 3; name = Toyota; model = Corolla; modification = 300; color = Черный} 
+2014-10-09 18:21:26,627 DEBUG [pool-1-thread-2] JohnKuper [JPAWebServiceImpl.java:119] Service method 'findCustomer' was called
+2014-10-09 18:21:26,627 DEBUG [pool-1-thread-2] JohnKuper [GenericDAOImpl.java:96] --- Start 'findOne' method for Customer entity with ID = 1 ---
+2014-10-09 18:21:26,657 DEBUG [pool-1-thread-2] JohnKuper [GenericDAOImpl.java:101] Found entity:  Customer: {id = 1; name = Игорь; surname = Ежов; patronymic = Владимирович; passport_series = 5705; passport_number = 032667; birthdate = 1970-04-16} 
+2014-10-09 18:21:26,657 DEBUG [pool-1-thread-2] JohnKuper [GenericDAOImpl.java:102] After mapping: CustomerDomain: {id = 1; custName = Игорь; custSurname = Ежов; custPatronymic = Владимирович; passportSeries = 5705; passportNumber = 032667; dateOfBirth = 1970-04-16}
+2014-10-09 18:21:26,663 DEBUG [pool-1-thread-2] JohnKuper [JPAWebServiceImpl.java:122] CustomerWeb: CustomerWeb: {id = 1; custName = Игорь; custSurname = Ежов; custPatronymic = Владимирович; passportSeries = 5705; passportNumber = 032667; dateOfBirth = 1970-04-16}
+2014-10-09 18:21:26,679 DEBUG [pool-1-thread-2] JohnKuper [JPAWebServiceImpl.java:131] Service method 'findMerchant' was called
+2014-10-09 18:21:26,679 DEBUG [pool-1-thread-2] JohnKuper [GenericDAOImpl.java:96] --- Start 'findOne' method for Merchant entity with ID = 1 ---
+2014-10-09 18:21:26,685 DEBUG [pool-1-thread-2] JohnKuper [GenericDAOImpl.java:101] Found entity:  Merchant: {id = 1; name = Михаил; surname = Захаров; patronymic = Олегович} 
+2014-10-09 18:21:26,686 DEBUG [pool-1-thread-2] JohnKuper [GenericDAOImpl.java:102] After mapping: MerchantDomain: {id = 1; merchName = Михаил; merchSurname = Захаров; merchPatronymic = Олегович}
+2014-10-09 18:21:26,690 DEBUG [pool-1-thread-2] JohnKuper [JPAWebServiceImpl.java:134] MerchantWeb: MerchantWeb: {id = 1; merchName = Михаил; merchSurname = Захаров; merchPatronymic = Олегович}
+2014-10-09 18:21:26,709 DEBUG [pool-1-thread-2] JohnKuper [JPAWebServiceImpl.java:145] Service method 'buyCar' was called
+2014-10-09 18:21:26,736 DEBUG [pool-1-thread-2] JohnKuper [GenericDAOImpl.java:55] --- Start 'create' method for Sale entity ---
+2014-10-09 18:21:26,736 DEBUG [pool-1-thread-2] JohnKuper [GenericDAOImpl.java:56] Domain for create: SaleDomain: {id = 0; salePrice = 1050000.8999999999068677425384521484375; dateOfSale = 2014-10-09
+CarDomain: {id = 3; car_mark = Toyota; car_model = Corolla; motorpower = 300; car_color = Черный}
+CustomerDomain: {id = 1; custName = Игорь; custSurname = Ежов; custPatronymic = Владимирович; passportSeries = 5705; passportNumber = 032667; dateOfBirth = Thu Apr 16 00:00:00 MSK 1970}
+MerchantDomain: {id = 1; merchName = Михаил; merchSurname = Захаров; merchPatronymic = Олегович}
+
+2014-10-09 18:21:26,774 DEBUG [pool-1-thread-2] JohnKuper [GenericDAOImpl.java:61] New entity: 
+ Sale: id = 6; price = 1050000.8999999999068677425384521484375; sale_date = Thu Oct 09 18:21:26 MSK 2014
+ Car: {id = 3; name = Toyota; model = Corolla; modification = 300; color = Черный} 
+ Customer: {id = 1; name = Игорь; surname = Ежов; patronymic = Владимирович; passport_series = 5705; passport_number = 032667; birthdate = Thu Apr 16 00:00:00 MSK 1970} 
+ Merchant: {id = 1; name = Михаил; surname = Захаров; patronymic = Олегович} 
+ 
+2014-10-09 18:21:26,774 DEBUG [pool-1-thread-2] JohnKuper [JPAWebServiceImpl.java:157] --- New sale was created: SaleWeb: {id = 0; salePrice = 1050000.8999999999068677425384521484375; dateOfSale = 2014-10-09
+CarWeb: {id = 3; car_mark = Toyota; car_model = Corolla; motorpower = 300; car_color = Черный}
+CustomerWeb: {id = 1; custName = Игорь; custSurname = Ежов; custPatronymic = Владимирович; passportSeries = 5705; passportNumber = 032667; dateOfBirth = Thu Apr 16 00:00:00 MSK 1970}
+MerchantWeb: {id = 1; merchName = Михаил; merchSurname = Захаров; merchPatronymic = Олегович}
+
+2014-10-09 18:21:26,785 DEBUG [pool-1-thread-2] JohnKuper [JPAWebServiceImpl.java:110] Service method 'createCustomer' was called
+2014-10-09 18:21:26,786 DEBUG [pool-1-thread-2] JohnKuper [GenericDAOImpl.java:55] --- Start 'create' method for Customer entity ---
+2014-10-09 18:21:26,786 DEBUG [pool-1-thread-2] JohnKuper [GenericDAOImpl.java:56] Domain for create: CustomerDomain: {id = 0; custName = Алексей; custSurname = Петров; custPatronymic = Васильевич; passportSeries = 4466; passportNumber = 569090; dateOfBirth = Tue Jun 22 18:21:26 MSD 1982}
+2014-10-09 18:21:26,793 DEBUG [pool-1-thread-2] JohnKuper [GenericDAOImpl.java:61] New entity:  Customer: {id = 6; name = Алексей; surname = Петров; patronymic = Васильевич; passport_series = 4466; passport_number = 569090; birthdate = Tue Jun 22 18:21:26 MSD 1982}  
+2014-10-09 18:23:23,845 DEBUG [main] JohnKuper [JPAWebServiceServer.java:16] Starting Server
+2014-10-09 18:23:23,939 DEBUG [main] JohnKuper [DomainServiceFieldRegistator.java:26] --- Start fields registration Domain ->> Service ---
+2014-10-09 18:23:24,001 DEBUG [main] JohnKuper [DomainServiceFieldRegistator.java:55] --- Fields registration Domain ->> Service complete ---
+2014-10-09 18:23:25,662 DEBUG [main] JohnKuper [EntityDomainFieldRegistator.java:26] --- Start fields registration Entity ->> Domain ---
+2014-10-09 18:23:25,680 DEBUG [main] JohnKuper [EntityDomainFieldRegistator.java:52] --- Fields registration Entity ->> Domain complete ---
+2014-10-09 18:23:26,786 DEBUG [main] JohnKuper [JPAWebServiceServer.java:20] The web service is published at http://localhost:9000/JPAWebService
+2014-10-09 18:23:26,788 DEBUG [main] JohnKuper [JPAWebServiceServer.java:27] Server is ready...
+2014-10-09 18:24:50,086 DEBUG [pool-1-thread-2] JohnKuper [JPAWebServiceImpl.java:66] Service method 'findCarByName' was called
+2014-10-09 18:24:50,086 DEBUG [pool-1-thread-2] JohnKuper [CarDAOImpl.java:24] --- Start 'findByName' method for Car entity --- 
+2014-10-09 18:24:50,280 DEBUG [pool-1-thread-2] JohnKuper [CarDAOImpl.java:34] Found car with name Lada:  Car: {id = 4; name = Lada; model = Granta; modification = 150; color = Синий} 
+2014-10-09 18:24:50,313 DEBUG [pool-1-thread-2] JohnKuper [JPAWebServiceImpl.java:81] Service method 'createCar' was called
+2014-10-09 18:24:50,318 DEBUG [pool-1-thread-2] JohnKuper [GenericDAOImpl.java:55] --- Start 'create' method for Car entity ---
+2014-10-09 18:24:50,319 DEBUG [pool-1-thread-2] JohnKuper [GenericDAOImpl.java:56] Domain for create: CarDomain: {id = 0; car_mark = Chevrolet; car_model = Corvette; motorpower = 560; car_color = Red}
+2014-10-09 18:25:26,647 DEBUG [main] JohnKuper [JPAWebServiceServer.java:16] Starting Server
+2014-10-09 18:25:26,744 DEBUG [main] JohnKuper [DomainServiceFieldRegistator.java:26] --- Start fields registration Domain ->> Service ---
+2014-10-09 18:25:26,791 DEBUG [main] JohnKuper [DomainServiceFieldRegistator.java:55] --- Fields registration Domain ->> Service complete ---
+2014-10-09 18:25:28,357 DEBUG [main] JohnKuper [EntityDomainFieldRegistator.java:26] --- Start fields registration Entity ->> Domain ---
+2014-10-09 18:25:28,376 DEBUG [main] JohnKuper [EntityDomainFieldRegistator.java:52] --- Fields registration Entity ->> Domain complete ---
+2014-10-09 18:25:29,583 DEBUG [main] JohnKuper [JPAWebServiceServer.java:20] The web service is published at http://localhost:9000/JPAWebService
+2014-10-09 18:25:29,585 DEBUG [main] JohnKuper [JPAWebServiceServer.java:27] Server is ready...
+2014-10-09 18:25:30,741 DEBUG [pool-1-thread-1] JohnKuper [JPAWebServiceImpl.java:66] Service method 'findCarByName' was called
+2014-10-09 18:25:30,741 DEBUG [pool-1-thread-1] JohnKuper [CarDAOImpl.java:24] --- Start 'findByName' method for Car entity --- 
+2014-10-09 18:25:30,799 DEBUG [pool-1-thread-1] JohnKuper [CarDAOImpl.java:34] Found car with name Lada:  Car: {id = 4; name = Lada; model = Granta; modification = 150; color = Синий} 
+2014-10-09 18:25:30,832 DEBUG [pool-1-thread-1] JohnKuper [JPAWebServiceImpl.java:81] Service method 'createCar' was called
+2014-10-09 18:25:30,844 DEBUG [pool-1-thread-1] JohnKuper [GenericDAOImpl.java:55] --- Start 'create' method for Car entity ---
+2014-10-09 18:25:30,845 DEBUG [pool-1-thread-1] JohnKuper [GenericDAOImpl.java:56] Domain for create: CarDomain: {id = 0; car_mark = Chevrolet; car_model = Corvette; motorpower = 560; car_color = Red}
+2014-10-09 18:25:30,904 DEBUG [pool-1-thread-1] JohnKuper [GenericDAOImpl.java:61] New entity:  Car: {id = 6; name = Chevrolet; model = Corvette; modification = 560; color = Red}  
+2014-10-09 18:25:31,161 DEBUG [pool-1-thread-1] JohnKuper [JPAWebServiceImpl.java:91] Service method 'findCarsByMotorPower' was called
+2014-10-09 18:25:31,162 DEBUG [pool-1-thread-1] JohnKuper [GenericDAOImpl.java:79] --- Start 'findAll' method for Car entity ---
+2014-10-09 18:25:31,168 DEBUG [pool-1-thread-1] JohnKuper [GenericDAOImpl.java:88] Found:  Car: {id = 1; name = Audi; model = R5; modification = 400; color = Красный} 
+2014-10-09 18:25:31,169 DEBUG [pool-1-thread-1] JohnKuper [GenericDAOImpl.java:88] Found:  Car: {id = 2; name = BMW; model = X3; modification = 250; color = Белый} 
+2014-10-09 18:25:31,169 DEBUG [pool-1-thread-1] JohnKuper [GenericDAOImpl.java:88] Found:  Car: {id = 3; name = Toyota; model = Corolla; modification = 300; color = Черный} 
+2014-10-09 18:25:31,170 DEBUG [pool-1-thread-1] JohnKuper [GenericDAOImpl.java:88] Found:  Car: {id = 4; name = Lada; model = Granta; modification = 150; color = Синий} 
+2014-10-09 18:25:31,170 DEBUG [pool-1-thread-1] JohnKuper [GenericDAOImpl.java:88] Found:  Car: {id = 5; name = Lamborghini; model = Diablo SV; modification = 900; color = Металлик} 
+2014-10-09 18:25:31,170 DEBUG [pool-1-thread-1] JohnKuper [GenericDAOImpl.java:88] Found:  Car: {id = 6; name = Chevrolet; model = Corvette; modification = 560; color = Red} 
+2014-10-09 18:25:31,178 DEBUG [pool-1-thread-1] JohnKuper [JPAWebServiceImpl.java:66] Service method 'findCarByName' was called
+2014-10-09 18:25:31,179 DEBUG [pool-1-thread-1] JohnKuper [CarDAOImpl.java:24] --- Start 'findByName' method for Car entity --- 
+2014-10-09 18:25:31,181 DEBUG [pool-1-thread-1] JohnKuper [CarDAOImpl.java:34] Found car with name Toyota:  Car: {id = 3; name = Toyota; model = Corolla; modification = 300; color = Черный} 
+2014-10-09 18:25:31,189 DEBUG [pool-1-thread-1] JohnKuper [JPAWebServiceImpl.java:121] Service method 'findCustomer' was called
+2014-10-09 18:25:31,189 DEBUG [pool-1-thread-1] JohnKuper [GenericDAOImpl.java:96] --- Start 'findOne' method for Customer entity with ID = 1 ---
+2014-10-09 18:25:31,210 DEBUG [pool-1-thread-1] JohnKuper [GenericDAOImpl.java:101] Found entity:  Customer: {id = 1; name = Игорь; surname = Ежов; patronymic = Владимирович; passport_series = 5705; passport_number = 032667; birthdate = 1970-04-16} 
+2014-10-09 18:25:31,211 DEBUG [pool-1-thread-1] JohnKuper [GenericDAOImpl.java:102] After mapping: CustomerDomain: {id = 1; custName = Игорь; custSurname = Ежов; custPatronymic = Владимирович; passportSeries = 5705; passportNumber = 032667; dateOfBirth = 1970-04-16}
+2014-10-09 18:25:31,219 DEBUG [pool-1-thread-1] JohnKuper [JPAWebServiceImpl.java:124] CustomerWeb: CustomerWeb: {id = 1; custName = Игорь; custSurname = Ежов; custPatronymic = Владимирович; passportSeries = 5705; passportNumber = 032667; dateOfBirth = 1970-04-16}
+2014-10-09 18:25:31,234 DEBUG [pool-1-thread-1] JohnKuper [JPAWebServiceImpl.java:133] Service method 'findMerchant' was called
+2014-10-09 18:25:31,235 DEBUG [pool-1-thread-1] JohnKuper [GenericDAOImpl.java:96] --- Start 'findOne' method for Merchant entity with ID = 1 ---
+2014-10-09 18:25:31,240 DEBUG [pool-1-thread-1] JohnKuper [GenericDAOImpl.java:101] Found entity:  Merchant: {id = 1; name = Михаил; surname = Захаров; patronymic = Олегович} 
+2014-10-09 18:25:31,240 DEBUG [pool-1-thread-1] JohnKuper [GenericDAOImpl.java:102] After mapping: MerchantDomain: {id = 1; merchName = Михаил; merchSurname = Захаров; merchPatronymic = Олегович}
+2014-10-09 18:25:31,245 DEBUG [pool-1-thread-1] JohnKuper [JPAWebServiceImpl.java:136] MerchantWeb: MerchantWeb: {id = 1; merchName = Михаил; merchSurname = Захаров; merchPatronymic = Олегович}
+2014-10-09 18:25:31,259 DEBUG [pool-1-thread-1] JohnKuper [JPAWebServiceImpl.java:147] Service method 'buyCar' was called
+2014-10-09 18:25:31,270 DEBUG [pool-1-thread-1] JohnKuper [GenericDAOImpl.java:55] --- Start 'create' method for Sale entity ---
+2014-10-09 18:25:31,270 DEBUG [pool-1-thread-1] JohnKuper [GenericDAOImpl.java:56] Domain for create: SaleDomain: {id = 0; salePrice = 1050000.8999999999068677425384521484375; dateOfSale = 2014-10-09
+CarDomain: {id = 3; car_mark = Toyota; car_model = Corolla; motorpower = 300; car_color = Черный}
+CustomerDomain: {id = 1; custName = Игорь; custSurname = Ежов; custPatronymic = Владимирович; passportSeries = 5705; passportNumber = 032667; dateOfBirth = Thu Apr 16 00:00:00 MSK 1970}
+MerchantDomain: {id = 1; merchName = Михаил; merchSurname = Захаров; merchPatronymic = Олегович}
+
+2014-10-09 18:25:31,301 DEBUG [pool-1-thread-1] JohnKuper [GenericDAOImpl.java:61] New entity: 
+ Sale: id = 6; price = 1050000.8999999999068677425384521484375; sale_date = Thu Oct 09 18:25:31 MSK 2014
+ Car: {id = 3; name = Toyota; model = Corolla; modification = 300; color = Черный} 
+ Customer: {id = 1; name = Игорь; surname = Ежов; patronymic = Владимирович; passport_series = 5705; passport_number = 032667; birthdate = Thu Apr 16 00:00:00 MSK 1970} 
+ Merchant: {id = 1; name = Михаил; surname = Захаров; patronymic = Олегович} 
+ 
+2014-10-09 18:25:31,301 DEBUG [pool-1-thread-1] JohnKuper [JPAWebServiceImpl.java:159] --- New sale was created: SaleWeb: {id = 0; salePrice = 1050000.8999999999068677425384521484375; dateOfSale = 2014-10-09
+CarWeb: {id = 3; car_mark = Toyota; car_model = Corolla; motorpower = 300; car_color = Черный}
+CustomerWeb: {id = 1; custName = Игорь; custSurname = Ежов; custPatronymic = Владимирович; passportSeries = 5705; passportNumber = 032667; dateOfBirth = Thu Apr 16 00:00:00 MSK 1970}
+MerchantWeb: {id = 1; merchName = Михаил; merchSurname = Захаров; merchPatronymic = Олегович}
+
+2014-10-09 18:25:31,330 DEBUG [pool-1-thread-1] JohnKuper [JPAWebServiceImpl.java:110] Service method 'createCustomer' was called
+2014-10-09 18:25:31,331 DEBUG [pool-1-thread-1] JohnKuper [GenericDAOImpl.java:55] --- Start 'create' method for Customer entity ---
+2014-10-09 18:25:31,331 DEBUG [pool-1-thread-1] JohnKuper [GenericDAOImpl.java:56] Domain for create: CustomerDomain: {id = 0; custName = Алексей; custSurname = Петров; custPatronymic = Васильевич; passportSeries = 4466; passportNumber = 569090; dateOfBirth = Tue Jun 22 18:25:31 MSD 1982}
+2014-10-09 18:25:31,339 DEBUG [pool-1-thread-1] JohnKuper [GenericDAOImpl.java:61] New entity:  Customer: {id = 6; name = Алексей; surname = Петров; patronymic = Васильевич; passport_series = 4466; passport_number = 569090; birthdate = Tue Jun 22 18:25:31 MSD 1982}  
+2014-10-09 18:30:33,648 DEBUG [main] JohnKuper [JPAWebServiceServer.java:16] Starting Server
+2014-10-09 18:30:33,753 DEBUG [main] JohnKuper [DomainServiceFieldRegistator.java:26] --- Start fields registration Domain ->> Service ---
+2014-10-09 18:30:33,808 DEBUG [main] JohnKuper [DomainServiceFieldRegistator.java:55] --- Fields registration Domain ->> Service complete ---
+2014-10-09 18:30:35,458 DEBUG [main] JohnKuper [EntityDomainFieldRegistator.java:26] --- Start fields registration Entity ->> Domain ---
+2014-10-09 18:30:35,473 DEBUG [main] JohnKuper [EntityDomainFieldRegistator.java:52] --- Fields registration Entity ->> Domain complete ---
+2014-10-09 18:30:36,759 DEBUG [main] JohnKuper [JPAWebServiceServer.java:20] The web service is published at http://localhost:9000/JPAWebService
+2014-10-09 18:30:36,760 DEBUG [main] JohnKuper [JPAWebServiceServer.java:27] Server is ready...
+2014-10-09 18:30:46,200 DEBUG [pool-1-thread-1] JohnKuper [JPAWebServiceImpl.java:66] Service method 'findCarByName' was called
+2014-10-09 18:30:46,201 DEBUG [pool-1-thread-1] JohnKuper [CarDAOImpl.java:24] --- Start 'findByName' method for Car entity --- 
+2014-10-09 18:30:46,382 DEBUG [pool-1-thread-1] JohnKuper [CarDAOImpl.java:34] Found car with name Lada:  Car: {id = 4; name = Lada; model = Granta; modification = 150; color = Синий} 
+2014-10-09 18:30:46,417 DEBUG [pool-1-thread-1] JohnKuper [JPAWebServiceImpl.java:81] Service method 'createCar' was called
+2014-10-09 18:30:46,422 DEBUG [pool-1-thread-1] JohnKuper [GenericDAOImpl.java:55] --- Start 'create' method for Car entity ---
+2014-10-09 18:30:46,422 DEBUG [pool-1-thread-1] JohnKuper [GenericDAOImpl.java:56] Domain for create: CarDomain: {id = 0; car_mark = Chevrolet; car_model = Corvette; motorpower = 560; car_color = Red}
+2014-10-09 18:31:04,195 DEBUG [main] JohnKuper [JPAWebServiceServer.java:16] Starting Server
+2014-10-09 18:31:04,299 DEBUG [main] JohnKuper [DomainServiceFieldRegistator.java:26] --- Start fields registration Domain ->> Service ---
+2014-10-09 18:31:04,353 DEBUG [main] JohnKuper [DomainServiceFieldRegistator.java:55] --- Fields registration Domain ->> Service complete ---
+2014-10-09 18:31:05,983 DEBUG [main] JohnKuper [EntityDomainFieldRegistator.java:26] --- Start fields registration Entity ->> Domain ---
+2014-10-09 18:31:05,996 DEBUG [main] JohnKuper [EntityDomainFieldRegistator.java:52] --- Fields registration Entity ->> Domain complete ---
+2014-10-09 18:31:07,243 DEBUG [main] JohnKuper [JPAWebServiceServer.java:20] The web service is published at http://localhost:9000/JPAWebService
+2014-10-09 18:31:07,246 DEBUG [main] JohnKuper [JPAWebServiceServer.java:27] Server is ready...
+2014-10-09 18:31:08,715 DEBUG [pool-1-thread-1] JohnKuper [JPAWebServiceImpl.java:66] Service method 'findCarByName' was called
+2014-10-09 18:31:08,716 DEBUG [pool-1-thread-1] JohnKuper [CarDAOImpl.java:24] --- Start 'findByName' method for Car entity --- 
+2014-10-09 18:31:08,795 DEBUG [pool-1-thread-1] JohnKuper [CarDAOImpl.java:34] Found car with name Lada:  Car: {id = 4; name = Lada; model = Granta; modification = 150; color = Синий} 
+2014-10-09 18:31:08,850 DEBUG [pool-1-thread-1] JohnKuper [JPAWebServiceImpl.java:81] Service method 'createCar' was called
+2014-10-09 18:31:08,855 DEBUG [pool-1-thread-1] JohnKuper [GenericDAOImpl.java:55] --- Start 'create' method for Car entity ---
+2014-10-09 18:31:08,855 DEBUG [pool-1-thread-1] JohnKuper [GenericDAOImpl.java:56] Domain for create: CarDomain: {id = 0; car_mark = Chevrolet; car_model = Corvette; motorpower = 560; car_color = Red}
+2014-10-09 18:31:08,899 DEBUG [pool-1-thread-1] JohnKuper [GenericDAOImpl.java:61] New entity:  Car: {id = 6; name = Chevrolet; model = Corvette; modification = 560; color = Red}  
+2014-10-09 18:31:08,928 DEBUG [pool-1-thread-1] JohnKuper [JPAWebServiceImpl.java:91] Service method 'findCarsByMotorPower' was called
+2014-10-09 18:31:08,929 DEBUG [pool-1-thread-1] JohnKuper [GenericDAOImpl.java:79] --- Start 'findAll' method for Car entity ---
+2014-10-09 18:31:08,936 DEBUG [pool-1-thread-1] JohnKuper [GenericDAOImpl.java:88] Found:  Car: {id = 1; name = Audi; model = R5; modification = 400; color = Красный} 
+2014-10-09 18:31:08,937 DEBUG [pool-1-thread-1] JohnKuper [GenericDAOImpl.java:88] Found:  Car: {id = 2; name = BMW; model = X3; modification = 250; color = Белый} 
+2014-10-09 18:31:08,937 DEBUG [pool-1-thread-1] JohnKuper [GenericDAOImpl.java:88] Found:  Car: {id = 3; name = Toyota; model = Corolla; modification = 300; color = Черный} 
+2014-10-09 18:31:08,938 DEBUG [pool-1-thread-1] JohnKuper [GenericDAOImpl.java:88] Found:  Car: {id = 4; name = Lada; model = Granta; modification = 150; color = Синий} 
+2014-10-09 18:31:08,938 DEBUG [pool-1-thread-1] JohnKuper [GenericDAOImpl.java:88] Found:  Car: {id = 5; name = Lamborghini; model = Diablo SV; modification = 900; color = Металлик} 
+2014-10-09 18:31:08,939 DEBUG [pool-1-thread-1] JohnKuper [GenericDAOImpl.java:88] Found:  Car: {id = 6; name = Chevrolet; model = Corvette; modification = 560; color = Red} 
+2014-10-09 18:31:37,085 DEBUG [main] JohnKuper [JPAWebServiceServer.java:16] Starting Server
+2014-10-09 18:31:37,202 DEBUG [main] JohnKuper [DomainServiceFieldRegistator.java:26] --- Start fields registration Domain ->> Service ---
+2014-10-09 18:31:37,255 DEBUG [main] JohnKuper [DomainServiceFieldRegistator.java:55] --- Fields registration Domain ->> Service complete ---
+2014-10-09 18:31:38,852 DEBUG [main] JohnKuper [EntityDomainFieldRegistator.java:26] --- Start fields registration Entity ->> Domain ---
+2014-10-09 18:31:38,870 DEBUG [main] JohnKuper [EntityDomainFieldRegistator.java:52] --- Fields registration Entity ->> Domain complete ---
+2014-10-09 18:31:40,141 DEBUG [main] JohnKuper [JPAWebServiceServer.java:20] The web service is published at http://localhost:9000/JPAWebService
+2014-10-09 18:31:40,142 DEBUG [main] JohnKuper [JPAWebServiceServer.java:27] Server is ready...
+2014-10-09 18:31:41,861 DEBUG [pool-1-thread-1] JohnKuper [JPAWebServiceImpl.java:66] Service method 'findCarByName' was called
+2014-10-09 18:31:41,861 DEBUG [pool-1-thread-1] JohnKuper [CarDAOImpl.java:24] --- Start 'findByName' method for Car entity --- 
+2014-10-09 18:31:42,066 DEBUG [pool-1-thread-1] JohnKuper [CarDAOImpl.java:34] Found car with name Lada:  Car: {id = 4; name = Lada; model = Granta; modification = 150; color = Синий} 
+2014-10-09 18:31:42,098 DEBUG [pool-1-thread-1] JohnKuper [JPAWebServiceImpl.java:81] Service method 'createCar' was called
+2014-10-09 18:31:42,103 DEBUG [pool-1-thread-1] JohnKuper [GenericDAOImpl.java:55] --- Start 'create' method for Car entity ---
+2014-10-09 18:31:42,103 DEBUG [pool-1-thread-1] JohnKuper [GenericDAOImpl.java:56] Domain for create: CarDomain: {id = 0; car_mark = Chevrolet; car_model = Corvette; motorpower = 560; car_color = Red}
+2014-10-09 18:31:42,146 DEBUG [pool-1-thread-1] JohnKuper [GenericDAOImpl.java:61] New entity:  Car: {id = 6; name = Chevrolet; model = Corvette; modification = 560; color = Red}  
+2014-10-09 18:31:42,154 DEBUG [pool-1-thread-1] JohnKuper [JPAWebServiceImpl.java:91] Service method 'findCarsByMotorPower' was called
+2014-10-09 18:31:42,154 DEBUG [pool-1-thread-1] JohnKuper [GenericDAOImpl.java:79] --- Start 'findAll' method for Car entity ---
+2014-10-09 18:31:42,162 DEBUG [pool-1-thread-1] JohnKuper [GenericDAOImpl.java:88] Found:  Car: {id = 1; name = Audi; model = R5; modification = 400; color = Красный} 
+2014-10-09 18:31:42,163 DEBUG [pool-1-thread-1] JohnKuper [GenericDAOImpl.java:88] Found:  Car: {id = 2; name = BMW; model = X3; modification = 250; color = Белый} 
+2014-10-09 18:31:42,163 DEBUG [pool-1-thread-1] JohnKuper [GenericDAOImpl.java:88] Found:  Car: {id = 3; name = Toyota; model = Corolla; modification = 300; color = Черный} 
+2014-10-09 18:31:42,164 DEBUG [pool-1-thread-1] JohnKuper [GenericDAOImpl.java:88] Found:  Car: {id = 4; name = Lada; model = Granta; modification = 150; color = Синий} 
+2014-10-09 18:31:42,164 DEBUG [pool-1-thread-1] JohnKuper [GenericDAOImpl.java:88] Found:  Car: {id = 5; name = Lamborghini; model = Diablo SV; modification = 900; color = Металлик} 
+2014-10-09 18:31:42,165 DEBUG [pool-1-thread-1] JohnKuper [GenericDAOImpl.java:88] Found:  Car: {id = 6; name = Chevrolet; model = Corvette; modification = 560; color = Red} 
+2014-10-09 18:31:42,173 DEBUG [pool-1-thread-1] JohnKuper [JPAWebServiceImpl.java:66] Service method 'findCarByName' was called
+2014-10-09 18:31:42,174 DEBUG [pool-1-thread-1] JohnKuper [CarDAOImpl.java:24] --- Start 'findByName' method for Car entity --- 
+2014-10-09 18:31:42,177 DEBUG [pool-1-thread-1] JohnKuper [CarDAOImpl.java:34] Found car with name Toyota:  Car: {id = 3; name = Toyota; model = Corolla; modification = 300; color = Черный} 
+2014-10-09 18:31:42,219 DEBUG [pool-1-thread-1] JohnKuper [JPAWebServiceImpl.java:121] Service method 'findCustomer' was called
+2014-10-09 18:31:42,219 DEBUG [pool-1-thread-1] JohnKuper [GenericDAOImpl.java:96] --- Start 'findOne' method for Customer entity with ID = 1 ---
+2014-10-09 18:31:42,239 DEBUG [pool-1-thread-1] JohnKuper [GenericDAOImpl.java:101] Found entity:  Customer: {id = 1; name = Игорь; surname = Ежов; patronymic = Владимирович; passport_series = 5705; passport_number = 032667; birthdate = 1970-04-16} 
+2014-10-09 18:31:42,240 DEBUG [pool-1-thread-1] JohnKuper [GenericDAOImpl.java:102] After mapping: CustomerDomain: {id = 1; custName = Игорь; custSurname = Ежов; custPatronymic = Владимирович; passportSeries = 5705; passportNumber = 032667; dateOfBirth = 1970-04-16}
+2014-10-09 18:31:42,246 DEBUG [pool-1-thread-1] JohnKuper [JPAWebServiceImpl.java:124] CustomerWeb: CustomerWeb: {id = 1; custName = Игорь; custSurname = Ежов; custPatronymic = Владимирович; passportSeries = 5705; passportNumber = 032667; dateOfBirth = 1970-04-16}
+2014-10-09 18:31:42,256 DEBUG [pool-1-thread-1] JohnKuper [JPAWebServiceImpl.java:133] Service method 'findMerchant' was called
+2014-10-09 18:31:42,256 DEBUG [pool-1-thread-1] JohnKuper [GenericDAOImpl.java:96] --- Start 'findOne' method for Merchant entity with ID = 1 ---
+2014-10-09 18:31:42,261 DEBUG [pool-1-thread-1] JohnKuper [GenericDAOImpl.java:101] Found entity:  Merchant: {id = 1; name = Михаил; surname = Захаров; patronymic = Олегович} 
+2014-10-09 18:31:42,262 DEBUG [pool-1-thread-1] JohnKuper [GenericDAOImpl.java:102] After mapping: MerchantDomain: {id = 1; merchName = Михаил; merchSurname = Захаров; merchPatronymic = Олегович}
+2014-10-09 18:31:42,266 DEBUG [pool-1-thread-1] JohnKuper [JPAWebServiceImpl.java:136] MerchantWeb: MerchantWeb: {id = 1; merchName = Михаил; merchSurname = Захаров; merchPatronymic = Олегович}
+2014-10-09 18:31:42,282 DEBUG [pool-1-thread-1] JohnKuper [JPAWebServiceImpl.java:147] Service method 'buyCar' was called
+2014-10-09 18:31:42,294 DEBUG [pool-1-thread-1] JohnKuper [GenericDAOImpl.java:55] --- Start 'create' method for Sale entity ---
+2014-10-09 18:31:42,295 DEBUG [pool-1-thread-1] JohnKuper [GenericDAOImpl.java:56] Domain for create: SaleDomain: {id = 0; salePrice = 1050000.8999999999068677425384521484375; dateOfSale = 2014-10-09
+CarDomain: {id = 3; car_mark = Toyota; car_model = Corolla; motorpower = 300; car_color = Черный}
+CustomerDomain: {id = 1; custName = Игорь; custSurname = Ежов; custPatronymic = Владимирович; passportSeries = 5705; passportNumber = 032667; dateOfBirth = Thu Apr 16 00:00:00 MSK 1970}
+MerchantDomain: {id = 1; merchName = Михаил; merchSurname = Захаров; merchPatronymic = Олегович}
+
+2014-10-09 18:31:42,341 DEBUG [pool-1-thread-1] JohnKuper [GenericDAOImpl.java:61] New entity: 
+ Sale: id = 6; price = 1050000.8999999999068677425384521484375; sale_date = Thu Oct 09 18:31:42 MSK 2014
+ Car: {id = 3; name = Toyota; model = Corolla; modification = 300; color = Черный} 
+ Customer: {id = 1; name = Игорь; surname = Ежов; patronymic = Владимирович; passport_series = 5705; passport_number = 032667; birthdate = Thu Apr 16 00:00:00 MSK 1970} 
+ Merchant: {id = 1; name = Михаил; surname = Захаров; patronymic = Олегович} 
+ 
+2014-10-09 18:31:42,342 DEBUG [pool-1-thread-1] JohnKuper [JPAWebServiceImpl.java:160] SaleWeb: {id = 0; salePrice = 1050000.8999999999068677425384521484375; dateOfSale = 2014-10-09
+CarWeb: {id = 3; car_mark = Toyota; car_model = Corolla; motorpower = 300; car_color = Черный}
+CustomerWeb: {id = 1; custName = Игорь; custSurname = Ежов; custPatronymic = Владимирович; passportSeries = 5705; passportNumber = 032667; dateOfBirth = Thu Apr 16 00:00:00 MSK 1970}
+MerchantWeb: {id = 1; merchName = Михаил; merchSurname = Захаров; merchPatronymic = Олегович}
+
+2014-10-09 18:31:42,357 DEBUG [pool-1-thread-1] JohnKuper [JPAWebServiceImpl.java:110] Service method 'createCustomer' was called
+2014-10-09 18:31:42,358 DEBUG [pool-1-thread-1] JohnKuper [GenericDAOImpl.java:55] --- Start 'create' method for Customer entity ---
+2014-10-09 18:31:42,358 DEBUG [pool-1-thread-1] JohnKuper [GenericDAOImpl.java:56] Domain for create: CustomerDomain: {id = 0; custName = Алексей; custSurname = Петров; custPatronymic = Васильевич; passportSeries = 4466; passportNumber = 569090; dateOfBirth = Tue Jun 22 18:31:42 MSD 1982}
+2014-10-09 18:31:42,372 DEBUG [pool-1-thread-1] JohnKuper [GenericDAOImpl.java:61] New entity:  Customer: {id = 6; name = Алексей; surname = Петров; patronymic = Васильевич; passport_series = 4466; passport_number = 569090; birthdate = Tue Jun 22 18:31:42 MSD 1982}  
+2014-10-09 18:46:50,916 DEBUG [main] JohnKuper [JPAWebServiceServer.java:16] Starting Server
+2014-10-09 18:46:51,010 DEBUG [main] JohnKuper [DomainServiceFieldRegistator.java:26] --- Start fields registration Domain ->> Service ---
+2014-10-09 18:46:51,069 DEBUG [main] JohnKuper [DomainServiceFieldRegistator.java:55] --- Fields registration Domain ->> Service complete ---
+2014-10-09 18:46:52,679 DEBUG [main] JohnKuper [EntityDomainFieldRegistator.java:26] --- Start fields registration Entity ->> Domain ---
+2014-10-09 18:46:52,696 DEBUG [main] JohnKuper [EntityDomainFieldRegistator.java:52] --- Fields registration Entity ->> Domain complete ---
+2014-10-09 18:46:53,775 DEBUG [main] JohnKuper [JPAWebServiceServer.java:20] The web service is published at http://localhost:9000/JPAWebService
+2014-10-09 18:46:53,777 DEBUG [main] JohnKuper [JPAWebServiceServer.java:27] Server is ready...
+2014-10-09 18:48:14,366 DEBUG [pool-1-thread-2] JohnKuper [JPAWebServiceImpl.java:66] Service method 'findCarByName' was called
+2014-10-09 18:48:14,366 DEBUG [pool-1-thread-2] JohnKuper [CarDAOImpl.java:24] --- Start 'findByName' method for Car entity --- 
+2014-10-09 18:48:14,556 DEBUG [pool-1-thread-2] JohnKuper [CarDAOImpl.java:34] Found car with name Lada:  Car: {id = 4; name = Lada; model = Granta; modification = 150; color = Синий} 
+2014-10-09 18:48:14,587 DEBUG [pool-1-thread-2] JohnKuper [JPAWebServiceImpl.java:81] Service method 'createCar' was called
+2014-10-09 18:48:14,595 DEBUG [pool-1-thread-2] JohnKuper [GenericDAOImpl.java:55] --- Start 'create' method for Car entity ---
+2014-10-09 18:48:14,595 DEBUG [pool-1-thread-2] JohnKuper [GenericDAOImpl.java:56] Domain for create: CarDomain: {id = 0; car_mark = Chevrolet; car_model = Corvette; motorpower = 560; car_color = Red}
+2014-10-09 18:48:14,631 DEBUG [pool-1-thread-2] JohnKuper [GenericDAOImpl.java:61] New entity:  Car: {id = 6; name = Chevrolet; model = Corvette; modification = 560; color = Red}  
+2014-10-09 18:48:14,636 DEBUG [pool-1-thread-2] JohnKuper [JPAWebServiceImpl.java:91] Service method 'findCarsByMotorPower' was called
+2014-10-09 18:48:14,637 DEBUG [pool-1-thread-2] JohnKuper [GenericDAOImpl.java:79] --- Start 'findAll' method for Car entity ---
+2014-10-09 18:48:14,659 DEBUG [pool-1-thread-2] JohnKuper [GenericDAOImpl.java:88] Found:  Car: {id = 1; name = Audi; model = R5; modification = 400; color = Красный} 
+2014-10-09 18:48:14,660 DEBUG [pool-1-thread-2] JohnKuper [GenericDAOImpl.java:88] Found:  Car: {id = 2; name = BMW; model = X3; modification = 250; color = Белый} 
+2014-10-09 18:48:14,660 DEBUG [pool-1-thread-2] JohnKuper [GenericDAOImpl.java:88] Found:  Car: {id = 3; name = Toyota; model = Corolla; modification = 300; color = Черный} 
+2014-10-09 18:48:14,661 DEBUG [pool-1-thread-2] JohnKuper [GenericDAOImpl.java:88] Found:  Car: {id = 4; name = Lada; model = Granta; modification = 150; color = Синий} 
+2014-10-09 18:48:14,661 DEBUG [pool-1-thread-2] JohnKuper [GenericDAOImpl.java:88] Found:  Car: {id = 5; name = Lamborghini; model = Diablo SV; modification = 900; color = Металлик} 
+2014-10-09 18:48:14,661 DEBUG [pool-1-thread-2] JohnKuper [GenericDAOImpl.java:88] Found:  Car: {id = 6; name = Chevrolet; model = Corvette; modification = 560; color = Red} 
+2014-10-09 18:48:14,693 DEBUG [pool-1-thread-2] JohnKuper [JPAWebServiceImpl.java:66] Service method 'findCarByName' was called
+2014-10-09 18:48:14,694 DEBUG [pool-1-thread-2] JohnKuper [CarDAOImpl.java:24] --- Start 'findByName' method for Car entity --- 
+2014-10-09 18:48:14,696 DEBUG [pool-1-thread-2] JohnKuper [CarDAOImpl.java:34] Found car with name Toyota:  Car: {id = 3; name = Toyota; model = Corolla; modification = 300; color = Черный} 
+2014-10-09 18:48:14,703 DEBUG [pool-1-thread-2] JohnKuper [JPAWebServiceImpl.java:121] Service method 'findCustomer' was called
+2014-10-09 18:48:14,704 DEBUG [pool-1-thread-2] JohnKuper [GenericDAOImpl.java:96] --- Start 'findOne' method for Customer entity with ID = 1 ---
+2014-10-09 18:48:14,722 DEBUG [pool-1-thread-2] JohnKuper [GenericDAOImpl.java:101] Found entity:  Customer: {id = 1; name = Игорь; surname = Ежов; patronymic = Владимирович; passport_series = 5705; passport_number = 032667; birthdate = 1970-04-16} 
+2014-10-09 18:48:14,723 DEBUG [pool-1-thread-2] JohnKuper [GenericDAOImpl.java:102] After mapping: CustomerDomain: {id = 1; custName = Игорь; custSurname = Ежов; custPatronymic = Владимирович; passportSeries = 5705; passportNumber = 032667; dateOfBirth = 1970-04-16}
+2014-10-09 18:48:14,728 DEBUG [pool-1-thread-2] JohnKuper [JPAWebServiceImpl.java:124] CustomerWeb: CustomerWeb: {id = 1; custName = Игорь; custSurname = Ежов; custPatronymic = Владимирович; passportSeries = 5705; passportNumber = 032667; dateOfBirth = 1970-04-16}
+2014-10-09 18:48:14,742 DEBUG [pool-1-thread-2] JohnKuper [JPAWebServiceImpl.java:133] Service method 'findMerchant' was called
+2014-10-09 18:48:14,742 DEBUG [pool-1-thread-2] JohnKuper [GenericDAOImpl.java:96] --- Start 'findOne' method for Merchant entity with ID = 1 ---
+2014-10-09 18:48:14,751 DEBUG [pool-1-thread-2] JohnKuper [GenericDAOImpl.java:101] Found entity:  Merchant: {id = 1; name = Михаил; surname = Захаров; patronymic = Олегович} 
+2014-10-09 18:48:14,752 DEBUG [pool-1-thread-2] JohnKuper [GenericDAOImpl.java:102] After mapping: MerchantDomain: {id = 1; merchName = Михаил; merchSurname = Захаров; merchPatronymic = Олегович}
+2014-10-09 18:48:14,756 DEBUG [pool-1-thread-2] JohnKuper [JPAWebServiceImpl.java:136] MerchantWeb: MerchantWeb: {id = 1; merchName = Михаил; merchSurname = Захаров; merchPatronymic = Олегович}
+2014-10-09 18:48:14,768 DEBUG [pool-1-thread-2] JohnKuper [JPAWebServiceImpl.java:157] Service method 'buyCar' was called
+2014-10-09 18:48:14,780 DEBUG [pool-1-thread-2] JohnKuper [GenericDAOImpl.java:55] --- Start 'create' method for Sale entity ---
+2014-10-09 18:48:14,780 DEBUG [pool-1-thread-2] JohnKuper [GenericDAOImpl.java:56] Domain for create: SaleDomain: {id = 0; salePrice = 1050000.8999999999068677425384521484375; dateOfSale = 2014-10-09
+CarDomain: {id = 3; car_mark = Toyota; car_model = Corolla; motorpower = 300; car_color = Черный}
+CustomerDomain: {id = 1; custName = Игорь; custSurname = Ежов; custPatronymic = Владимирович; passportSeries = 5705; passportNumber = 032667; dateOfBirth = Thu Apr 16 00:00:00 MSK 1970}
+MerchantDomain: {id = 1; merchName = Михаил; merchSurname = Захаров; merchPatronymic = Олегович}
+
+2014-10-09 18:48:14,806 DEBUG [pool-1-thread-2] JohnKuper [GenericDAOImpl.java:61] New entity: 
+ Sale: id = 6; price = 1050000.8999999999068677425384521484375; sale_date = Thu Oct 09 18:48:14 MSK 2014
+ Car: {id = 3; name = Toyota; model = Corolla; modification = 300; color = Черный} 
+ Customer: {id = 1; name = Игорь; surname = Ежов; patronymic = Владимирович; passport_series = 5705; passport_number = 032667; birthdate = Thu Apr 16 00:00:00 MSK 1970} 
+ Merchant: {id = 1; name = Михаил; surname = Захаров; patronymic = Олегович} 
+ 
+2014-10-09 18:48:14,807 DEBUG [pool-1-thread-2] JohnKuper [JPAWebServiceImpl.java:170] SaleWeb: {id = 0; salePrice = 1050000.8999999999068677425384521484375; dateOfSale = 2014-10-09
+CarWeb: {id = 3; car_mark = Toyota; car_model = Corolla; motorpower = 300; car_color = Черный}
+CustomerWeb: {id = 1; custName = Игорь; custSurname = Ежов; custPatronymic = Владимирович; passportSeries = 5705; passportNumber = 032667; dateOfBirth = Thu Apr 16 00:00:00 MSK 1970}
+MerchantWeb: {id = 1; merchName = Михаил; merchSurname = Захаров; merchPatronymic = Олегович}
+
+2014-10-09 18:48:14,816 DEBUG [pool-1-thread-2] JohnKuper [JPAWebServiceImpl.java:110] Service method 'createCustomer' was called
+2014-10-09 18:48:14,817 DEBUG [pool-1-thread-2] JohnKuper [GenericDAOImpl.java:55] --- Start 'create' method for Customer entity ---
+2014-10-09 18:48:14,818 DEBUG [pool-1-thread-2] JohnKuper [GenericDAOImpl.java:56] Domain for create: CustomerDomain: {id = 0; custName = Алексей; custSurname = Петров; custPatronymic = Васильевич; passportSeries = 4466; passportNumber = 569090; dateOfBirth = Tue Jun 22 18:48:14 MSD 1982}
+2014-10-09 18:48:14,826 DEBUG [pool-1-thread-2] JohnKuper [GenericDAOImpl.java:61] New entity:  Customer: {id = 6; name = Алексей; surname = Петров; patronymic = Васильевич; passport_series = 4466; passport_number = 569090; birthdate = Tue Jun 22 18:48:14 MSD 1982}  
+2014-10-09 18:50:20,191 DEBUG [main] JohnKuper [JPAWebServiceServer.java:16] Starting Server
+2014-10-09 18:50:20,295 DEBUG [main] JohnKuper [DomainServiceFieldRegistator.java:26] --- Start fields registration Domain ->> Service ---
+2014-10-09 18:50:20,351 DEBUG [main] JohnKuper [DomainServiceFieldRegistator.java:55] --- Fields registration Domain ->> Service complete ---
+2014-10-09 18:50:21,888 DEBUG [main] JohnKuper [EntityDomainFieldRegistator.java:26] --- Start fields registration Entity ->> Domain ---
+2014-10-09 18:50:21,910 DEBUG [main] JohnKuper [EntityDomainFieldRegistator.java:52] --- Fields registration Entity ->> Domain complete ---
+2014-10-09 18:50:23,117 DEBUG [main] JohnKuper [JPAWebServiceServer.java:20] The web service is published at http://localhost:9000/JPAWebService
+2014-10-09 18:50:23,118 DEBUG [main] JohnKuper [JPAWebServiceServer.java:27] Server is ready...
+2014-10-09 18:50:23,844 DEBUG [pool-1-thread-1] JohnKuper [JPAWebServiceImpl.java:66] Service method 'findCarByName' was called
+2014-10-09 18:50:23,844 DEBUG [pool-1-thread-1] JohnKuper [CarDAOImpl.java:24] --- Start 'findByName' method for Car entity --- 
+2014-10-09 18:50:23,921 DEBUG [pool-1-thread-1] JohnKuper [CarDAOImpl.java:34] Found car with name Lada:  Car: {id = 4; name = Lada; model = Granta; modification = 150; color = Синий} 
+2014-10-09 18:50:23,951 DEBUG [pool-1-thread-1] JohnKuper [JPAWebServiceImpl.java:81] Service method 'createCar' was called
+2014-10-09 18:50:23,956 DEBUG [pool-1-thread-1] JohnKuper [GenericDAOImpl.java:55] --- Start 'create' method for Car entity ---
+2014-10-09 18:50:23,957 DEBUG [pool-1-thread-1] JohnKuper [GenericDAOImpl.java:56] Domain for create: CarDomain: {id = 0; car_mark = Chevrolet; car_model = Corvette; motorpower = 560; car_color = Red}
+2014-10-09 18:50:23,991 DEBUG [pool-1-thread-1] JohnKuper [GenericDAOImpl.java:61] New entity:  Car: {id = 6; name = Chevrolet; model = Corvette; modification = 560; color = Red}  
+2014-10-09 18:50:24,020 DEBUG [pool-1-thread-1] JohnKuper [JPAWebServiceImpl.java:91] Service method 'findCarsByMotorPower' was called
+2014-10-09 18:50:24,021 DEBUG [pool-1-thread-1] JohnKuper [GenericDAOImpl.java:79] --- Start 'findAll' method for Car entity ---
+2014-10-09 18:50:24,029 DEBUG [pool-1-thread-1] JohnKuper [GenericDAOImpl.java:88] Found:  Car: {id = 1; name = Audi; model = R5; modification = 400; color = Красный} 
+2014-10-09 18:50:24,030 DEBUG [pool-1-thread-1] JohnKuper [GenericDAOImpl.java:88] Found:  Car: {id = 2; name = BMW; model = X3; modification = 250; color = Белый} 
+2014-10-09 18:50:24,031 DEBUG [pool-1-thread-1] JohnKuper [GenericDAOImpl.java:88] Found:  Car: {id = 3; name = Toyota; model = Corolla; modification = 300; color = Черный} 
+2014-10-09 18:50:24,031 DEBUG [pool-1-thread-1] JohnKuper [GenericDAOImpl.java:88] Found:  Car: {id = 4; name = Lada; model = Granta; modification = 150; color = Синий} 
+2014-10-09 18:50:24,031 DEBUG [pool-1-thread-1] JohnKuper [GenericDAOImpl.java:88] Found:  Car: {id = 5; name = Lamborghini; model = Diablo SV; modification = 900; color = Металлик} 
+2014-10-09 18:50:24,032 DEBUG [pool-1-thread-1] JohnKuper [GenericDAOImpl.java:88] Found:  Car: {id = 6; name = Chevrolet; model = Corvette; modification = 560; color = Red} 
+2014-10-09 18:50:24,042 DEBUG [pool-1-thread-1] JohnKuper [JPAWebServiceImpl.java:66] Service method 'findCarByName' was called
+2014-10-09 18:50:24,043 DEBUG [pool-1-thread-1] JohnKuper [CarDAOImpl.java:24] --- Start 'findByName' method for Car entity --- 
+2014-10-09 18:50:24,047 DEBUG [pool-1-thread-1] JohnKuper [CarDAOImpl.java:34] Found car with name Toyota:  Car: {id = 3; name = Toyota; model = Corolla; modification = 300; color = Черный} 
+2014-10-09 18:50:24,067 DEBUG [pool-1-thread-1] JohnKuper [JPAWebServiceImpl.java:121] Service method 'findCustomer' was called
+2014-10-09 18:50:24,069 DEBUG [pool-1-thread-1] JohnKuper [GenericDAOImpl.java:96] --- Start 'findOne' method for Customer entity with ID = 1 ---
+2014-10-09 18:50:24,101 DEBUG [pool-1-thread-1] JohnKuper [GenericDAOImpl.java:101] Found entity:  Customer: {id = 1; name = Игорь; surname = Ежов; patronymic = Владимирович; passport_series = 5705; passport_number = 032667; birthdate = 1970-04-16} 
+2014-10-09 18:50:24,101 DEBUG [pool-1-thread-1] JohnKuper [GenericDAOImpl.java:102] After mapping: CustomerDomain: {id = 1; custName = Игорь; custSurname = Ежов; custPatronymic = Владимирович; passportSeries = 5705; passportNumber = 032667; dateOfBirth = 1970-04-16}
+2014-10-09 18:50:24,119 DEBUG [pool-1-thread-1] JohnKuper [JPAWebServiceImpl.java:124] CustomerWeb: CustomerWeb: {id = 1; custName = Игорь; custSurname = Ежов; custPatronymic = Владимирович; passportSeries = 5705; passportNumber = 032667; dateOfBirth = 1970-04-16}
+2014-10-09 18:50:24,131 DEBUG [pool-1-thread-1] JohnKuper [JPAWebServiceImpl.java:133] Service method 'findMerchant' was called
+2014-10-09 18:50:24,132 DEBUG [pool-1-thread-1] JohnKuper [GenericDAOImpl.java:96] --- Start 'findOne' method for Merchant entity with ID = 1 ---
+2014-10-09 18:50:24,136 DEBUG [pool-1-thread-1] JohnKuper [GenericDAOImpl.java:101] Found entity:  Merchant: {id = 1; name = Михаил; surname = Захаров; patronymic = Олегович} 
+2014-10-09 18:50:24,137 DEBUG [pool-1-thread-1] JohnKuper [GenericDAOImpl.java:102] After mapping: MerchantDomain: {id = 1; merchName = Михаил; merchSurname = Захаров; merchPatronymic = Олегович}
+2014-10-09 18:50:24,141 DEBUG [pool-1-thread-1] JohnKuper [JPAWebServiceImpl.java:136] MerchantWeb: MerchantWeb: {id = 1; merchName = Михаил; merchSurname = Захаров; merchPatronymic = Олегович}
+2014-10-09 18:50:24,155 DEBUG [pool-1-thread-1] JohnKuper [JPAWebServiceImpl.java:157] Service method 'buyCar' was called
+2014-10-09 18:50:24,169 DEBUG [pool-1-thread-1] JohnKuper [GenericDAOImpl.java:55] --- Start 'create' method for Sale entity ---
+2014-10-09 18:50:24,170 DEBUG [pool-1-thread-1] JohnKuper [GenericDAOImpl.java:56] Domain for create: SaleDomain: {id = 0; salePrice = 1050000.8999999999068677425384521484375; dateOfSale = 2014-10-09
+CarDomain: {id = 3; car_mark = Toyota; car_model = Corolla; motorpower = 300; car_color = Черный}
+CustomerDomain: {id = 1; custName = Игорь; custSurname = Ежов; custPatronymic = Владимирович; passportSeries = 5705; passportNumber = 032667; dateOfBirth = Thu Apr 16 00:00:00 MSK 1970}
+MerchantDomain: {id = 1; merchName = Михаил; merchSurname = Захаров; merchPatronymic = Олегович}
+
+2014-10-09 18:50:24,193 DEBUG [pool-1-thread-1] JohnKuper [GenericDAOImpl.java:61] New entity: 
+ Sale: id = 6; price = 1050000.8999999999068677425384521484375; sale_date = Thu Oct 09 18:50:24 MSK 2014
+ Car: {id = 3; name = Toyota; model = Corolla; modification = 300; color = Черный} 
+ Customer: {id = 1; name = Игорь; surname = Ежов; patronymic = Владимирович; passport_series = 5705; passport_number = 032667; birthdate = Thu Apr 16 00:00:00 MSK 1970} 
+ Merchant: {id = 1; name = Михаил; surname = Захаров; patronymic = Олегович} 
+ 
+2014-10-09 18:50:24,194 DEBUG [pool-1-thread-1] JohnKuper [JPAWebServiceImpl.java:170] SaleWeb: {id = 0; salePrice = 1050000.8999999999068677425384521484375; dateOfSale = 2014-10-09
+CarWeb: {id = 3; car_mark = Toyota; car_model = Corolla; motorpower = 300; car_color = Черный}
+CustomerWeb: {id = 1; custName = Игорь; custSurname = Ежов; custPatronymic = Владимирович; passportSeries = 5705; passportNumber = 032667; dateOfBirth = Thu Apr 16 00:00:00 MSK 1970}
+MerchantWeb: {id = 1; merchName = Михаил; merchSurname = Захаров; merchPatronymic = Олегович}
+
+2014-10-09 18:50:24,204 DEBUG [pool-1-thread-1] JohnKuper [JPAWebServiceImpl.java:110] Service method 'createCustomer' was called
+2014-10-09 18:50:24,205 DEBUG [pool-1-thread-1] JohnKuper [GenericDAOImpl.java:55] --- Start 'create' method for Customer entity ---
+2014-10-09 18:50:24,205 DEBUG [pool-1-thread-1] JohnKuper [GenericDAOImpl.java:56] Domain for create: CustomerDomain: {id = 0; custName = Алексей; custSurname = Петров; custPatronymic = Васильевич; passportSeries = 4466; passportNumber = 569090; dateOfBirth = Tue Jun 22 18:50:24 MSD 1982}
+2014-10-09 18:50:24,212 DEBUG [pool-1-thread-1] JohnKuper [GenericDAOImpl.java:61] New entity:  Customer: {id = 6; name = Алексей; surname = Петров; patronymic = Васильевич; passport_series = 4466; passport_number = 569090; birthdate = Tue Jun 22 18:50:24 MSD 1982}  
+2014-10-09 18:50:24,225 DEBUG [pool-1-thread-1] JohnKuper [JPAWebServiceImpl.java:145] Service method 'createMerchant' was called
+2014-10-09 18:50:24,226 DEBUG [pool-1-thread-1] JohnKuper [GenericDAOImpl.java:55] --- Start 'create' method for Merchant entity ---
+2014-10-09 18:50:24,227 DEBUG [pool-1-thread-1] JohnKuper [GenericDAOImpl.java:56] Domain for create: MerchantDomain: {id = 0; merchName = Михаил; merchSurname = Шишкин; merchPatronymic = Валентинович}
+2014-10-09 18:50:24,248 DEBUG [pool-1-thread-1] JohnKuper [GenericDAOImpl.java:61] New entity:  Merchant: {id = 4; name = Михаил; surname = Шишкин; patronymic = Валентинович}  

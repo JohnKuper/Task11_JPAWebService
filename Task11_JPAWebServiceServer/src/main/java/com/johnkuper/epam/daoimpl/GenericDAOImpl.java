@@ -99,6 +99,7 @@ public class GenericDAOImpl<Entity, Domain, IdType> implements
 		Entity entity = entityManager.find(entityType, id);
 		Domain domain = mapper.map(entity, domainType);
 		logger.debug("Found entity: {}", entity);
+		logger.debug("After mapping: {}", domain);
 		return domain;
 	}
 

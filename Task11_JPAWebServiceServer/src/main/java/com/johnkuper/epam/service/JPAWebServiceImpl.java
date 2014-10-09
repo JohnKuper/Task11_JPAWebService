@@ -2,6 +2,7 @@ package com.johnkuper.epam.service;
 
 import java.math.BigDecimal;
 import java.util.ArrayList;
+import java.util.Calendar;
 import java.util.List;
 
 import javax.jws.WebService;
@@ -13,9 +14,11 @@ import org.slf4j.LoggerFactory;
 import com.johnkuper.epam.daoimpl.CarDAOImpl;
 import com.johnkuper.epam.daoimpl.CustomerDAOImpl;
 import com.johnkuper.epam.daoimpl.MerchantDAOImpl;
+import com.johnkuper.epam.daoimpl.SaleDAOImpl;
 import com.johnkuper.epam.domain.CarDomain;
 import com.johnkuper.epam.domain.CustomerDomain;
 import com.johnkuper.epam.domain.MerchantDomain;
+import com.johnkuper.epam.domain.SaleDomain;
 import com.johnkuper.epam.mapper.DomainServiceFieldRegistator;
 import com.johnkuper.epam.mapper.Mapper;
 import com.johnkuper.epam.servicemodel.CarWeb;
@@ -31,6 +34,7 @@ public class JPAWebServiceImpl implements JPAWebService {
 	private CarDAOImpl carDaoImpl;
 	private CustomerDAOImpl custDaoImpl;
 	private MerchantDAOImpl merchDaoImpl;
+	private SaleDAOImpl saleDaoImpl;
 	final static Logger logger = LoggerFactory.getLogger("JohnKuper");
 
 	public JPAWebServiceImpl() {
@@ -38,6 +42,7 @@ public class JPAWebServiceImpl implements JPAWebService {
 		this.carDaoImpl = new CarDAOImpl();
 		this.custDaoImpl = new CustomerDAOImpl();
 		this.merchDaoImpl = new MerchantDAOImpl();
+		this.saleDaoImpl = new SaleDAOImpl();
 	}
 
 	private String calledMethod(String methodName) {
@@ -71,11 +76,13 @@ public class JPAWebServiceImpl implements JPAWebService {
 	}
 
 	@Override
-	public void createCar(CarWeb carWeb) {
+	public String createCar(CarWeb carWeb) {
 
 		logger.debug(calledMethod("createCar"));
 		CarDomain carDomain = mapper.map(carWeb, CarDomain.class);
 		carDaoImpl.create(carDomain);
+
+		return "New car was successfully create";
 	}
 
 	@Override
@@ -98,11 +105,13 @@ public class JPAWebServiceImpl implements JPAWebService {
 
 	// Customer methods
 	@Override
-	public void createCustomer(CustomerWeb customer) {
+	public String createCustomer(CustomerWeb customer) {
 
 		logger.debug(calledMethod("createCustomer"));
 		CustomerDomain custDomain = mapper.map(customer, CustomerDomain.class);
 		custDaoImpl.create(custDomain);
+
+		return "New customer was successfully create";
 
 	}
 
@@ -112,6 +121,7 @@ public class JPAWebServiceImpl implements JPAWebService {
 		logger.debug(calledMethod("findCustomer"));
 		CustomerDomain custDomain = custDaoImpl.findOne(id);
 		CustomerWeb custWeb = mapper.map(custDomain, CustomerWeb.class);
+		logger.debug("CustomerWeb: {}", custWeb);
 
 		return custWeb;
 	}
@@ -123,16 +133,44 @@ public class JPAWebServiceImpl implements JPAWebService {
 		logger.debug(calledMethod("findMerchant"));
 		MerchantDomain merchDomain = merchDaoImpl.findOne(id);
 		MerchantWeb merchWeb = mapper.map(merchDomain, MerchantWeb.class);
+		logger.debug("MerchantWeb: {}", merchWeb);
 
 		return merchWeb;
 
 	}
 
 	@Override
-	public SaleWeb buyCar(CarWeb car, CustomerWeb customer, MerchantWeb merchant,
-			BigDecimal price) {
-		// TODO Auto-generated method stub
-		return null;
+	public String createMerchant(MerchantWeb merchant) {
+
+		logger.debug(calledMethod("createMerchant"));
+		MerchantDomain merchDomain = mapper.map(merchant, MerchantDomain.class);
+		merchDaoImpl.create(merchDomain);
+
+		return "New merchant was successfully create";
+	}
+
+	// Sale methods
+	@Override
+	public String buyCar(CarWeb car, CustomerWeb customer,
+			MerchantWeb merchant, BigDecimal price) {
+
+		logger.debug(calledMethod("buyCar"));
+
+		Calendar calendar = Calendar.getInstance();
+
+		java.util.Date now = calendar.getTime();
+		java.sql.Date currentDate = new java.sql.Date(now.getTime());
+
+		SaleWeb saleWeb = new SaleWeb(car, customer, merchant, price,
+				currentDate);
+		SaleDomain saleDomain = mapper.map(saleWeb, SaleDomain.class);
+		saleDaoImpl.create(saleDomain);
+
+		String status = "New sale was created";
+		logger.debug("{}", saleWeb);
+
+		return status;
+
 	}
 
 }

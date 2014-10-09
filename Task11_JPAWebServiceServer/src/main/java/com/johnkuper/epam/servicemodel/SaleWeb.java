@@ -1,30 +1,27 @@
 package com.johnkuper.epam.servicemodel;
 
 import java.math.BigDecimal;
-import java.util.Date;
-
-import com.johnkuper.epam.entity.Car;
-import com.johnkuper.epam.entity.Customer;
-import com.johnkuper.epam.entity.Merchant;
+import java.sql.Date;
 
 public class SaleWeb {
 
 	private int id;
-	private Car car;
-	private Customer customer;
-	private Merchant merchant;
+	private CarWeb car;
+	private CustomerWeb customer;
+	private MerchantWeb merchant;
 	private BigDecimal salePrice;
 	private Date dateOfSale;
 
 	public SaleWeb() {
 	}
 
-	public SaleWeb(Car car, Customer customer, Merchant merchant,
-			BigDecimal salePrice) {
+	public SaleWeb(CarWeb car, CustomerWeb customer, MerchantWeb merchant,
+			BigDecimal salePrice, Date saleTime) {
 		this.car = car;
 		this.customer = customer;
 		this.merchant = merchant;
 		this.salePrice = salePrice;
+		this.dateOfSale = saleTime;
 	}
 
 	@Override
@@ -34,8 +31,6 @@ public class SaleWeb {
 				+ "%n" + customer + "%n" + merchant + "%n");
 	}
 
-	
-
 	public int getId() {
 		return id;
 	}
@@ -44,27 +39,27 @@ public class SaleWeb {
 		this.id = id;
 	}
 
-	public Car getCar() {
+	public CarWeb getCar() {
 		return car;
 	}
 
-	public void setCar(Car car) {
+	public void setCar(CarWeb car) {
 		this.car = car;
 	}
 
-	public Customer getCustomer() {
+	public CustomerWeb getCustomer() {
 		return customer;
 	}
 
-	public void setCustomer(Customer customer) {
+	public void setCustomer(CustomerWeb customer) {
 		this.customer = customer;
 	}
 
-	public Merchant getMerchant() {
+	public MerchantWeb getMerchant() {
 		return merchant;
 	}
 
-	public void setMerchant(Merchant merchant) {
+	public void setMerchant(MerchantWeb merchant) {
 		this.merchant = merchant;
 	}
 

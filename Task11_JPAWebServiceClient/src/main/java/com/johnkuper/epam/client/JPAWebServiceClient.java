@@ -9,6 +9,8 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import com.johnkuper.epam.requests.CarRequests;
+import com.johnkuper.epam.requests.CustomerRequests;
+import com.johnkuper.epam.requests.MerchantRequests;
 
 public class JPAWebServiceClient {
 
@@ -21,24 +23,6 @@ public class JPAWebServiceClient {
 
 	// wsimport -keep -p com.johnkuper.epam.client
 	// http://localhost:9000/JPAWebService?wsdl
-
-	public static void main(String[] args) {
-
-		URL url = getWSDLURL(SERVICE_URL);
-		portSetup(url);
-		sayHi("This is Kuper!!!");
-		carRequests();
-
-	}
-
-	private static void carRequests() {
-
-		CarRequests requests = new CarRequests(jpaPort);
-
-		requests.findCarByName("Lada");
-		requests.createCar();
-		requests.findCarsByMotorPower();
-	}
 
 	private static void portSetup(URL url) {
 
@@ -56,12 +40,39 @@ public class JPAWebServiceClient {
 		return url;
 	}
 
-	private static String sayHi(String text) {
+	public static void main(String[] args) {
 
-		String clientStr = text;
-		clientStr = jpaPort.sayHi(clientStr);
-		logger.debug("String after service response : {}", clientStr);
-		return clientStr;
+		URL url = getWSDLURL(SERVICE_URL);
+		portSetup(url);
+
+		carRequests();
+		customerRequests();
+		merchantRequests();
+
+	}
+
+	private static void carRequests() {
+
+		CarRequests requests = new CarRequests(jpaPort);
+
+		requests.findCarByName("Lada");
+		requests.createCar();
+		requests.findCarsByMotorPower();
+		requests.buyCar();
+	}
+
+	private static void customerRequests() {
+
+		CustomerRequests requests = new CustomerRequests(jpaPort);
+
+		requests.createCustomer();
+	}
+
+	private static void merchantRequests() {
+
+		MerchantRequests requests = new MerchantRequests(jpaPort);
+
+		requests.createMerchant();
 	}
 
 }

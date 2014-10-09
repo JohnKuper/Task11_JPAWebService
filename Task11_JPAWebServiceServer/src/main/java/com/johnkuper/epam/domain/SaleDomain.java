@@ -1,31 +1,28 @@
 package com.johnkuper.epam.domain;
 
 import java.math.BigDecimal;
-import java.util.Date;
-
-import com.johnkuper.epam.entity.Car;
-import com.johnkuper.epam.entity.Customer;
-import com.johnkuper.epam.entity.Merchant;
+import java.sql.Date;
 
 public class SaleDomain {
 
 	private int id; // id
-	private Car car; //
-	private Customer customer;
-	private Merchant merchant;
+	private CarDomain car; //
+	private CustomerDomain customer;
+	private MerchantDomain merchant;
 	private BigDecimal salePrice; // price
 	private Date dateOfSale; // saleDate
 
 	public SaleDomain() {
-		
+
 	}
 
-	public SaleDomain(Car car, Customer customer, Merchant merchant,
-			BigDecimal salePrice) {
+	public SaleDomain(CarDomain car, CustomerDomain customer,
+			MerchantDomain merchant, BigDecimal salePrice, Date saleTime) {
 		this.car = car;
 		this.customer = customer;
 		this.merchant = merchant;
 		this.salePrice = salePrice;
+		this.dateOfSale = saleTime;
 	}
 
 	@Override
@@ -35,8 +32,6 @@ public class SaleDomain {
 				+ "%n" + customer + "%n" + merchant + "%n");
 	}
 
-	
-
 	public int getId() {
 		return id;
 	}
@@ -45,27 +40,27 @@ public class SaleDomain {
 		this.id = id;
 	}
 
-	public Car getCar() {
+	public CarDomain getCar() {
 		return car;
 	}
 
-	public void setCar(Car car) {
+	public void setCar(CarDomain car) {
 		this.car = car;
 	}
 
-	public Customer getCustomer() {
+	public CustomerDomain getCustomer() {
 		return customer;
 	}
 
-	public void setCustomer(Customer customer) {
+	public void setCustomer(CustomerDomain customer) {
 		this.customer = customer;
 	}
 
-	public Merchant getMerchant() {
+	public MerchantDomain getMerchant() {
 		return merchant;
 	}
 
-	public void setMerchant(Merchant merchant) {
+	public void setMerchant(MerchantDomain merchant) {
 		this.merchant = merchant;
 	}
 
