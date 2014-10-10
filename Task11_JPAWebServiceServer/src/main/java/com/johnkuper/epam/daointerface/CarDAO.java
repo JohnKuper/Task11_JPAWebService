@@ -9,4 +9,6 @@ public interface CarDAO extends GenericDAO<Car, CarDomain, Integer> {
 
 	List<CarDomain> findByName(String name);
 
+	List<CarDomain> findByMotorPower(int minPower, int maxPower);
+
 }

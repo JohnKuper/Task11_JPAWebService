@@ -2,12 +2,10 @@ package com.johnkuper.epam.servicemodel;
 
 import java.math.BigDecimal;
 
-import com.johnkuper.epam.entity.Car;
-
 public class StoreWeb {
 
 	private int id;
-	private Car car;
+	private CarWeb car;
 	private int amount;
 	private BigDecimal carPrice;
 	private boolean testDrive;
@@ -15,7 +13,7 @@ public class StoreWeb {
 	public StoreWeb() {
 	}
 
-	public StoreWeb(Car car, int amount, BigDecimal carPrice,
+	public StoreWeb(CarWeb car, int amount, BigDecimal carPrice,
 			boolean testDrive) {
 		this.car = car;
 		this.amount = amount;
@@ -38,11 +36,11 @@ public class StoreWeb {
 		this.id = id;
 	}
 
-	public Car getCar() {
+	public CarWeb getCar() {
 		return car;
 	}
 
-	public void setCar(Car car) {
+	public void setCar(CarWeb car) {
 		this.car = car;
 	}
 

@@ -21,9 +21,6 @@ public class JPAWebServiceClient {
 
 	static JPAWebServiceImpl jpaPort;
 
-	// wsimport -keep -p com.johnkuper.epam.client
-	// http://localhost:9000/JPAWebService?wsdl
-
 	private static void portSetup(URL url) {
 
 		JPAWebService jpaService = new JPAWebService(url, qName);
@@ -43,7 +40,10 @@ public class JPAWebServiceClient {
 	public static void main(String[] args) {
 
 		URL url = getWSDLURL(SERVICE_URL);
-		portSetup(url);
+
+		if (jpaPort == null) {
+			portSetup(url);
+		}
 
 		carRequests();
 		customerRequests();
@@ -56,9 +56,13 @@ public class JPAWebServiceClient {
 		CarRequests requests = new CarRequests(jpaPort);
 
 		requests.findCarByName("Lada");
+		requests.updateCar();
 		requests.createCar();
 		requests.findCarsByMotorPower();
 		requests.buyCar();
+		requests.findCarsBetweenPrices();
+
+		requests.getAllCarsFromStore();
 	}
 
 	private static void customerRequests() {

@@ -25,7 +25,7 @@ public class CustomerRequests {
 		return String.format("--- Client method '%s' was called", methodName);
 	}
 
-	private XMLGregorianCalendar getXMLGregorianCalendarNow()
+	private XMLGregorianCalendar getXMLGregorianCalendar()
 			throws DatatypeConfigurationException {
 		GregorianCalendar gregorianCalendar = new GregorianCalendar();
 		DatatypeFactory datatypeFactory = DatatypeFactory.newInstance();
@@ -48,7 +48,7 @@ public class CustomerRequests {
 			customer.setPassportSeries("4466");
 			customer.setPassportNumber("569090");
 
-			XMLGregorianCalendar currentTime = getXMLGregorianCalendarNow();
+			XMLGregorianCalendar currentTime = getXMLGregorianCalendar();
 			currentTime.setYear(1982);
 			currentTime.setMonth(6);
 			currentTime.setDay(22);

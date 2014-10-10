@@ -15,16 +15,19 @@ import com.johnkuper.epam.daoimpl.CarDAOImpl;
 import com.johnkuper.epam.daoimpl.CustomerDAOImpl;
 import com.johnkuper.epam.daoimpl.MerchantDAOImpl;
 import com.johnkuper.epam.daoimpl.SaleDAOImpl;
+import com.johnkuper.epam.daoimpl.StoreDAOImpl;
 import com.johnkuper.epam.domain.CarDomain;
 import com.johnkuper.epam.domain.CustomerDomain;
 import com.johnkuper.epam.domain.MerchantDomain;
 import com.johnkuper.epam.domain.SaleDomain;
+import com.johnkuper.epam.domain.StoreDomain;
 import com.johnkuper.epam.mapper.DomainServiceFieldRegistator;
 import com.johnkuper.epam.mapper.Mapper;
 import com.johnkuper.epam.servicemodel.CarWeb;
 import com.johnkuper.epam.servicemodel.CustomerWeb;
 import com.johnkuper.epam.servicemodel.MerchantWeb;
 import com.johnkuper.epam.servicemodel.SaleWeb;
+import com.johnkuper.epam.servicemodel.StoreWeb;
 
 @WebService(serviceName = "JPAWebService", portName = "JPAWebServicePort", targetNamespace = "http://jpa.johnkuper/jpawebservice")
 @SOAPBinding(style = SOAPBinding.Style.DOCUMENT, use = SOAPBinding.Use.LITERAL, parameterStyle = SOAPBinding.ParameterStyle.WRAPPED)
@@ -35,6 +38,7 @@ public class JPAWebServiceImpl implements JPAWebService {
 	private CustomerDAOImpl custDaoImpl;
 	private MerchantDAOImpl merchDaoImpl;
 	private SaleDAOImpl saleDaoImpl;
+	private StoreDAOImpl storeDaoImpl;
 	final static Logger logger = LoggerFactory.getLogger("JohnKuper");
 
 	public JPAWebServiceImpl() {
@@ -43,36 +47,78 @@ public class JPAWebServiceImpl implements JPAWebService {
 		this.custDaoImpl = new CustomerDAOImpl();
 		this.merchDaoImpl = new MerchantDAOImpl();
 		this.saleDaoImpl = new SaleDAOImpl();
+		this.storeDaoImpl = new StoreDAOImpl();
 	}
 
+	// Private methods for inside service work
 	private String calledMethod(String methodName) {
 		return String.format("Service method '%s' was called", methodName);
 	}
 
-	public String sayHi(String text) {
-
-		if (text.length() > 0) {
-			logger.debug(calledMethod("sayHi"));
-			return "Hello! " + text;
-		} else {
-			return "Please, enter correct text";
+	private void checkId(int id) {
+		if (id < 1) {
+			throw new IllegalArgumentException("ID can't be less than 1.");
 		}
+	}
+
+	private java.sql.Date getCurrentDate() {
+
+		Calendar calendar = Calendar.getInstance();
+
+		java.util.Date now = calendar.getTime();
+		java.sql.Date currentDate = new java.sql.Date(now.getTime());
+
+		return currentDate;
+	}
+
+	private List<CarWeb> getWebCarsFromDomainCars(List<CarDomain> domainCars) {
+		List<CarWeb> webCars = new ArrayList<>();
+		if (domainCars.size() != 0) {
+			for (CarDomain car : domainCars) {
+				webCars.add(mapper.map(car, CarWeb.class));
+			}
+		}
+		return webCars;
+	}
+
+	private List<StoreWeb> getWebStoresFromDomainStores(
+			List<StoreDomain> domainStores) {
+		List<StoreWeb> webStores = new ArrayList<>();
+		if (domainStores.size() != 0) {
+			for (StoreDomain store : domainStores) {
+				webStores.add(mapper.map(store, StoreWeb.class));
+			}
+		}
+		return webStores;
 	}
 
 	// Car methods
 	@Override
 	public List<CarWeb> findCarByName(String name) {
 
-		logger.debug(calledMethod("findCarByName"));
-		List<CarDomain> carDomains = carDaoImpl.findByName(name);
-		List<CarWeb> carWebs = new ArrayList<>();
-		if (carDomains.size() != 0) {
-			for (CarDomain car : carDomains) {
-				carWebs.add(mapper.map(car, CarWeb.class));
-			}
+		if (!(name instanceof String)) {
+			throw new IllegalArgumentException(
+					"Car name should be instance of String.");
 		}
 
+		logger.debug(calledMethod("findCarByName"));
+		List<CarDomain> carDomains = carDaoImpl.findByName(name);
+		List<CarWeb> carWebs = getWebCarsFromDomainCars(carDomains);
+
 		return carWebs;
+	}
+
+	@Override
+	public CarWeb findCar(int id) {
+
+		checkId(id);
+
+		logger.debug(calledMethod("findCar"));
+		CarDomain carDomain = carDaoImpl.findOne(id);
+		CarWeb carWeb = mapper.map(carDomain, CarWeb.class);
+		logger.debug("CarWeb: {}", carWeb);
+
+		return carWeb;
 	}
 
 	@Override
@@ -86,21 +132,45 @@ public class JPAWebServiceImpl implements JPAWebService {
 	}
 
 	@Override
+	public String updateCar(CarWeb carWeb) {
+
+		logger.debug(calledMethod("updateCar"));
+		CarDomain carDomain = mapper.map(carWeb, CarDomain.class);
+		carDaoImpl.update(carDomain);
+
+		return String.format(
+				"Information about car with ID = %s was successfully updated",
+				carDomain.getId());
+	}
+
+	@Override
 	public List<CarWeb> findCarsByMotorPower(int minPower, int maxPower) {
 
-		logger.debug(calledMethod("findCarsByMotorPower"));
-		List<CarDomain> domainCars = carDaoImpl.findAll();
-		List<CarWeb> webCars = new ArrayList<>();
-		if (domainCars.size() != 0) {
-			for (CarDomain car : domainCars) {
-				int motorPower = Integer.valueOf(car.getMotorpower());
-				if (motorPower >= minPower && motorPower <= maxPower) {
-					webCars.add(mapper.map(car, CarWeb.class));
-				}
-			}
+		if (minPower < 0 || maxPower < 0) {
+			throw new IllegalArgumentException(
+					"Motor power can't be less than 0.");
+		}
+		if (minPower > maxPower) {
+			throw new IllegalArgumentException(
+					"Min power can't be more than max power.");
 		}
 
+		logger.debug(calledMethod("findCarsByMotorPower"));
+		List<CarDomain> domainCars = carDaoImpl.findByMotorPower(minPower,
+				maxPower);
+		List<CarWeb> webCars = getWebCarsFromDomainCars(domainCars);
 		return webCars;
+	}
+
+	@Override
+	public List<StoreWeb> getAllCarsFromStore() {
+
+		logger.debug(calledMethod("getAllCarsFromStore"));
+
+		List<StoreDomain> domainStores = storeDaoImpl.findAll();
+		List<StoreWeb> webStores = getWebStoresFromDomainStores(domainStores);
+
+		return webStores;
 	}
 
 	// Customer methods
@@ -118,6 +188,8 @@ public class JPAWebServiceImpl implements JPAWebService {
 	@Override
 	public CustomerWeb findCustomer(int id) {
 
+		checkId(id);
+
 		logger.debug(calledMethod("findCustomer"));
 		CustomerDomain custDomain = custDaoImpl.findOne(id);
 		CustomerWeb custWeb = mapper.map(custDomain, CustomerWeb.class);
@@ -129,6 +201,8 @@ public class JPAWebServiceImpl implements JPAWebService {
 	// Merchant methods
 	@Override
 	public MerchantWeb findMerchant(int id) {
+
+		checkId(id);
 
 		logger.debug(calledMethod("findMerchant"));
 		MerchantDomain merchDomain = merchDaoImpl.findOne(id);
@@ -156,10 +230,7 @@ public class JPAWebServiceImpl implements JPAWebService {
 
 		logger.debug(calledMethod("buyCar"));
 
-		Calendar calendar = Calendar.getInstance();
-
-		java.util.Date now = calendar.getTime();
-		java.sql.Date currentDate = new java.sql.Date(now.getTime());
+		java.sql.Date currentDate = getCurrentDate();
 
 		SaleWeb saleWeb = new SaleWeb(car, customer, merchant, price,
 				currentDate);
@@ -170,6 +241,28 @@ public class JPAWebServiceImpl implements JPAWebService {
 		logger.debug("{}", saleWeb);
 
 		return status;
+
+	}
+
+	// Store methods
+	@Override
+	public List<StoreWeb> findCarsBetweenPrices(BigDecimal minPrice,
+			BigDecimal maxPrice) {
+
+		if (minPrice.compareTo(BigDecimal.ZERO) < 0
+				|| maxPrice.compareTo(BigDecimal.ZERO) < 0) {
+			throw new IllegalArgumentException("Price can't be less than 0.");
+		}
+		if (maxPrice.compareTo(minPrice) < 0) {
+			throw new IllegalArgumentException(
+					"Min price can't be more than max price.");
+		}
+
+		logger.debug(calledMethod("findCarsBetweenPrices"));
+		List<StoreDomain> domainStorses = storeDaoImpl.findItemsBetweenPrices(
+				minPrice, maxPrice);
+		List<StoreWeb> webStores = getWebStoresFromDomainStores(domainStorses);
+		return webStores;
 
 	}
 

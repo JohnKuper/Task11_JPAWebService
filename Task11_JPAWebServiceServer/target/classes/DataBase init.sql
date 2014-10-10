@@ -7,7 +7,7 @@ create table if not exists cars (
 	id_car int(4) auto_increment primary key,
 	name varchar(100) not null,
 	model varchar(100) not null,
-	modification varchar(100) not null,
+	modification int(5) not null,
 	color varchar(30) not null,
 	unique key mark_unique_key (name,model,modification)
 );

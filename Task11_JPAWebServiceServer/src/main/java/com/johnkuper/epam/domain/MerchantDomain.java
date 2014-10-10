@@ -3,10 +3,10 @@ package com.johnkuper.epam.domain;
 
 public class MerchantDomain {
 
-	private int id; // id
-	private String merchName; // name
-	private String merchSurname; // surname
-	private String merchPatronymic; // patronymic
+	private int id;
+	private String merchName;
+	private String merchSurname;
+	private String merchPatronymic;
 
 	public MerchantDomain() {
 	}

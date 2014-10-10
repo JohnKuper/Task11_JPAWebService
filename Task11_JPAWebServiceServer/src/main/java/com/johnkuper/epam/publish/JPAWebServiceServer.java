@@ -27,7 +27,7 @@ public class JPAWebServiceServer {
 		logger.debug("Server is ready...");
 
 		try {
-			Thread.sleep(1000 * 60 * 60);
+			Thread.sleep(1000 * 60 * 10);
 		} catch (InterruptedException e) {
 			logger.error("Server thread was interrupted", e);
 

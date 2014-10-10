@@ -42,5 +42,28 @@ public class CarDAOImpl extends GenericDAOImpl<Car, CarDomain, Integer>
 					"SELECT s FROM Store s WHERE s.price BETWEEN :minprice AND :maxprice",
 					Store.class);
 
+	@Override
+	public List<CarDomain> findByMotorPower(int minPower, int maxPower) {
+
+		logger.debug("--- Start 'findByMotorPower' method for Car entity --- ");
+
+		TypedQuery<Car> query = entityManager
+				.createQuery(
+						"SELECT c FROM Car c WHERE c.modification BETWEEN :minPower AND :maxPower",
+						Car.class);
+		query.setParameter("minPower", minPower);
+		query.setParameter("maxPower", maxPower);
+		List<Car> cars = query.getResultList();
+		List<CarDomain> carDomains = new ArrayList<>();
+		if (cars.size() != 0) {
+			for (Car car : cars) {
+				carDomains.add(mapper.map(car, CarDomain.class));
+				logger.debug("Found car between {} and {} motor power: {}",
+						minPower, maxPower, car);
+			}
+		}
+
+		return carDomains;
+	}
 
 }

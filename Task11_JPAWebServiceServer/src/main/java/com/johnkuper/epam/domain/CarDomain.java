@@ -1,18 +1,17 @@
 package com.johnkuper.epam.domain;
 
+public class CarDomain {
 
-public class CarDomain  {
-
-	private int id; // id
-	private String car_mark; // name
-	private String car_model; // model
-	private String motorpower; // modification
-	private String car_color; // color
+	private int id;
+	private String car_mark;
+	private String car_model;
+	private int motorpower;
+	private String car_color;
 
 	public CarDomain() {
 	}
 
-	public CarDomain(String car_mark, String car_model, String motorpower,
+	public CarDomain(String car_mark, String car_model, int motorpower,
 			String car_color) {
 		this.car_mark = car_mark;
 		this.car_model = car_model;
@@ -26,8 +25,6 @@ public class CarDomain  {
 				+ "; car_model = " + car_model + "; motorpower = " + motorpower
 				+ "; car_color = " + car_color + "}";
 	}
-
-	
 
 	public int getId() {
 		return id;
@@ -53,11 +50,11 @@ public class CarDomain  {
 		this.car_model = car_model;
 	}
 
-	public String getMotorpower() {
+	public int getMotorpower() {
 		return motorpower;
 	}
 
-	public void setMotorpower(String motorpower) {
+	public void setMotorpower(int motorpower) {
 		this.motorpower = motorpower;
 	}
 

@@ -5,12 +5,12 @@ import java.sql.Date;
 
 public class SaleDomain {
 
-	private int id; // id
-	private CarDomain car; //
+	private int id;
+	private CarDomain car;
 	private CustomerDomain customer;
 	private MerchantDomain merchant;
-	private BigDecimal salePrice; // price
-	private Date dateOfSale; // saleDate
+	private BigDecimal salePrice;
+	private Date dateOfSale;
 
 	public SaleDomain() {
 

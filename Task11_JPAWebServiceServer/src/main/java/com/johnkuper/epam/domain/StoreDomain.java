@@ -6,9 +6,9 @@ public class StoreDomain {
 
 	private int id;
 	private CarDomain car;
-	private int amount; // count
-	private BigDecimal carPrice; // price
-	private boolean testDrive; // testdrive_avaible
+	private int amount;
+	private BigDecimal carPrice;
+	private boolean testDrive;
 
 	public StoreDomain() {
 	}

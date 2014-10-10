@@ -21,7 +21,7 @@ import javax.xml.bind.annotation.XmlType;
  *         &lt;element name="car_mark" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
  *         &lt;element name="car_model" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
  *         &lt;element name="id" type="{http://www.w3.org/2001/XMLSchema}int"/>
- *         &lt;element name="motorpower" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
+ *         &lt;element name="motorpower" type="{http://www.w3.org/2001/XMLSchema}int"/>
  *       &lt;/sequence>
  *     &lt;/restriction>
  *   &lt;/complexContent>
@@ -47,7 +47,7 @@ public class CarWeb {
     @XmlElement(name = "car_model")
     protected String carModel;
     protected int id;
-    protected String motorpower;
+    protected int motorpower;
 
     /**
      * Gets the value of the carColor property.
@@ -140,24 +140,16 @@ public class CarWeb {
     /**
      * Gets the value of the motorpower property.
      * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
      */
-    public String getMotorpower() {
+    public int getMotorpower() {
         return motorpower;
     }
 
     /**
      * Sets the value of the motorpower property.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
      */
-    public void setMotorpower(String value) {
+    public void setMotorpower(int value) {
         this.motorpower = value;
     }
 

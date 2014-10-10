@@ -22,8 +22,8 @@ public class Car {
 	@Column(nullable = false, length = 100)
 	private String model;
 
-	@Column(nullable = false, length = 100)
-	private String modification;
+	@Column(nullable = false)
+	private int modification;
 
 	@Column(nullable = false, length = 30)
 	private String color;
@@ -31,7 +31,7 @@ public class Car {
 	public Car() {
 	}
 
-	public Car(String name, String model, String modification, String color) {
+	public Car(String name, String model, int modification, String color) {
 		this.name = name;
 		this.model = model;
 		this.modification = modification;
@@ -69,11 +69,11 @@ public class Car {
 		this.model = model;
 	}
 
-	public String getModification() {
+	public int getModification() {
 		return modification;
 	}
 
-	public void setModification(String modification) {
+	public void setModification(int modification) {
 		this.modification = modification;
 	}
 

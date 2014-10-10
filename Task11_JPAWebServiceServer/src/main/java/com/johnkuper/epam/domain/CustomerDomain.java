@@ -4,13 +4,13 @@ import java.util.Date;
 
 public class CustomerDomain {
 
-	private int id; // id
-	private String custName; // name
-	private String custSurname; // surname
-	private String custPatronymic; // patronymic
-	private String passportSeries; // passport_series
-	private String passportNumber; // passport_number
-	private Date dateOfBirth; // birthdate
+	private int id;
+	private String custName;
+	private String custSurname;
+	private String custPatronymic;
+	private String passportSeries;
+	private String passportNumber;
+	private Date dateOfBirth;
 
 	public CustomerDomain() {
 	}
